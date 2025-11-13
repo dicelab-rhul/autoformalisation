@@ -2,6 +2,13 @@
     margin-bottom: 20px;
 }
 
-.paper h3 {
-    margin-bottom: 4px;
+#charts {
+    max-width: 50%;
+    margin: auto;
+}
+
+.paper {
+    border: 5px solid black;
+    padding: 1%;
+    margin: 1%;
 }

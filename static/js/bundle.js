@@ -2584,6 +2584,41 @@ var safeLoad = renamed("safeLoad", "load");
 var safeLoadAll = renamed("safeLoadAll", "loadAll");
 var safeDump = renamed("safeDump", "dump");
 
+// src/typescript/DomManipulation.ts
+var DomManipulation = class {
+  static createParagraph(text) {
+    const p = document.createElement("p");
+    p.textContent = text;
+    return p;
+  }
+  static createBoldLabel(label, value) {
+    const p = document.createElement("p");
+    const b = document.createElement("b");
+    b.textContent = label + ": ";
+    p.appendChild(b);
+    p.appendChild(document.createTextNode(value));
+    return p;
+  }
+  static createLink(url, label) {
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = label;
+    p.appendChild(a);
+    return p;
+  }
+  static getElementByIdOrThrowError(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      return el;
+    } else {
+      throw new Error(`Element #${id} not found`);
+    }
+  }
+};
+
 // node_modules/@kurkle/color/dist/color.esm.js
 function round(v) {
   return v + 0.5 | 0;
@@ -17057,101 +17092,72 @@ var registerables = [
 Chart.register(...registerables);
 var auto_default = Chart;
 
-// src/typescript/paper_loader.ts
-function getEl(id) {
-  const el = document.getElementById(id);
-  if (!el) throw new Error(`Element #${id} not found`);
-  return el;
-}
-function createBoldLabel(label, value) {
-  const p = document.createElement("p");
-  const b = document.createElement("b");
-  b.textContent = label + ": ";
-  p.appendChild(b);
-  p.appendChild(document.createTextNode(value));
-  return p;
-}
-function createLink(url, label) {
-  const p = document.createElement("p");
-  const a = document.createElement("a");
-  a.href = url;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
-  a.textContent = label;
-  p.appendChild(a);
-  return p;
-}
-async function loadPapers() {
-  const response = await fetch("/_data/papers.yml");
-  const text = await response.text();
-  const data = [];
-  loadAll(text, (doc) => {
-    const p = doc;
-    if (p.year) {
-      const n = Number(p.year);
-      p.year = Number.isNaN(n) ? p.year : n;
+// src/typescript/Renderer.ts
+var Renderer = class _Renderer {
+  static renderPapers(data) {
+    const container = DomManipulation.getElementByIdOrThrowError("papers");
+    while (container.firstChild) {
+      container.firstChild.remove();
     }
-    data.push(p);
-  });
-  const llms = /* @__PURE__ */ new Set();
-  const langs = /* @__PURE__ */ new Set();
-  const types = /* @__PURE__ */ new Set();
-  for (const p of data) {
-    if (p.llm) llms.add(p.llm);
-    if (p.language) langs.add(p.language);
-    if (p.type) types.add(p.type);
+    container.appendChild(document.createElement("hr"));
+    const filtered = _Renderer.filterPapers(data);
+    _Renderer.renderFilteredPapers(filtered, container);
+    _Renderer.renderCharts(filtered, data);
+    container.appendChild(document.createElement("hr"));
   }
-  const filters = {
-    llm: "",
-    language: "",
-    type: "",
-    search: ""
-  };
-  const fillSelect = (id, values) => {
-    const sel = getEl(id);
-    for (const v of [...values].sort((a, b) => a.localeCompare(b))) {
-      const opt = document.createElement("option");
-      opt.value = v;
-      opt.textContent = v;
-      sel.appendChild(opt);
-    }
-  };
-  fillSelect("filter-llm", llms);
-  fillSelect("filter-lang", langs);
-  fillSelect("filter-type", types);
-  function renderPapers() {
-    const container = getEl("papers");
-    while (container.firstChild) container.firstChild.remove();
-    const filtered = data.filter((p) => !filters.llm || p.llm === filters.llm).filter((p) => !filters.language || p.language === filters.language).filter((p) => !filters.type || p.type === filters.type).filter((p) => {
-      if (!filters.search) return true;
-      const s = filters.search;
-      return p.title?.toLowerCase().includes(s) || p.author?.toLowerCase().includes(s);
+  static filterPapers(data, filters) {
+    const appliedFilters = filters ?? {
+      llm: "",
+      language: "",
+      type: "",
+      search: ""
+    };
+    return data.filter((p) => !appliedFilters.llm || p.llm === appliedFilters.llm).filter((p) => !appliedFilters.language || p.language === appliedFilters.language).filter((p) => !appliedFilters.type || p.type === appliedFilters.type).filter((p) => {
+      if (appliedFilters.search) {
+        const s = appliedFilters.search.toLowerCase();
+        return p.title?.toLowerCase().includes(s) || p.author?.toLowerCase().includes(s);
+      } else {
+        return true;
+      }
     });
+  }
+  static appendOptionalEntries(p, div) {
+    const fields = [
+      { key: "llm", label: "LLM" },
+      { key: "language", label: "Language" },
+      { key: "type", label: "Type" },
+      { key: "url", label: "Paper", isLink: true },
+      { key: "repository", label: "Code", isLink: true }
+    ];
+    for (const field of fields) {
+      const value = p[field.key];
+      if (!value) {
+        continue;
+      } else if (field.isLink) {
+        div.appendChild(DomManipulation.createLink(value, field.label));
+      } else {
+        div.appendChild(DomManipulation.createBoldLabel(field.label, value));
+      }
+    }
+  }
+  static renderFilteredPapers(filtered, container) {
     for (const p of filtered) {
       const div = document.createElement("div");
       div.className = "paper";
       const h3 = document.createElement("h3");
-      h3.textContent = p.title;
+      h3.textContent = p.title ?? "";
       div.appendChild(h3);
       const meta = document.createElement("p");
       const strong = document.createElement("strong");
       strong.textContent = p.author ?? "";
       meta.appendChild(strong);
-      meta.appendChild(
-        document.createTextNode(` (${p.year ?? ""})`)
-      );
+      meta.appendChild(document.createTextNode(` (${p.year ?? ""})`));
       div.appendChild(meta);
-      if (p.llm) div.appendChild(createBoldLabel("LLM", p.llm));
-      if (p.language) div.appendChild(createBoldLabel("Language", p.language));
-      if (p.type) div.appendChild(createBoldLabel("Type", p.type));
-      if (p.url) div.appendChild(createLink(p.url, "Paper"));
-      if (p.repository) div.appendChild(createLink(p.repository, "Code"));
-      div.appendChild(document.createElement("hr"));
+      _Renderer.appendOptionalEntries(p, div);
       container.appendChild(div);
     }
-    renderCharts(filtered);
   }
-  function renderCharts(filtered) {
+  static renderCharts(filtered, data) {
     const subset = filtered ?? data;
     const byYear = {};
     const byLLM = {};
@@ -17161,7 +17167,7 @@ async function loadPapers() {
       const l = p.llm ?? "None";
       byLLM[l] = (byLLM[l] || 0) + 1;
     }
-    new auto_default(getEl("chartYear"), {
+    const _chartYear = new auto_default(DomManipulation.getElementByIdOrThrowError("chartYear"), {
       type: "bar",
       data: {
         labels: Object.keys(byYear),
@@ -17172,9 +17178,11 @@ async function loadPapers() {
           }
         ]
       },
-      options: { responsive: true }
+      options: {
+        responsive: true
+      }
     });
-    new auto_default(getEl("chartLLM"), {
+    const _chartLLM = new auto_default(DomManipulation.getElementByIdOrThrowError("chartLLM"), {
       type: "pie",
       data: {
         labels: Object.keys(byLLM),
@@ -17185,12 +17193,53 @@ async function loadPapers() {
           }
         ]
       },
-      options: { responsive: true }
+      options: {
+        responsive: true
+      }
     });
   }
-  renderPapers();
-}
-await loadPapers();
+};
+
+// src/typescript/paper_loader.ts
+var PaperLoader = class _PaperLoader {
+  static async loadPapers() {
+    const response = await fetch("/_data/papers.yml");
+    const text = await response.text();
+    const data = _PaperLoader.populatePapersList(text);
+    const llms = new Set(data.map((p) => p.llm).filter((x) => !!x));
+    const langs = new Set(data.map((p) => p.language).filter((x) => !!x));
+    const types = new Set(data.map((p) => p.type).filter((x) => !!x));
+    _PaperLoader.fillSelect("filter-llm", llms);
+    _PaperLoader.fillSelect("filter-lang", langs);
+    _PaperLoader.fillSelect("filter-type", types);
+    Renderer.renderPapers(data);
+  }
+  static populatePapersList(text) {
+    const data = [];
+    loadAll(text, (doc) => {
+      const p = doc;
+      if (p.year) {
+        const n = Number(p.year);
+        p.year = Number.isNaN(n) ? p.year : n;
+      }
+      data.push(p);
+    });
+    return data;
+  }
+  static fillSelect(id, values) {
+    const sel = DomManipulation.getElementByIdOrThrowError(id);
+    for (const v of [...values].sort((a, b) => a.localeCompare(b))) {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      sel.appendChild(opt);
+    }
+  }
+};
+await PaperLoader.loadPapers();
+export {
+  PaperLoader
+};
 /*! Bundled license information:
 
 js-yaml/dist/js-yaml.mjs:

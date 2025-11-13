@@ -2,8 +2,8 @@
 <html lang="en" xml:lang="en">
     <head>
         <title>Awesome LLM Papers</title>
-        <link rel="stylesheet" href="/static/css/index.css" nonce="{{nonce_value}}" integrity="sha384-gQOXE3BjOXDhWl3BHPM9YGakOHW7O0gWl2zznBopE8F78AjO8UThVOO5glzwOXm4" crossorigin="anonymous">
-        <script id="paper-loaded" type="module" src="/static/js/bundle.js" nonce="{{nonce_value}}" integrity="sha384-N/29sflt/xU0ut397jb2MNy+LMTYAhCGNgc0644ocRgCw945pGJZEGRa3M5HE0T+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/static/css/index.css" nonce="{{nonce_value}}" integrity="sha384-tVgB+acNnsBvxY4Q2cWpDpaRVTTtQuxClz2yhl3DRDoBDNnKzA6o8DXiLdCByRHs" crossorigin="anonymous">
+        <script id="paper-loaded" type="module" src="/static/js/bundle.js" nonce="{{nonce_value}}" integrity="sha384-sSjJZg2DTLrr4ZkWZrHlUxAU85sL31oPFp2WfhelER0vCdE9Fg2meo2C95Ug81vy" crossorigin="anonymous"></script>
         <script id="tt-enforced-polyfill" type="text/javascript" src="/static/js/trusted_types_enforced_polyfill.js" nonce="{{nonce_value}}" integrity="sha384-elE2tSenQy/SKYupFKXI9VB/bZKiQPvt/aw0mintfi1utG9CxsRhuatwJdW/6Bvx" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -21,8 +21,9 @@
         <div id="papers"></div>
 
         <h2>Statistics</h2>
-        <canvas id="chartYear" width="400" height="200"></canvas>
-        <canvas id="chartLLM" width="400" height="200"></canvas>
-</div>
+        <div id="charts">
+            <canvas id="chartYear"></canvas>
+            <canvas id="chartLLM"></canvas>
+        </div>
     </body>
 </html>

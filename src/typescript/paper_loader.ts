@@ -1,216 +1,54 @@
 import * as jsyaml from "js-yaml";
-import Chart from "chart.js/auto";
+import { Paper } from "./utils/Paper";
+import { DomManipulation } from "./utils/DomManipulation";
+import { Renderer } from "./Renderer";
 
-interface Paper {
-  ENTRYTYPE?: string;
-  ID?: string;
-  title: string;
-  author?: string;
-  journal?: string;
-  topic?: string;
-  year?: number | string;
-  llm?: string;
-  language?: string;
-  type?: string;
-  url?: string;
-  repository?: string;
-}
+export class PaperLoader {
+    public static async loadPapers(): Promise<void> {
+        const response: Response = await fetch("/_data/papers.yml");
+        const text: string = await response.text();
+        const data: Paper[] = PaperLoader.populatePapersList(text);
+        const llms  = new Set(data.map(p => p.llm).filter((x): x is string => !!x));
+        const langs = new Set(data.map(p => p.language).filter((x): x is string => !!x));
+        const types = new Set(data.map(p => p.type).filter((x): x is string => !!x));
 
-interface Filters {
-  llm: string;
-  language: string;
-  type: string;
-  search: string;
-}
+        PaperLoader.fillSelect("filter-llm", llms);
+        PaperLoader.fillSelect("filter-lang", langs);
+        PaperLoader.fillSelect("filter-type", types);
 
-// Utility to ensure correct element type
-function getEl<T extends HTMLElement>(id: string): T {
-  const el = document.getElementById(id);
-  if (!el) throw new Error(`Element #${id} not found`);
-  return el as T;
-}
-
-// -------------------------
-// SAFE DOM RENDER FUNCTIONS
-// -------------------------
-function createParagraph(text: string): HTMLParagraphElement {
-  const p = document.createElement("p");
-  p.textContent = text;
-  return p;
-}
-
-function createBoldLabel(label: string, value: string): HTMLParagraphElement {
-  const p = document.createElement("p");
-  const b = document.createElement("b");
-  b.textContent = label + ": ";
-  p.appendChild(b);
-  p.appendChild(document.createTextNode(value));
-  return p;
-}
-
-function createLink(url: string, label: string): HTMLParagraphElement {
-  const p = document.createElement("p");
-  const a = document.createElement("a");
-  a.href = url;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
-  a.textContent = label;
-  p.appendChild(a);
-  return p;
-}
-
-async function loadPapers(): Promise<void> {
-  const response = await fetch("/_data/papers.yml");
-  const text = await response.text();
-
-  const data = [] as Paper[];
-
-  jsyaml.loadAll(text, (doc) => {
-    const p = doc as Paper;
-
-    // Normalize year
-    if (p.year) {
-      const n = Number(p.year);
-      p.year = Number.isNaN(n) ? p.year : n;
+        Renderer.renderPapers(data);
     }
 
-    data.push(p);
-  });
+    private static populatePapersList(text: string): Paper[] {
+        const data: Paper[] = [] as Paper[];
 
-  // Sets for dropdowns
-  const llms = new Set<string>();
-  const langs = new Set<string>();
-  const types = new Set<string>();
+        jsyaml.loadAll(text, (doc) => {
+            const p: Paper = doc as Paper;
 
-  for (const p of data) {
-    if (p.llm) llms.add(p.llm);
-    if (p.language) langs.add(p.language);
-    if (p.type) types.add(p.type);
-  }
+            if (p.year) {
+                const n: number = Number(p.year);
 
-  const filters: Filters = {
-    llm: "",
-    language: "",
-    type: "",
-    search: ""
-  };
+                p.year = Number.isNaN(n) ? p.year : n;
+            }
 
-  const fillSelect = (id: string, values: Set<string>): void => {
-    const sel = getEl<HTMLSelectElement>(id);
-    for (const v of [...values].sort((a, b) => a.localeCompare(b))) {
-      const opt = document.createElement("option");
-      opt.value = v;
-      opt.textContent = v;
-      sel.appendChild(opt);
-    }
-  };
+            data.push(p);
+        });
 
-  fillSelect("filter-llm", llms);
-  fillSelect("filter-lang", langs);
-  fillSelect("filter-type", types);
-
-  function renderPapers(): void {
-    const container = getEl<HTMLDivElement>("papers");
-
-    // Clear existing children safely
-    while (container.firstChild) container.firstChild.remove();
-
-    const filtered = data
-      .filter((p) => !filters.llm || p.llm === filters.llm)
-      .filter((p) => !filters.language || p.language === filters.language)
-      .filter((p) => !filters.type || p.type === filters.type)
-      .filter((p) => {
-        if (!filters.search) return true;
-        const s = filters.search;
-        return (
-          p.title?.toLowerCase().includes(s) ||
-          p.author?.toLowerCase().includes(s)
-        );
-      });
-
-    for (const p of filtered) {
-      const div = document.createElement("div");
-      div.className = "paper";
-
-      // Title
-      const h3 = document.createElement("h3");
-      h3.textContent = p.title;
-      div.appendChild(h3);
-
-      // Author + year
-      const meta = document.createElement("p");
-      const strong = document.createElement("strong");
-      strong.textContent = p.author ?? "";
-      meta.appendChild(strong);
-      meta.appendChild(
-        document.createTextNode(` (${p.year ?? ""})`)
-      );
-      div.appendChild(meta);
-
-      if (p.llm) div.appendChild(createBoldLabel("LLM", p.llm));
-      if (p.language) div.appendChild(createBoldLabel("Language", p.language));
-      if (p.type) div.appendChild(createBoldLabel("Type", p.type));
-
-      if (p.url) div.appendChild(createLink(p.url, "Paper"));
-      if (p.repository) div.appendChild(createLink(p.repository, "Code"));
-
-      // HR divider
-      div.appendChild(document.createElement("hr"));
-
-      container.appendChild(div);
+        return data;
     }
 
-    renderCharts(filtered);
-  }
+    private static fillSelect(id: string, values: Set<string>): void {
+        const sel: HTMLSelectElement = DomManipulation.getElementByIdOrThrowError<HTMLSelectElement>(id);
 
-  // -------------------------
-  // CHARTS
-  // -------------------------
-  function renderCharts(filtered: Paper[]): void {
-    const subset = filtered ?? data;
+        for (const v of [...values].sort((a, b) => a.localeCompare(b))) {
+            const opt: HTMLOptionElement = document.createElement("option");
 
-    const byYear: Record<string, number> = {};
-    const byLLM: Record<string, number> = {};
+            opt.value = v;
+            opt.textContent = v;
 
-    for (const p of subset) {
-      const y = p.year?.toString() ?? "Unknown";
-      byYear[y] = (byYear[y] || 0) + 1;
-
-      const l = p.llm ?? "None";
-      byLLM[l] = (byLLM[l] || 0) + 1;
+            sel.appendChild(opt);
+        }
     }
-
-    // New instances (if you want to avoid duplicates, you can store refs)
-    new Chart(getEl<HTMLCanvasElement>("chartYear"), {
-      type: "bar",
-      data: {
-        labels: Object.keys(byYear),
-        datasets: [
-          {
-            label: "Papers per Year",
-            data: Object.values(byYear),
-          },
-        ],
-      },
-      options: { responsive: true },
-    });
-
-    new Chart(getEl<HTMLCanvasElement>("chartLLM"), {
-      type: "pie",
-      data: {
-        labels: Object.keys(byLLM),
-        datasets: [
-          {
-            label: "LLM usage",
-            data: Object.values(byLLM),
-          },
-        ],
-      },
-      options: { responsive: true },
-    });
-  }
-
-  renderPapers();
 }
 
-await loadPapers();
+await PaperLoader.loadPapers();
