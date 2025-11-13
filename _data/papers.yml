@@ -1,0 +1,20 @@
+ENTRYTYPE: article
+ID: smith2023chatgpt
+author: Smith, John and Doe, Jane
+journal: AI Journal
+language: Python
+llm: GPT-4
+repository: https://github.com/example/chatgpt-repo
+title: 'ChatGPT: The Emergence of Large Language Models'
+type: research
+url: https://arxiv.org/abs/2302.00001
+year: '2023'
+---
+ENTRYTYPE: article
+ID: lee2024survey
+author: Lee, Minsoo
+journal: SurveyAI
+title: A Survey on Code Generation LLMs
+topic: Code Generation
+type: survey
+year: '2024'

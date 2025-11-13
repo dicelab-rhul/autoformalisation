@@ -1,0 +1,8 @@
+lee2024survey:
+  topic: Code Generation
+  type: survey
+smith2023chatgpt:
+  language: Python
+  llm: GPT-4
+  repository: https://github.com/example/chatgpt-repo
+  type: research

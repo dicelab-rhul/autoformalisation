@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+    <head>
+        <title>Awesome LLM Papers</title>
+        <link rel="stylesheet" href="/static/css/index.css" nonce="{{nonce_value}}" integrity="sha384-gQOXE3BjOXDhWl3BHPM9YGakOHW7O0gWl2zznBopE8F78AjO8UThVOO5glzwOXm4" crossorigin="anonymous">
+        <script id="paper-loaded" type="module" src="/static/js/bundle.js" nonce="{{nonce_value}}" integrity="sha384-TJOllcd3srHx9r4CR89b9K41X39J4D8/Jeyw7p3DlSpyNGCJLskYHSKLC4Apocgf" crossorigin="anonymous"></script>
+        <script id="tt-enforced-polyfill" type="text/javascript" src="/static/js/trusted_types_enforced_polyfill.js" nonce="{{nonce_value}}" integrity="sha384-elE2tSenQy/SKYupFKXI9VB/bZKiQPvt/aw0mintfi1utG9CxsRhuatwJdW/6Bvx" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Awesome LLM Papers</h1>
+        <div id="filters">
+            <label for="filter-search">Search:</label>
+            <input id="filter-search" type="text" placeholder="Search title or author...">
+            <label for="filter-llm">LLM:</label>
+            <select id="filter-llm"><option value="">All</option></select>
+            <label for="filter-lang">Language:</label>
+            <select id="filter-lang"><option value="">All</option></select>
+            <label for="filter-type">Type:</label>
+            <select id="filter-type"><option value="">All</option></select>
+        </div>
+        <div id="papers"></div>
+
+        <h2>Statistics</h2>
+        <canvas id="chartYear" width="400" height="200"></canvas>
+        <canvas id="chartLLM" width="400" height="200"></canvas>
+</div>
+    </body>
+</html>
