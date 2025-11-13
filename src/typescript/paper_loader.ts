@@ -2,8 +2,12 @@ import * as jsyaml from "js-yaml";
 import Chart from "chart.js/auto";
 
 interface Paper {
+  ENTRYTYPE?: string;
+  ID?: string;
   title: string;
   author?: string;
+  journal?: string;
+  topic?: string;
   year?: number | string;
   llm?: string;
   language?: string;
@@ -56,10 +60,22 @@ function createLink(url: string, label: string): HTMLParagraphElement {
 }
 
 async function loadPapers(): Promise<void> {
-  const response = await fetch("{{ '/_data/papers.yml' | relative_url }}");
+  const response = await fetch("/_data/papers.yml");
   const text = await response.text();
 
-  const data = jsyaml.load(text) as Paper[];
+  const data = [] as Paper[];
+
+  jsyaml.loadAll(text, (doc) => {
+    const p = doc as Paper;
+
+    // Normalize year
+    if (p.year) {
+      const n = Number(p.year);
+      p.year = Number.isNaN(n) ? p.year : n;
+    }
+
+    data.push(p);
+  });
 
   // Sets for dropdowns
   const llms = new Set<string>();

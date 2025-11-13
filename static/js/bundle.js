@@ -17082,9 +17082,17 @@ function createLink(url, label) {
   return p;
 }
 async function loadPapers() {
-  const response = await fetch("{{ '/_data/papers.yml' | relative_url }}");
+  const response = await fetch("/_data/papers.yml");
   const text = await response.text();
-  const data = load(text);
+  const data = [];
+  loadAll(text, (doc) => {
+    const p = doc;
+    if (p.year) {
+      const n = Number(p.year);
+      p.year = Number.isNaN(n) ? p.year : n;
+    }
+    data.push(p);
+  });
   const llms = /* @__PURE__ */ new Set();
   const langs = /* @__PURE__ */ new Set();
   const types = /* @__PURE__ */ new Set();
