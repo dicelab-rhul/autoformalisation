@@ -1,46 +1,43 @@
 export class AutoFormalisationValidator {
-    private constructor() {}
+    private constructor() {} // prevent instantiation
 
-    public static isNullOrUndefined(value: any): boolean {
-        // This method returns true if the given value is null or undefined, false otherwise.
-        return value === null || value === undefined;
+    /** Returns true if value is null or undefined */
+    public static isNil(value: unknown): value is null | undefined {
+        return value == null;
     }
 
-    public static allArgumentsExist(...obj: any[]): boolean {
-        return !AutoFormalisationValidator.isNullOrUndefined(obj) && obj.every((value: any) => !AutoFormalisationValidator.isNullOrUndefined(value));
-    }
-
-    public static allValuesExist(obj: Iterable<any>): boolean {
-        return !AutoFormalisationValidator.isNullOrUndefined(obj) && AutoFormalisationValidator.allArgumentsExist(...Array.from(obj));
-    }
-
-    public static validateExistence<T>(obj: T, errorMessage?: string): T {
-        if (AutoFormalisationValidator.allArgumentsExist(obj)) {
-            return obj;
+    /** Ensures a value exists (not null or undefined) */
+    public static ensureExists<T>(value: T | null | undefined, message = "Value is null or undefined"): T {
+        if (this.isNil(value)) {
+            throw new TypeError(message);
         }
         else {
-            throw new Error(errorMessage || "The object is null or undefined.");
+            return value;
         }
     }
 
-    public static validateAllExistence<T>(obj: T[], errorMessage?: string): T[] {
-        if (AutoFormalisationValidator.allValuesExist(obj)) {
-            return obj;
-        }
-        else {
-            throw new Error(errorMessage || "The object is null or undefined.");
+    /** Ensures that all given arguments exist */
+    public static ensureAllExist(values: Iterable<unknown>, message = "One or more values are null or undefined"): void {
+        for (const v of values) {
+            if (this.isNil(v)) {
+                throw new TypeError(message);
+            }
+            else {
+                continue;
+            }
         }
     }
 
-    public static validateNumber(value: number, lowerBoundInclusive: number, upperBoundInclusive: number, errorMessage?: string): number {
-        if (!AutoFormalisationValidator.allArgumentsExist(value, lowerBoundInclusive, upperBoundInclusive)) {
-            throw new Error(errorMessage || "The value is null or undefined.");
+    /** Ensures a number exists, is a number, and is within the given range (inclusive). */
+    public static ensureNumberInRange(value: unknown, min: number, max: number, message = "Number is out of bounds"): number {
+        if (this.isNil(value)) {
+            throw new TypeError("Value is null or undefined");
         }
-        else if (typeof value !== "number" || typeof lowerBoundInclusive !== "number" || typeof upperBoundInclusive !== "number") {
-            throw new TypeError(errorMessage || "The value is not a number.");
+        else if (typeof value !== "number") {
+            throw new TypeError("Value is not a number");
         }
-        else if (value < lowerBoundInclusive || value > upperBoundInclusive) {
-            throw new Error(errorMessage || "The value is out of bounds.");
+        else if (value < min || value > max) {
+            throw new RangeError(message);
         }
         else {
             return value;

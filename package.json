@@ -2,8 +2,9 @@
   "name": "awesome-llm-papers",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "esbuild src/typescript/paper_loader.ts --bundle --format=esm --target=es2022 --outfile=static/js/bundle.js"
+    "build": "esbuild src/typescript/index.ts --bundle --format=esm --target=esnext --minify --outfile=static/js/index.js && node build-sri.js"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
@@ -11,7 +12,8 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
-    "esbuild": "^0.23.0",
+    "esbuild": "^0.27.0",
+    "prettier": "^3.6.2",
     "typescript": "^5.9.3"
   }
 }

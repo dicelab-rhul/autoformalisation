@@ -1,20 +1,247 @@
 ENTRYTYPE: article
-ID: smith2023chatgpt
-author: Smith, John and Doe, Jane
-journal: AI Journal
-language: Python
-llm: GPT-4
-repository: https://github.com/example/chatgpt-repo
-title: 'ChatGPT: The Emergence of Large Language Models'
-type: research
-url: https://arxiv.org/abs/2302.00001
-year: '2023'
+ID: luo2025llmagent
+author: Luo, Junyu and Zhang, Weizhi and Yuan, Ye and Zhao, Yusheng and Yang, Junwei
+  and Gu, Yiyang and Wu, Bohan and others
+journal: arXiv preprint
+title: 'Large Language Model Agent: A Survey on Methodology, Applications and Challenges'
+url: https://arxiv.org/abs/2503.21460
+volume: arXiv:2503.21460
+year: '2025'
 ---
 ENTRYTYPE: article
-ID: lee2024survey
-author: Lee, Minsoo
-journal: SurveyAI
-title: A Survey on Code Generation LLMs
-topic: Code Generation
-type: survey
-year: '2024'
+ID: yang2025specializedllm
+author: Yang, Chenghan and Zhao, Ruiyu and Liu, Yang and Jiang, Ling
+journal: CoRR
+title: Survey of Specialized Large Language Model
+url: https://arxiv.org/abs/2508.19667
+volume: abs/2508.19667
+year: '2025'
+---
+ENTRYTYPE: article
+ID: ni2025llmbenchmarks
+author: Ni, Shiwen and Chen, Guhong and Li, Shuaimin and Chen, Xuanang and Li, Siyi
+  and Wang, Bingli and Wang, Qiyao and Wang, Xingjian and Zhang, Yifan and Fan, Liyang
+  and Li, Chengming and Xu, Ruifeng and Sun, Le and Yang, Min
+journal: CoRR
+title: A Survey on Large Language Model Benchmarks
+url: https://arxiv.org/abs/2508.15361
+volume: abs/2508.15361
+year: '2025'
+---
+ENTRYTYPE: article
+ID: yehudai2025llmagenteval
+author: Yehudai, Asaf and Eden, Lilach and Li, Alan and Uziel, Guy and Zhao, Yilun
+  and Bar-Haim, Roy and Cohan, Arman and Shmueli-Scheuer, Michal
+journal: arXiv preprint
+title: Survey on Evaluation of LLM-based Agents
+url: https://arxiv.org/abs/2503.16416
+volume: arXiv:2503.16416
+year: '2025'
+---
+ENTRYTYPE: article
+ID: ke2025adaptation
+author: Ke, Zixuan and Ming, Yifei and Joty, Shafiq
+journal: arXiv preprint
+title: 'NAACL2025 Tutorial: Adaptation of Large Language Models'
+url: https://arxiv.org/abs/2504.03931
+volume: arXiv:2504.03931
+year: '2025'
+---
+ENTRYTYPE: book
+ID: xiao2025foundations
+address: ''
+author: Xiao, Tong
+publisher: arXiv
+title: Foundations of Large Language Models
+url: https://arxiv.org/abs/2501.09223
+volume: arXiv:2501.09223
+year: '2025'
+---
+ENTRYTYPE: article
+ID: belcak2025slmagentic
+author: Belcak, Peter and others
+journal: arXiv preprint
+title: Small Language Models are the Future of Agentic AI
+url: https://arxiv.org/abs/2506.02153
+volume: arXiv:2506.02153
+year: '2025'
+---
+ENTRYTYPE: article
+ID: xu2025saydo
+author: Xu, Ruoxi and others
+journal: arXiv preprint
+title: Large Language Models Often Say One Thing and Do Another
+url: https://arxiv.org/abs/2503.07003
+volume: arXiv:2503.07003
+year: '2025'
+---
+ENTRYTYPE: article
+ID: berg2025subjective
+author: Berg, Cameron and de Lucena, Diogo and Rosenblatt, Judd
+journal: arXiv preprint
+title: Large Language Models Report Subjective Experience Under Self-Referential Processing
+url: https://arxiv.org/abs/2510.24797
+volume: arXiv:2510.24797
+year: '2025'
+---
+ENTRYTYPE: article
+ID: schroder2025psychology
+author: Schr{\"o}der, Sarah and others
+journal: arXiv preprint
+title: Large Language Models Do Not Simulate Human Psychology
+url: https://arxiv.org/abs/2508.06950
+volume: arXiv:2508.06950
+year: '2025'
+---
+ENTRYTYPE: article
+ID: baumann2025llmhacking
+author: Baumann, Johannes and others
+journal: arXiv preprint
+title: 'Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for
+  Text Annotation'
+url: https://arxiv.org/abs/2509.08825
+volume: arXiv:2509.08825
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: brinkmann2025latentgrammar
+address: Albuquerque, New Mexico
+author: Brinkmann, Jannik and Wendler, Chris and Bartelt, Christian and Mueller, Aaron
+booktitle: 'Proceedings of the 2025 Conference of the North American Chapter of the
+  Association for Computational Linguistics: Human Language Technologies'
+doi: 10.18653/v1/2025.naacl-long.312
+publisher: Association for Computational Linguistics
+title: Large Language Models Share Representations of Latent Grammatical Concepts
+  Across Typologically Diverse Languages
+url: https://aclanthology.org/2025.naacl-long.312/
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: guo2025englishaccent
+author: Guo, Yanzhu and Conia, Simone and Zhou, Zelin and Li, Min and Potdar, Saloni
+  and Xiao, Henry
+booktitle: Proceedings of the 63rd Annual Meeting of the Association for Computational
+  Linguistics
+note: ACL 2025
+publisher: Association for Computational Linguistics
+title: Do Large Language Models Have an English Accent? Evaluating and Improving the
+  Naturalness of Multilingual LLMs
+url: https://2025.aclweb.org/program/main_papers/
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: puerto2025diversecot
+author: Puerto, Haritz and Chubakov, Tilek and Zhu, Xiaodan and Madabushi, Harish
+  Tayyar and Gurevych, Iryna
+booktitle: Proceedings of the 63rd Annual Meeting of the Association for Computational
+  Linguistics
+note: ACL 2025
+publisher: Association for Computational Linguistics
+title: Fine-Tuning on Diverse Reasoning Chains Drives Within-Inference CoT Refinement
+  in LLMs
+url: https://2025.aclweb.org/program/main_papers/
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: zhu2025shortcutneuron
+author: Zhu, Kejian and Tu, Shangqing and Jin, Zhuoran and Hou, Lei and Li, Juanzi
+  and Zhao, Jun
+booktitle: Proceedings of the 63rd Annual Meeting of the Association for Computational
+  Linguistics
+note: ACL 2025
+publisher: Association for Computational Linguistics
+title: Establishing Trustworthy LLM Evaluation via Shortcut Neuron Analysis
+url: https://2025.aclweb.org/program/main_papers/
+year: '2025'
+---
+ENTRYTYPE: article
+ID: ock2025modulartasks
+author: Ock, Jonghwan and others
+doi: 10.1101/2025.07.02.662875
+journal: bioRxiv
+title: Large Language Model Agent for Modular Task Execution
+url: https://www.biorxiv.org/content/10.1101/2025.07.02.662875v1
+year: '2025'
+---
+ENTRYTYPE: article
+ID: wang2025hypertensionagent
+author: Wang, Yijun and others
+doi: 10.1161/HYPERTENSIONAHA.125.25305
+journal: Hypertension
+title: Large Language Model Agent for Managing Patients With Suspected Hypertension
+url: https://pubmed.ncbi.nlm.nih.gov/41064862/
+year: '2025'
+---
+ENTRYTYPE: article
+ID: gou2025aisearchllm
+author: Gou, Bowen and others
+journal: Preprints
+title: A Survey on AI Search with Large Language Models
+url: https://www.preprints.org/manuscript/202507.2024/v1
+volume: '202507.2024'
+year: '2025'
+---
+ENTRYTYPE: misc
+ID: adaline2025q1llm
+author: Adaline Labs
+howpublished: Technical blog post
+title: A Survey on the LLM Released in Q1 2025
+url: https://labs.adaline.ai/p/a-survey-on-the-llm-released-in-q1
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: andriushchenko2025agentharm
+author: Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas,
+  Derek and Lin, Maxwell and Wang, Justin and Duenas, Dan and others
+booktitle: Proceedings of the International Conference on Learning Representations
+note: ICLR 2025
+title: 'AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents'
+url: https://proceedings.iclr.cc/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Paper-Conference.pdf
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: yu2025xfinder
+author: Yu, Qian and others
+booktitle: Proceedings of the International Conference on Learning Representations
+note: ICLR 2025
+title: 'xFinder: Large Language Models as Automated Evaluators for Machine Learning
+  Testbeds'
+url: https://openreview.net/forum?id=7UqQJUKaLM
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: codemmlu2025benchmark
+author: Anonymous
+booktitle: Proceedings of the International Conference on Learning Representations
+note: ICLR 2025
+title: 'CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding and Reasoning
+  Capabilities of Code LLMs'
+url: https://iclr.cc/virtual/2025/papers.html
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: computeoptimal2025llm
+author: Anonymous
+booktitle: Proceedings of the International Conference on Learning Representations
+note: ICLR 2025
+title: Compute-Optimal LLMs Provably Generalize Better with Scale
+url: https://iclr.cc/virtual/2025/papers.html
+year: '2025'
+---
+ENTRYTYPE: inproceedings
+ID: symprover2025llm
+author: Anonymous
+booktitle: Proceedings of the International Conference on Learning Representations
+note: ICLR 2025
+title: Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation
+url: https://iclr.cc/virtual/2025/papers.html
+year: '2025'
+---
+ENTRYTYPE: article
+ID: scientificllm2025survey
+author: Anonymous
+journal: arXiv preprint
+title: A Survey of Scientific Large Language Models
+url: https://arxiv.org/abs/2508.21148
+volume: arXiv:2508.21148
+year: '2025'
