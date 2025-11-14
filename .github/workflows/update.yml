@@ -4,21 +4,44 @@ on:
     branches: [ main ]
   schedule:
     - cron: "0 0 * * 0"  # Weekly
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
+      # --- Node + Yarn setup ---
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+
+      - name: Install JS dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build frontend
+        run: yarn build
+
+      # --- Python setup ---
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - run: python src/python/parse_bibtex.py
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run paper parser
+        run: python src/python/parse_bibtex.py
+
+      # --- Commit updates ---
       - name: Commit updates
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add _data/papers.yml
+          git add _data/papers.yml static/js/index.js
           git commit -m "Auto-update paper list" || echo "No changes"
           git push origin main
