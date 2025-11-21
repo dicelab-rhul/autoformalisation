@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "0 0 * * 0"  # Weekly
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,6 +29,7 @@ jobs:
 
       - name: Build frontend
         run: yarn build
+        # Output goes into /static
 
       # --- Python setup ---
       - name: Setup Python
@@ -45,3 +51,33 @@ jobs:
           git add _data/papers.yml static/js/index.js
           git commit -m "Auto-update paper list" || echo "No changes"
           git push origin main
+
+      # --- Upload ONLY index.html + static/ ---
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+          retention-days: 1
+          # Upload pages-artifact automatically excludes .git, .github, etc.
+          # We just need to keep only index.html + static
+
+      - name: Remove everything except index.html and static
+        run: |
+          find . -maxdepth 1 ! -name "index.html" ! -name "static" ! -name "." -exec rm -rf {} +
+
+      - name: Upload filtered site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
