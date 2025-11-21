@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 0 * * 0"  # Weekly
+    - cron: "0 0 * * 0"
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
 
       - name: Build frontend
         run: yarn build
-        # Output goes into /static
+        # Writes to ./static
 
       # --- Python setup ---
       - name: Setup Python
@@ -52,23 +52,19 @@ jobs:
           git commit -m "Auto-update paper list" || echo "No changes"
           git push origin main
 
-      # --- Upload ONLY index.html + static/ ---
+      # --- Prepare clean publish folder ---
+      - name: Create publish directory
+        run: |
+          rm -rf publish
+          mkdir publish
+          cp index.html publish/
+          cp -r static publish/
+
+      # --- Upload artifact for Pages ---
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
-          retention-days: 1
-          # Upload pages-artifact automatically excludes .git, .github, etc.
-          # We just need to keep only index.html + static
-
-      - name: Remove everything except index.html and static
-        run: |
-          find . -maxdepth 1 ! -name "index.html" ! -name "static" ! -name "." -exec rm -rf {} +
-
-      - name: Upload filtered site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./
+          path: ./publish
 
   deploy:
     needs: build
