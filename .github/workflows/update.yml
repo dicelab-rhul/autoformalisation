@@ -71,6 +71,12 @@ jobs:
           # Disable Jekyll so _data is not removed
           touch publish/.nojekyll
 
+      # --- DEBUG list ---
+      - name: List publish directory (debug)
+        run: |
+          echo "=== publish directory ==="
+          find publish -maxdepth 4 -type f -print
+
       # --- Upload artifact for GitHub Pages ---
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
