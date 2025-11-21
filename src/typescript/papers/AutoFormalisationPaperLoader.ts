@@ -6,7 +6,8 @@ export class AutoFormalisationPaperLoader {
     private constructor() {} // prevent instantiation
 
     public static async loadPapers(): Promise<Paper[]> {
-        const response: Response = await fetch("/_data/papers.yml");
+        const url: URL = new URL("./_data/papers.yml", globalThis.location.href);
+        const response: Response = await fetch(url.toString());
         const yamlText: string = await response.text();
         const papers: Paper[] = AutoFormalisationPaperLoader.parseYamlToPapers(yamlText);
 

@@ -29,7 +29,6 @@ jobs:
 
       - name: Build frontend
         run: yarn build
-        # outputs in ./static
 
       # --- Python setup ---
       - name: Setup Python
@@ -68,6 +67,9 @@ jobs:
           # Copy data files
           mkdir -p publish/_data
           cp _data/papers.yml publish/_data/
+
+          # Disable Jekyll so _data is not removed
+          touch publish/.nojekyll
 
       # --- Upload artifact for GitHub Pages ---
       - name: Upload site artifact
