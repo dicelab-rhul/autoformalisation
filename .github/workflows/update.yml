@@ -29,7 +29,7 @@ jobs:
 
       - name: Build frontend
         run: yarn build
-        # Writes to ./static
+        # outputs in ./static
 
       # --- Python setup ---
       - name: Setup Python
@@ -52,15 +52,15 @@ jobs:
           git commit -m "Auto-update paper list" || echo "No changes"
           git push origin main
 
-      # --- Prepare clean publish folder ---
-      - name: Create publish directory
+      # --- Build publish folder (flattened root) ---
+      - name: Prepare publish directory
         run: |
           rm -rf publish
           mkdir publish
           cp index.html publish/
-          cp -r static publish/
+          cp -r static publish/static
 
-      # --- Upload artifact for Pages ---
+      # --- Upload artifact for GitHub Pages ---
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
