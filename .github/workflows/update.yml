@@ -57,8 +57,17 @@ jobs:
         run: |
           rm -rf publish
           mkdir publish
+
+          # Copy root files
           cp index.html publish/
+          cp favicon.ico publish/ 2>/dev/null || true
+
+          # Copy static assets
           cp -r static publish/static
+
+          # Copy data files
+          mkdir -p publish/_data
+          cp _data/papers.yml publish/_data/
 
       # --- Upload artifact for GitHub Pages ---
       - name: Upload site artifact
