@@ -10,3 +10,7 @@ deepreasoning2026benchmark:
   llm: MyLLM
   language: Brainfuck
   type: made up
+neuralphysics1997model:
+  llm: MyLLM
+  language: Ancient Greek
+  type: whatever
