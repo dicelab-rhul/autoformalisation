@@ -6,3 +6,7 @@ smith2023chatgpt:
   llm: GPT-4
   repository: https://github.com/example/chatgpt-repo
   type: research
+deepreasoning2026benchmark:
+  llm: MyLLM
+  language: Brainfuck
+  type: made up
