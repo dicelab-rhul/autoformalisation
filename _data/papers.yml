@@ -245,3 +245,15 @@ title: A Survey of Scientific Large Language Models
 url: https://arxiv.org/abs/2508.21148
 volume: arXiv:2508.21148
 year: '2025'
+---
+ENTRYTYPE: article
+ID: deepreasoning2026benchmark
+author: Doe, Jane and Smith, Alan R. and Kumar, Priya
+journal: arXiv preprint
+language: Brainfuck
+llm: MyLLM
+title: 'DeepReasoning: A Comprehensive Benchmark for Multi-Modal Scientific Inference'
+type: made up
+url: https://arxiv.org/abs/2603.15742
+volume: arXiv:2603.15742
+year: '2026'
