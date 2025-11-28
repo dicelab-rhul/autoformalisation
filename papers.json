@@ -1,0 +1,1796 @@
+{
+    "entries": [
+        {
+            "raw": {
+                "id": "luo2025llmagent",
+                "entrytype": "article",
+                "title": "Large Language Model Agent: A Survey on Methodology, Applications and Challenges",
+                "author": "Luo, Junyu and Zhang, Weizhi and Yuan, Ye and Zhao, Yusheng and Yang, Junwei and Gu, Yiyang and Wu, Bohan and others",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2503.21460",
+                "url": "https://arxiv.org/abs/2503.21460"
+            },
+            "norm": {
+                "authors": [
+                    "gu yiyang",
+                    "luo junyu",
+                    "others",
+                    "wu bohan",
+                    "yang junwei",
+                    "yuan ye",
+                    "zhang weizhi",
+                    "zhao yusheng"
+                ],
+                "title": "large language model agent a survey on methodology applications and challenges",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "model",
+                    "agent",
+                    "a",
+                    "survey",
+                    "on",
+                    "methodology",
+                    "applications",
+                    "and",
+                    "challenges"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2503.21460",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "luo2025llmagent",
+                        "tokens": [
+                            "luo2025llmagent"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250321460",
+                        "tokens": [
+                            "arxiv250321460"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "yang2025specializedllm",
+                "entrytype": "article",
+                "title": "Survey of Specialized Large Language Model",
+                "author": "Yang, Chenghan and Zhao, Ruiyu and Liu, Yang and Jiang, Ling",
+                "year": "2025",
+                "journal": "CoRR",
+                "volume": "abs/2508.19667",
+                "url": "https://arxiv.org/abs/2508.19667"
+            },
+            "norm": {
+                "authors": [
+                    "jiang ling",
+                    "liu yang",
+                    "yang chenghan",
+                    "zhao ruiyu"
+                ],
+                "title": "survey of specialized large language model",
+                "title_tokens": [
+                    "survey",
+                    "of",
+                    "specialized",
+                    "large",
+                    "language",
+                    "model"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2508.19667",
+                "venue": "corr",
+                "venue_tokens": [
+                    "corr"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "yang2025specializedllm",
+                        "tokens": [
+                            "yang2025specializedllm"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "abs250819667",
+                        "tokens": [
+                            "abs250819667"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "ni2025llmbenchmarks",
+                "entrytype": "article",
+                "title": "A Survey on Large Language Model Benchmarks",
+                "author": "Ni, Shiwen and Chen, Guhong and Li, Shuaimin and Chen, Xuanang and Li, Siyi and Wang, Bingli and Wang, Qiyao and Wang, Xingjian and Zhang, Yifan and Fan, Liyang and Li, Chengming and Xu, Ruifeng and Sun, Le and Yang, Min",
+                "year": "2025",
+                "journal": "CoRR",
+                "volume": "abs/2508.15361",
+                "url": "https://arxiv.org/abs/2508.15361"
+            },
+            "norm": {
+                "authors": [
+                    "chen guhong",
+                    "chen xuanang",
+                    "fan liyang",
+                    "li chengming",
+                    "li shuaimin",
+                    "li siyi",
+                    "ni shiwen",
+                    "sun le",
+                    "wang bingli",
+                    "wang qiyao",
+                    "wang xingjian",
+                    "xu ruifeng",
+                    "yang min",
+                    "zhang yifan"
+                ],
+                "title": "a survey on large language model benchmarks",
+                "title_tokens": [
+                    "a",
+                    "survey",
+                    "on",
+                    "large",
+                    "language",
+                    "model",
+                    "benchmarks"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2508.15361",
+                "venue": "corr",
+                "venue_tokens": [
+                    "corr"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "ni2025llmbenchmarks",
+                        "tokens": [
+                            "ni2025llmbenchmarks"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "abs250815361",
+                        "tokens": [
+                            "abs250815361"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "yehudai2025llmagenteval",
+                "entrytype": "article",
+                "title": "Survey on Evaluation of LLM-based Agents",
+                "author": "Yehudai, Asaf and Eden, Lilach and Li, Alan and Uziel, Guy and Zhao, Yilun and Bar-Haim, Roy and Cohan, Arman and Shmueli-Scheuer, Michal",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2503.16416",
+                "url": "https://arxiv.org/abs/2503.16416"
+            },
+            "norm": {
+                "authors": [
+                    "barhaim roy",
+                    "cohan arman",
+                    "eden lilach",
+                    "li alan",
+                    "shmuelischeuer michal",
+                    "uziel guy",
+                    "yehudai asaf",
+                    "zhao yilun"
+                ],
+                "title": "survey on evaluation of llmbased agents",
+                "title_tokens": [
+                    "survey",
+                    "on",
+                    "evaluation",
+                    "of",
+                    "llmbased",
+                    "agents"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2503.16416",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "yehudai2025llmagenteval",
+                        "tokens": [
+                            "yehudai2025llmagenteval"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250316416",
+                        "tokens": [
+                            "arxiv250316416"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "ke2025adaptation",
+                "entrytype": "article",
+                "title": "NAACL2025 Tutorial: Adaptation of Large Language Models",
+                "author": "Ke, Zixuan and Ming, Yifei and Joty, Shafiq",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2504.03931",
+                "url": "https://arxiv.org/abs/2504.03931"
+            },
+            "norm": {
+                "authors": [
+                    "joty shafiq",
+                    "ke zixuan",
+                    "ming yifei"
+                ],
+                "title": "naacl2025 tutorial adaptation of large language models",
+                "title_tokens": [
+                    "naacl2025",
+                    "tutorial",
+                    "adaptation",
+                    "of",
+                    "large",
+                    "language",
+                    "models"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2504.03931",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "ke2025adaptation",
+                        "tokens": [
+                            "ke2025adaptation"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250403931",
+                        "tokens": [
+                            "arxiv250403931"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "xiao2025foundations",
+                "entrytype": "book",
+                "title": "Foundations of Large Language Models",
+                "author": "Xiao, Tong",
+                "year": "2025",
+                "publisher": "arXiv",
+                "address": "",
+                "volume": "arXiv:2501.09223",
+                "url": "https://arxiv.org/abs/2501.09223"
+            },
+            "norm": {
+                "authors": [
+                    "xiao tong"
+                ],
+                "title": "foundations of large language models",
+                "title_tokens": [
+                    "foundations",
+                    "of",
+                    "large",
+                    "language",
+                    "models"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2501.09223",
+                "venue": "",
+                "venue_tokens": [],
+                "custom": {
+                    "id": {
+                        "text": "xiao2025foundations",
+                        "tokens": [
+                            "xiao2025foundations"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "book",
+                        "tokens": [
+                            "book"
+                        ]
+                    },
+                    "publisher": {
+                        "text": "arxiv",
+                        "tokens": [
+                            "arxiv"
+                        ]
+                    },
+                    "address": {
+                        "text": "",
+                        "tokens": []
+                    },
+                    "volume": {
+                        "text": "arxiv250109223",
+                        "tokens": [
+                            "arxiv250109223"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "belcak2025slmagentic",
+                "entrytype": "article",
+                "title": "Small Language Models are the Future of Agentic AI",
+                "author": "Belcak, Peter and others",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2506.02153",
+                "url": "https://arxiv.org/abs/2506.02153"
+            },
+            "norm": {
+                "authors": [
+                    "belcak peter",
+                    "others"
+                ],
+                "title": "small language models are the future of agentic ai",
+                "title_tokens": [
+                    "small",
+                    "language",
+                    "models",
+                    "are",
+                    "the",
+                    "future",
+                    "of",
+                    "agentic",
+                    "ai"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2506.02153",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "belcak2025slmagentic",
+                        "tokens": [
+                            "belcak2025slmagentic"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250602153",
+                        "tokens": [
+                            "arxiv250602153"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "xu2025saydo",
+                "entrytype": "article",
+                "title": "Large Language Models Often Say One Thing and Do Another",
+                "author": "Xu, Ruoxi and others",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2503.07003",
+                "url": "https://arxiv.org/abs/2503.07003"
+            },
+            "norm": {
+                "authors": [
+                    "others",
+                    "xu ruoxi"
+                ],
+                "title": "large language models often say one thing and do another",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "models",
+                    "often",
+                    "say",
+                    "one",
+                    "thing",
+                    "and",
+                    "do",
+                    "another"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2503.07003",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "xu2025saydo",
+                        "tokens": [
+                            "xu2025saydo"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250307003",
+                        "tokens": [
+                            "arxiv250307003"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "berg2025subjective",
+                "entrytype": "article",
+                "title": "Large Language Models Report Subjective Experience Under Self-Referential Processing",
+                "author": "Berg, Cameron and de Lucena, Diogo and Rosenblatt, Judd",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2510.24797",
+                "url": "https://arxiv.org/abs/2510.24797"
+            },
+            "norm": {
+                "authors": [
+                    "berg cameron",
+                    "de lucena diogo",
+                    "rosenblatt judd"
+                ],
+                "title": "large language models report subjective experience under selfreferential processing",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "models",
+                    "report",
+                    "subjective",
+                    "experience",
+                    "under",
+                    "selfreferential",
+                    "processing"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2510.24797",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "berg2025subjective",
+                        "tokens": [
+                            "berg2025subjective"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv251024797",
+                        "tokens": [
+                            "arxiv251024797"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "schroder2025psychology",
+                "entrytype": "article",
+                "title": "Large Language Models Do Not Simulate Human Psychology",
+                "author": "Schröder, Sarah and others",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2508.06950",
+                "url": "https://arxiv.org/abs/2508.06950"
+            },
+            "norm": {
+                "authors": [
+                    "others",
+                    "schroder sarah"
+                ],
+                "title": "large language models do not simulate human psychology",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "models",
+                    "do",
+                    "not",
+                    "simulate",
+                    "human",
+                    "psychology"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2508.06950",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "schroder2025psychology",
+                        "tokens": [
+                            "schroder2025psychology"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250806950",
+                        "tokens": [
+                            "arxiv250806950"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "baumann2025llmhacking",
+                "entrytype": "article",
+                "title": "Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation",
+                "author": "Baumann, Johannes and others",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2509.08825",
+                "url": "https://arxiv.org/abs/2509.08825"
+            },
+            "norm": {
+                "authors": [
+                    "baumann johannes",
+                    "others"
+                ],
+                "title": "large language model hacking quantifying the hidden risks of using llms for text annotation",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "model",
+                    "hacking",
+                    "quantifying",
+                    "the",
+                    "hidden",
+                    "risks",
+                    "of",
+                    "using",
+                    "llms",
+                    "for",
+                    "text",
+                    "annotation"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2509.08825",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "baumann2025llmhacking",
+                        "tokens": [
+                            "baumann2025llmhacking"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250908825",
+                        "tokens": [
+                            "arxiv250908825"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "brinkmann2025latentgrammar",
+                "entrytype": "inproceedings",
+                "title": "Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages",
+                "author": "Brinkmann, Jannik and Wendler, Chris and Bartelt, Christian and Mueller, Aaron",
+                "booktitle": "Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+                "year": "2025",
+                "address": "Albuquerque, New Mexico",
+                "publisher": "Association for Computational Linguistics",
+                "url": "https://aclanthology.org/2025.naacl-long.312/",
+                "doi": "10.18653/v1/2025.naacl-long.312"
+            },
+            "norm": {
+                "authors": [
+                    "bartelt christian",
+                    "brinkmann jannik",
+                    "mueller aaron",
+                    "wendler chris"
+                ],
+                "title": "large language models share representations of latent grammatical concepts across typologically diverse languages",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "models",
+                    "share",
+                    "representations",
+                    "of",
+                    "latent",
+                    "grammatical",
+                    "concepts",
+                    "across",
+                    "typologically",
+                    "diverse",
+                    "languages"
+                ],
+                "year": 2025,
+                "doi": "10.18653/v1/2025.naacl-long.312",
+                "url": "https://aclanthology.org/2025.naacl-long.312/",
+                "venue": "proceedings of the 2025 conference of the north american chapter of the association for computational linguistics human language technologies",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "2025",
+                    "conference",
+                    "of",
+                    "the",
+                    "north",
+                    "american",
+                    "chapter",
+                    "of",
+                    "the",
+                    "association",
+                    "for",
+                    "computational",
+                    "linguistics",
+                    "human",
+                    "language",
+                    "technologies"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "brinkmann2025latentgrammar",
+                        "tokens": [
+                            "brinkmann2025latentgrammar"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "address": {
+                        "text": "albuquerque new mexico",
+                        "tokens": [
+                            "albuquerque",
+                            "new",
+                            "mexico"
+                        ]
+                    },
+                    "publisher": {
+                        "text": "association for computational linguistics",
+                        "tokens": [
+                            "association",
+                            "for",
+                            "computational",
+                            "linguistics"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "guo2025englishaccent",
+                "entrytype": "inproceedings",
+                "title": "Do Large Language Models Have an English Accent? Evaluating and Improving the Naturalness of Multilingual LLMs",
+                "author": "Guo, Yanzhu and Conia, Simone and Zhou, Zelin and Li, Min and Potdar, Saloni and Xiao, Henry",
+                "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
+                "year": "2025",
+                "publisher": "Association for Computational Linguistics",
+                "note": "ACL 2025",
+                "url": "https://2025.aclweb.org/program/main_papers/"
+            },
+            "norm": {
+                "authors": [
+                    "conia simone",
+                    "guo yanzhu",
+                    "li min",
+                    "potdar saloni",
+                    "xiao henry",
+                    "zhou zelin"
+                ],
+                "title": "do large language models have an english accent evaluating and improving the naturalness of multilingual llms",
+                "title_tokens": [
+                    "do",
+                    "large",
+                    "language",
+                    "models",
+                    "have",
+                    "an",
+                    "english",
+                    "accent",
+                    "evaluating",
+                    "and",
+                    "improving",
+                    "the",
+                    "naturalness",
+                    "of",
+                    "multilingual",
+                    "llms"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://2025.aclweb.org/program/main_papers/",
+                "venue": "proceedings of the 63rd annual meeting of the association for computational linguistics",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "63rd",
+                    "annual",
+                    "meeting",
+                    "of",
+                    "the",
+                    "association",
+                    "for",
+                    "computational",
+                    "linguistics"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "guo2025englishaccent",
+                        "tokens": [
+                            "guo2025englishaccent"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "publisher": {
+                        "text": "association for computational linguistics",
+                        "tokens": [
+                            "association",
+                            "for",
+                            "computational",
+                            "linguistics"
+                        ]
+                    },
+                    "note": {
+                        "text": "acl 2025",
+                        "tokens": [
+                            "acl",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "puerto2025diversecot",
+                "entrytype": "inproceedings",
+                "title": "Fine-Tuning on Diverse Reasoning Chains Drives Within-Inference CoT Refinement in LLMs",
+                "author": "Puerto, Haritz and Chubakov, Tilek and Zhu, Xiaodan and Madabushi, Harish Tayyar and Gurevych, Iryna",
+                "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
+                "year": "2025",
+                "publisher": "Association for Computational Linguistics",
+                "note": "ACL 2025",
+                "url": "https://2025.aclweb.org/program/main_papers/"
+            },
+            "norm": {
+                "authors": [
+                    "chubakov tilek",
+                    "gurevych iryna",
+                    "madabushi harish tayyar",
+                    "puerto haritz",
+                    "zhu xiaodan"
+                ],
+                "title": "finetuning on diverse reasoning chains drives withininference cot refinement in llms",
+                "title_tokens": [
+                    "finetuning",
+                    "on",
+                    "diverse",
+                    "reasoning",
+                    "chains",
+                    "drives",
+                    "withininference",
+                    "cot",
+                    "refinement",
+                    "in",
+                    "llms"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://2025.aclweb.org/program/main_papers/",
+                "venue": "proceedings of the 63rd annual meeting of the association for computational linguistics",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "63rd",
+                    "annual",
+                    "meeting",
+                    "of",
+                    "the",
+                    "association",
+                    "for",
+                    "computational",
+                    "linguistics"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "puerto2025diversecot",
+                        "tokens": [
+                            "puerto2025diversecot"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "publisher": {
+                        "text": "association for computational linguistics",
+                        "tokens": [
+                            "association",
+                            "for",
+                            "computational",
+                            "linguistics"
+                        ]
+                    },
+                    "note": {
+                        "text": "acl 2025",
+                        "tokens": [
+                            "acl",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "zhu2025shortcutneuron",
+                "entrytype": "inproceedings",
+                "title": "Establishing Trustworthy LLM Evaluation via Shortcut Neuron Analysis",
+                "author": "Zhu, Kejian and Tu, Shangqing and Jin, Zhuoran and Hou, Lei and Li, Juanzi and Zhao, Jun",
+                "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
+                "year": "2025",
+                "publisher": "Association for Computational Linguistics",
+                "note": "ACL 2025",
+                "url": "https://2025.aclweb.org/program/main_papers/"
+            },
+            "norm": {
+                "authors": [
+                    "hou lei",
+                    "jin zhuoran",
+                    "li juanzi",
+                    "tu shangqing",
+                    "zhao jun",
+                    "zhu kejian"
+                ],
+                "title": "establishing trustworthy llm evaluation via shortcut neuron analysis",
+                "title_tokens": [
+                    "establishing",
+                    "trustworthy",
+                    "llm",
+                    "evaluation",
+                    "via",
+                    "shortcut",
+                    "neuron",
+                    "analysis"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://2025.aclweb.org/program/main_papers/",
+                "venue": "proceedings of the 63rd annual meeting of the association for computational linguistics",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "63rd",
+                    "annual",
+                    "meeting",
+                    "of",
+                    "the",
+                    "association",
+                    "for",
+                    "computational",
+                    "linguistics"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "zhu2025shortcutneuron",
+                        "tokens": [
+                            "zhu2025shortcutneuron"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "publisher": {
+                        "text": "association for computational linguistics",
+                        "tokens": [
+                            "association",
+                            "for",
+                            "computational",
+                            "linguistics"
+                        ]
+                    },
+                    "note": {
+                        "text": "acl 2025",
+                        "tokens": [
+                            "acl",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "ock2025modulartasks",
+                "entrytype": "article",
+                "title": "Large Language Model Agent for Modular Task Execution",
+                "author": "Ock, Jonghwan and others",
+                "year": "2025",
+                "journal": "bioRxiv",
+                "doi": "10.1101/2025.07.02.662875",
+                "url": "https://www.biorxiv.org/content/10.1101/2025.07.02.662875v1"
+            },
+            "norm": {
+                "authors": [
+                    "ock jonghwan",
+                    "others"
+                ],
+                "title": "large language model agent for modular task execution",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "model",
+                    "agent",
+                    "for",
+                    "modular",
+                    "task",
+                    "execution"
+                ],
+                "year": 2025,
+                "doi": "10.1101/2025.07.02.662875",
+                "url": "https://www.biorxiv.org/content/10.1101/2025.07.02.662875v1",
+                "venue": "biorxiv",
+                "venue_tokens": [
+                    "biorxiv"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "ock2025modulartasks",
+                        "tokens": [
+                            "ock2025modulartasks"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "wang2025hypertensionagent",
+                "entrytype": "article",
+                "title": "Large Language Model Agent for Managing Patients With Suspected Hypertension",
+                "author": "Wang, Yijun and others",
+                "year": "2025",
+                "journal": "Hypertension",
+                "doi": "10.1161/HYPERTENSIONAHA.125.25305",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/41064862/"
+            },
+            "norm": {
+                "authors": [
+                    "others",
+                    "wang yijun"
+                ],
+                "title": "large language model agent for managing patients with suspected hypertension",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "model",
+                    "agent",
+                    "for",
+                    "managing",
+                    "patients",
+                    "with",
+                    "suspected",
+                    "hypertension"
+                ],
+                "year": 2025,
+                "doi": "10.1161/hypertensionaha.125.25305",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/41064862/",
+                "venue": "hypertension",
+                "venue_tokens": [
+                    "hypertension"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "wang2025hypertensionagent",
+                        "tokens": [
+                            "wang2025hypertensionagent"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "gou2025aisearchllm",
+                "entrytype": "article",
+                "title": "A Survey on AI Search with Large Language Models",
+                "author": "Gou, Bowen and others",
+                "year": "2025",
+                "journal": "Preprints",
+                "volume": "202507.2024",
+                "url": "https://www.preprints.org/manuscript/202507.2024/v1"
+            },
+            "norm": {
+                "authors": [
+                    "gou bowen",
+                    "others"
+                ],
+                "title": "a survey on ai search with large language models",
+                "title_tokens": [
+                    "a",
+                    "survey",
+                    "on",
+                    "ai",
+                    "search",
+                    "with",
+                    "large",
+                    "language",
+                    "models"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://www.preprints.org/manuscript/202507.2024/v1",
+                "venue": "preprints",
+                "venue_tokens": [
+                    "preprints"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "gou2025aisearchllm",
+                        "tokens": [
+                            "gou2025aisearchllm"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "2025072024",
+                        "tokens": [
+                            "2025072024"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "adaline2025q1llm",
+                "entrytype": "misc",
+                "title": "A Survey on the LLM Released in Q1 2025",
+                "author": "Adaline Labs",
+                "year": "2025",
+                "howpublished": "Technical blog post",
+                "url": "https://labs.adaline.ai/p/a-survey-on-the-llm-released-in-q1"
+            },
+            "norm": {
+                "authors": [
+                    "adaline labs"
+                ],
+                "title": "a survey on the llm released in q1 2025",
+                "title_tokens": [
+                    "a",
+                    "survey",
+                    "on",
+                    "the",
+                    "llm",
+                    "released",
+                    "in",
+                    "q1",
+                    "2025"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://labs.adaline.ai/p/a-survey-on-the-llm-released-in-q1",
+                "venue": "",
+                "venue_tokens": [],
+                "custom": {
+                    "id": {
+                        "text": "adaline2025q1llm",
+                        "tokens": [
+                            "adaline2025q1llm"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "misc",
+                        "tokens": [
+                            "misc"
+                        ]
+                    },
+                    "howpublished": {
+                        "text": "technical blog post",
+                        "tokens": [
+                            "technical",
+                            "blog",
+                            "post"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "andriushchenko2025agentharm",
+                "entrytype": "inproceedings",
+                "title": "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents",
+                "author": "Andriushchenko, Maksym and Souly, Alexandra and Dziemian, Mateusz and Duenas, Derek and Lin, Maxwell and Wang, Justin and Duenas, Dan and others",
+                "booktitle": "Proceedings of the International Conference on Learning Representations",
+                "year": "2025",
+                "note": "ICLR 2025",
+                "url": "https://proceedings.iclr.cc/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Paper-Conference.pdf"
+            },
+            "norm": {
+                "authors": [
+                    "andriushchenko maksym",
+                    "duenas dan",
+                    "duenas derek",
+                    "dziemian mateusz",
+                    "lin maxwell",
+                    "others",
+                    "souly alexandra",
+                    "wang justin"
+                ],
+                "title": "agentharm a benchmark for measuring harmfulness of llm agents",
+                "title_tokens": [
+                    "agentharm",
+                    "a",
+                    "benchmark",
+                    "for",
+                    "measuring",
+                    "harmfulness",
+                    "of",
+                    "llm",
+                    "agents"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://proceedings.iclr.cc/paper/2025/file/c493d23af93118975cdbc32cbe7323f5-Paper-Conference.pdf",
+                "venue": "proceedings of the international conference on learning representations",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "international",
+                    "conference",
+                    "on",
+                    "learning",
+                    "representations"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "andriushchenko2025agentharm",
+                        "tokens": [
+                            "andriushchenko2025agentharm"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "note": {
+                        "text": "iclr 2025",
+                        "tokens": [
+                            "iclr",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "yu2025xfinder",
+                "entrytype": "inproceedings",
+                "title": "xFinder: Large Language Models as Automated Evaluators for Machine Learning Testbeds",
+                "author": "Yu, Qian and others",
+                "booktitle": "Proceedings of the International Conference on Learning Representations",
+                "year": "2025",
+                "note": "ICLR 2025",
+                "url": "https://openreview.net/forum?id=7UqQJUKaLM"
+            },
+            "norm": {
+                "authors": [
+                    "others",
+                    "yu qian"
+                ],
+                "title": "xfinder large language models as automated evaluators for machine learning testbeds",
+                "title_tokens": [
+                    "xfinder",
+                    "large",
+                    "language",
+                    "models",
+                    "as",
+                    "automated",
+                    "evaluators",
+                    "for",
+                    "machine",
+                    "learning",
+                    "testbeds"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://openreview.net/forum?id=7UqQJUKaLM",
+                "venue": "proceedings of the international conference on learning representations",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "international",
+                    "conference",
+                    "on",
+                    "learning",
+                    "representations"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "yu2025xfinder",
+                        "tokens": [
+                            "yu2025xfinder"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "note": {
+                        "text": "iclr 2025",
+                        "tokens": [
+                            "iclr",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "codemmlu2025benchmark",
+                "entrytype": "inproceedings",
+                "title": "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding and Reasoning Capabilities of Code LLMs",
+                "author": "Anonymous",
+                "booktitle": "Proceedings of the International Conference on Learning Representations",
+                "year": "2025",
+                "note": "ICLR 2025",
+                "url": "https://iclr.cc/virtual/2025/papers.html"
+            },
+            "norm": {
+                "authors": [
+                    "anonymous"
+                ],
+                "title": "codemmlu a multitask benchmark for assessing code understanding and reasoning capabilities of code llms",
+                "title_tokens": [
+                    "codemmlu",
+                    "a",
+                    "multitask",
+                    "benchmark",
+                    "for",
+                    "assessing",
+                    "code",
+                    "understanding",
+                    "and",
+                    "reasoning",
+                    "capabilities",
+                    "of",
+                    "code",
+                    "llms"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://iclr.cc/virtual/2025/papers.html",
+                "venue": "proceedings of the international conference on learning representations",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "international",
+                    "conference",
+                    "on",
+                    "learning",
+                    "representations"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "codemmlu2025benchmark",
+                        "tokens": [
+                            "codemmlu2025benchmark"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "note": {
+                        "text": "iclr 2025",
+                        "tokens": [
+                            "iclr",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "computeoptimal2025llm",
+                "entrytype": "inproceedings",
+                "title": "Compute-Optimal LLMs Provably Generalize Better with Scale",
+                "author": "Anonymous",
+                "booktitle": "Proceedings of the International Conference on Learning Representations",
+                "year": "2025",
+                "note": "ICLR 2025",
+                "url": "https://iclr.cc/virtual/2025/papers.html"
+            },
+            "norm": {
+                "authors": [
+                    "anonymous"
+                ],
+                "title": "computeoptimal llms provably generalize better with scale",
+                "title_tokens": [
+                    "computeoptimal",
+                    "llms",
+                    "provably",
+                    "generalize",
+                    "better",
+                    "with",
+                    "scale"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://iclr.cc/virtual/2025/papers.html",
+                "venue": "proceedings of the international conference on learning representations",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "international",
+                    "conference",
+                    "on",
+                    "learning",
+                    "representations"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "computeoptimal2025llm",
+                        "tokens": [
+                            "computeoptimal2025llm"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "note": {
+                        "text": "iclr 2025",
+                        "tokens": [
+                            "iclr",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "symprover2025llm",
+                "entrytype": "inproceedings",
+                "title": "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+                "author": "Anonymous",
+                "booktitle": "Proceedings of the International Conference on Learning Representations",
+                "year": "2025",
+                "note": "ICLR 2025",
+                "url": "https://iclr.cc/virtual/2025/papers.html"
+            },
+            "norm": {
+                "authors": [
+                    "anonymous"
+                ],
+                "title": "large language models meet symbolic provers for logical reasoning evaluation",
+                "title_tokens": [
+                    "large",
+                    "language",
+                    "models",
+                    "meet",
+                    "symbolic",
+                    "provers",
+                    "for",
+                    "logical",
+                    "reasoning",
+                    "evaluation"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://iclr.cc/virtual/2025/papers.html",
+                "venue": "proceedings of the international conference on learning representations",
+                "venue_tokens": [
+                    "proceedings",
+                    "of",
+                    "the",
+                    "international",
+                    "conference",
+                    "on",
+                    "learning",
+                    "representations"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "symprover2025llm",
+                        "tokens": [
+                            "symprover2025llm"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "inproceedings",
+                        "tokens": [
+                            "inproceedings"
+                        ]
+                    },
+                    "note": {
+                        "text": "iclr 2025",
+                        "tokens": [
+                            "iclr",
+                            "2025"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "scientificllm2025survey",
+                "entrytype": "article",
+                "title": "A Survey of Scientific Large Language Models",
+                "author": "Anonymous",
+                "year": "2025",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2508.21148",
+                "url": "https://arxiv.org/abs/2508.21148"
+            },
+            "norm": {
+                "authors": [
+                    "anonymous"
+                ],
+                "title": "a survey of scientific large language models",
+                "title_tokens": [
+                    "a",
+                    "survey",
+                    "of",
+                    "scientific",
+                    "large",
+                    "language",
+                    "models"
+                ],
+                "year": 2025,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2508.21148",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "scientificllm2025survey",
+                        "tokens": [
+                            "scientificllm2025survey"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv250821148",
+                        "tokens": [
+                            "arxiv250821148"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "deepreasoning2026benchmark",
+                "entrytype": "article",
+                "title": "DeepReasoning: A Comprehensive Benchmark for Multi-Modal Scientific Inference",
+                "author": "Doe, Jane and Smith, Alan R. and Kumar, Priya",
+                "year": "2026",
+                "journal": "arXiv preprint",
+                "volume": "arXiv:2603.15742",
+                "url": "https://arxiv.org/abs/2603.15742",
+                "llm": "MyLLM",
+                "language": "Brainfuck",
+                "type": "made up"
+            },
+            "norm": {
+                "authors": [
+                    "doe jane",
+                    "kumar priya",
+                    "smith alan r"
+                ],
+                "title": "deepreasoning a comprehensive benchmark for multimodal scientific inference",
+                "title_tokens": [
+                    "deepreasoning",
+                    "a",
+                    "comprehensive",
+                    "benchmark",
+                    "for",
+                    "multimodal",
+                    "scientific",
+                    "inference"
+                ],
+                "year": 2026,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2603.15742",
+                "venue": "arxiv preprint",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "deepreasoning2026benchmark",
+                        "tokens": [
+                            "deepreasoning2026benchmark"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "arxiv260315742",
+                        "tokens": [
+                            "arxiv260315742"
+                        ]
+                    },
+                    "llm": {
+                        "text": "myllm",
+                        "tokens": [
+                            "myllm"
+                        ]
+                    },
+                    "language": {
+                        "text": "brainfuck",
+                        "tokens": [
+                            "brainfuck"
+                        ]
+                    },
+                    "type": {
+                        "text": "made up",
+                        "tokens": [
+                            "made",
+                            "up"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "neuralphysics1997model",
+                "entrytype": "article",
+                "title": "Neural Approaches to Computational Physics: An Early Framework",
+                "author": "Hartley, Miriam L. and Zhao, Wen-Tao",
+                "year": "1997",
+                "journal": "Journal of Experimental Computation",
+                "volume": "12",
+                "number": "3",
+                "pages": "145--162",
+                "url": "http://example.org/jec/1997/neuralphysics",
+                "llm": "MyLLM",
+                "language": "Ancient Greek",
+                "type": "whatever"
+            },
+            "norm": {
+                "authors": [
+                    "hartley miriam l",
+                    "zhao wentao"
+                ],
+                "title": "neural approaches to computational physics an early framework",
+                "title_tokens": [
+                    "neural",
+                    "approaches",
+                    "to",
+                    "computational",
+                    "physics",
+                    "an",
+                    "early",
+                    "framework"
+                ],
+                "year": 1997,
+                "doi": null,
+                "url": "http://example.org/jec/1997/neuralphysics",
+                "venue": "journal of experimental computation",
+                "venue_tokens": [
+                    "journal",
+                    "of",
+                    "experimental",
+                    "computation"
+                ],
+                "custom": {
+                    "id": {
+                        "text": "neuralphysics1997model",
+                        "tokens": [
+                            "neuralphysics1997model"
+                        ]
+                    },
+                    "entrytype": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "volume": {
+                        "text": "12",
+                        "tokens": [
+                            "12"
+                        ]
+                    },
+                    "number": {
+                        "text": "3",
+                        "tokens": [
+                            "3"
+                        ]
+                    },
+                    "pages": {
+                        "text": "145162",
+                        "tokens": [
+                            "145162"
+                        ]
+                    },
+                    "llm": {
+                        "text": "myllm",
+                        "tokens": [
+                            "myllm"
+                        ]
+                    },
+                    "language": {
+                        "text": "ancient greek",
+                        "tokens": [
+                            "ancient",
+                            "greek"
+                        ]
+                    },
+                    "type": {
+                        "text": "whatever",
+                        "tokens": [
+                            "whatever"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

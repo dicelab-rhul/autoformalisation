@@ -19,6 +19,14 @@
     margin: 0 1%;
 }
 
+#apply-filters-button {
+    margin-top: 1%;
+}
+
+#clear-filters-button {
+    margin-top: 1%;
+}
+
 #charts-div {
     max-width: 50%;
     margin: auto;

@@ -7,8 +7,11 @@ export class Main {
     private constructor() {}
 
     public static async main(): Promise<void> {
-        const papers: Paper[] = await AutoFormalisationPaperLoader.loadPapers();
-        const mainContainerDiv: AutoFormalisationMainContainerDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), "Welcome to the AutoFormalisation Paper Repository", "Explore the collection of papers on automatic formalisation.");
+        const papersJsonPath: string = "_data/papers.json";
+        const papers: Paper[] = await AutoFormalisationPaperLoader.loadPapers(papersJsonPath);
+        const mainMessage: string = "Awesome LLM papers";
+        const description: string = "Explore this collection of papers on LLMs. Use the filters to narrow down your search and find papers that match your interests.";
+        const mainContainerDiv: AutoFormalisationMainContainerDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), mainMessage, description);
     
         mainContainerDiv.pack();
 

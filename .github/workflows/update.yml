@@ -35,20 +35,21 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Run paper parser
-        run: python src/python/parse_bibtex.py
+      # --- Sync database ---
+      - name: Sync database
+        run: python src/python/sync_database.py
 
       # --- Commit updates ---
       - name: Commit updates
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add _data/papers.yml static/js/index.js
+          git add _data/papers.json static/js/index.js
           git commit -m "Auto-update paper list" || echo "No changes"
           git push origin main
 
@@ -67,7 +68,7 @@ jobs:
 
           # Copy data files
           mkdir -p publish/_data
-          cp _data/papers.yml publish/_data/
+          cp _data/papers.json publish/_data/
 
           # Disable Jekyll so _data is not removed
           touch publish/.nojekyll

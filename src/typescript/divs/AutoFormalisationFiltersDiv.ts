@@ -24,6 +24,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
     private typeFilterOptions!: HTMLOptionElement[];
 
     private applyButton!: HTMLButtonElement;
+    private clearButton!: HTMLButtonElement;
 
     private readonly callback: (filters: any) => void;
 
@@ -93,6 +94,26 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
                 llm: this.llmFilterSelect.value,
                 language: this.languageFilterSelect.value,
                 type: this.typeFilterSelect.value
+            });
+        });
+
+        // Clear Button
+        this.clearButton = document.createElement("button");
+        this.clearButton.textContent = "Clear Filters";
+        this.clearButton.id = "clear-filters-button";
+        this.clearButton.addEventListener("click", () => {
+            console.log("Clear Filters button clicked.");
+
+            this.searchInput.value = this.searchInput.defaultValue;
+            this.llmFilterSelect.value = this.llmFilterSelect.options[0].value;
+            this.languageFilterSelect.value = this.languageFilterSelect.options[0].value;
+            this.typeFilterSelect.value = this.typeFilterSelect.options[0].value;
+
+            this.callback({
+                search: "",
+                llm: "",
+                language: "",
+                type: ""
             });
         });
     }
@@ -182,8 +203,10 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.div.appendChild(this.typeFilterLabel);
         this.div.appendChild(this.typeFilterSelect);
 
-        // Button
+        // Buttons in a new line
+        this.div.appendChild(document.createElement("br"));
         this.div.appendChild(this.applyButton);
+        this.div.appendChild(this.clearButton);
     }
 
     public pack(): void {
@@ -207,6 +230,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         AutoFormalisationValidator.ensureAllExist([this.typeFilterLabel, this.typeFilterSelect]);
         AutoFormalisationValidator.ensureAllExist(this.typeFilterOptions);
         AutoFormalisationValidator.ensureExists(this.applyButton);
+        AutoFormalisationValidator.ensureExists(this.clearButton);
 
         this.packAndAppendAllFilters();
 

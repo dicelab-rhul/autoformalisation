@@ -1,6 +1,6 @@
 export interface Paper {
-    ENTRYTYPE?: string;
-    ID?: string;
+    entrytype: string;
+    id: string;
     title: string;
     author?: string;
     journal?: string;

@@ -50,12 +50,16 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
                 const papersDiv: HTMLDivElement = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("papers-div");
 
                 for (const paperChild of papersDiv.children) {
-                    const paperID = paperChild.id.replace("paper-div-", "");
+                    const paperID: string = paperChild.id.replace("paper-div-", "");
+                    const paper: Paper | undefined = this.filteredPapers.find(p => p.id === paperID);
 
-                    if (this.doesPaperMatchFilters(this.filteredPapers.find(p => p.ID === paperID)!, filters)) {
+                    if (!paper) {
+                        (paperChild as HTMLDivElement).hidden = true;
+                    }
+                    else if (this.doesPaperMatchFilters(paper, filters)) {
                         (paperChild as HTMLDivElement).hidden = false;
 
-                        matchingPapers.push(this.filteredPapers.find(p => p.ID === paperID)!);
+                        matchingPapers.push(paper);
                     }
                     else {
                         (paperChild as HTMLDivElement).hidden = true;

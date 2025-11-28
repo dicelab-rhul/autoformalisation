@@ -15,7 +15,7 @@ export class AutoFormalisationPaperDiv implements AutoFormalisationDiv {
 
         this.div = document.createElement("div");
 
-        this.div.id = `paper-div-${paper.ID}`;
+        this.div.id = `paper-div-${paper.id}`;
         this.div.classList.add("paper-div");
         this.div.hidden = true;
 
