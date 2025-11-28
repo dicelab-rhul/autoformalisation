@@ -11,4 +11,5 @@ export interface Paper {
     type?: string;
     url?: string;
     repository?: string;
+    custom?: { [key: string]: any; };
 }

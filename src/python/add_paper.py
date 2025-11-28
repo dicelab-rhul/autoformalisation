@@ -4,6 +4,7 @@ from __future__ import annotations
 from json import load, dump
 
 from normaliser import Normaliser, NormalisedEntry
+from duplicate_checker import DuplicateChecker
 
 import os
 
@@ -50,8 +51,8 @@ class PaperEntryParser():
     def __append_entry_to_bib(self, entry: dict[str, str]) -> None:
         normalised_entry: NormalisedEntry = self.__normaliser.normalise_bibtex_entry(bibtex_entry=entry)
 
-        if normalised_entry["raw"]["id"] in [e["raw"]["id"] for e in self.__bib_database["entries"]]:
-            raise ValueError(f"The paper with ID {normalised_entry["raw"]["id"]} already exists in the BibTeX database.")
+        if DuplicateChecker.is_duplicate(normalised_entry=normalised_entry, normalised_entries=self.__bib_database["entries"]):
+            raise ValueError("The paper to be added is a duplicate of an existing paper in the BibTeX database.")
 
         self.__bib_database["entries"].append(normalised_entry)
 

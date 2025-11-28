@@ -42,7 +42,7 @@ jobs:
 
       # --- Sync database ---
       - name: Sync database
-        run: python src/python/sync_database.py
+        run: ./sync_database.sh
 
       # --- Commit updates ---
       - name: Commit updates

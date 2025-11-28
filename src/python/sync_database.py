@@ -48,6 +48,7 @@ class SyncDatabase():
             with open(self.__db_path, "w", encoding="utf-8") as db_file:
                 dump(papers, db_file, indent=4, ensure_ascii=False)
 
+            print(f"Database successfully updated at {self.__db_path}.")
         except Exception as e:
             os.replace(self.__db_backup_path, self.__db_path)
 

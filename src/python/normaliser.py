@@ -8,13 +8,13 @@ NormalisedEntry: TypeAlias = dict[str, dict[str, Any]]
 
 class Normaliser():
     def __init__(self) -> None:
-        self.__standard_keys: set[str] = {"ID", "ENTRYTYPE", "author", "title", "year", "doi", "url", "journal", "booktitle", "venue"}
+        self.__standard_keys: set[str] = {"id", "entrytype", "author", "title", "year", "doi", "url", "journal", "booktitle", "venue"}
 
     def normalise_bibtex_entry(self, bibtex_entry: dict[str, str]) -> NormalisedEntry:
         self.__bibtex_entry: dict[str, str] = bibtex_entry
 
-        entry_id: str = str(self.__bibtex_entry.get("ID", "")).strip()
-        entry_type: str = str(self.__bibtex_entry.get("ENTRYTYPE", "unknown")).lower()
+        entry_id: str = self.__normalise_entry_id_field()
+        entry_type: str = self.__normalise_entry_type_field()
         authors = self.__normalise_authors_field(auth_field=self.__bibtex_entry.get("author"))
         title_dict: dict[str, str | list[str]] = self.__normalise_title_field(self.__bibtex_entry.get("title"))
         title: str = cast(str, title_dict["text"])
@@ -31,8 +31,8 @@ class Normaliser():
         return {
             "raw": self.__bibtex_entry,
             "norm": {
-                "ID": entry_id,
-                "ENTRYTYPE": entry_type,
+                "id": entry_id,
+                "entrytype": entry_type,
                 "authors": authors,
                 "title": title,
                 "title_tokens": title_tokens,
@@ -44,6 +44,28 @@ class Normaliser():
                 "custom": custom,
             }
         }
+
+    def __normalise_entry_id_field(self,) -> str:
+        if "id" not in self.__bibtex_entry:
+            raise ValueError("BibTeX entry is missing the \"id\" field.")
+
+        candidate_id: str = str(self.__bibtex_entry["id"]).strip()
+
+        if not candidate_id:
+            raise ValueError("BibTeX entry has an empty \"id\" field.")
+        else:
+            return candidate_id
+
+    def __normalise_entry_type_field(self,) -> str:
+        if "entrytype" not in self.__bibtex_entry:
+            raise ValueError("BibTeX entry is missing the \"entrytype\" field.")
+
+        candidate_entry_type: str = str(self.__bibtex_entry["entrytype"]).strip()
+
+        if not candidate_entry_type:
+            raise ValueError("BibTeX entry has an empty \"entrytype\" field.")
+        else:
+            return candidate_entry_type.lower()
 
     def __normalise_authors_field(self, auth_field: Any | Iterable[Any]) -> list[str]:
         if not auth_field:
