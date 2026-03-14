@@ -113,12 +113,15 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         const llmsSet: Set<string> = new Set(papers.map(p => p.llm).filter((x): x is string => !!x));
         const langsSet: Set<string> = new Set(papers.map(p => p.language).filter((x): x is string => !!x));
         const typesSet: Set<string> = new Set(papers.map(p => p.type).filter((x): x is string => !!x));
+        const datasetsSet: Set<string> = new Set(papers.map(p => p.dataset).filter((x): x is string => !!x));
 
         const llms: string[] = [...llmsSet].sort((a, b) => a.localeCompare(b));
         const languages: string[] = [...langsSet].sort((a, b) => a.localeCompare(b));
         const types: string[] = [...typesSet].sort((a, b) => a.localeCompare(b));
+        const datasets: string[] = [...datasetsSet].sort((a, b) => a.localeCompare(b));
 
-        return new AutoFormalisationFiltersDiv(llms, languages, types, this.filtersCallback.bind(this));
+
+        return new AutoFormalisationFiltersDiv(llms, languages, types, datasets, this.filtersCallback.bind(this));
     }
 
     public getDiv(): HTMLDivElement {
