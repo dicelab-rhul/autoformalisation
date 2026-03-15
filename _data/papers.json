@@ -265,7 +265,8 @@
         "url": "https://arxiv.org/abs/2603.15742",
         "llm": "MyLLM",
         "language": "Brainfuck",
-        "type": "made up"
+        "type": "made up",
+        "dataset": "Whats UPPPPP"
     },
     {
         "id": "neuralphysics1997model",
