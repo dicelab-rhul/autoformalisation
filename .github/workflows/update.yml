@@ -2,96 +2,43 @@ name: Update Site
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron: "0 0 * * 0"
-
 permissions:
   contents: write
   pages: write
   id-token: write
-
 jobs:
   build:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
-      # --- Node + Yarn setup ---
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "yarn"
-
       - name: Install JS dependencies
-        run: yarn install --frozen-lockfile
-
+        run: npm install
       - name: Build frontend
-        run: yarn build
-
-      # --- Python setup ---
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-
-      # --- Sync database ---
-      - name: Sync database
-        run: ./sync_database.sh
-
-      # --- Commit updates ---
-      - name: Commit updates
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add _data/papers.json static/js/index.js
-          git commit -m "Auto-update paper list" || echo "No changes"
-          git push origin main
-
-      # --- Build publish folder (flattened root) ---
+        run: npm run build
       - name: Prepare publish directory
         run: |
           rm -rf publish
           mkdir publish
-
-          # Copy root files
           cp index.html publish/
-          cp favicon.ico publish/ 2>/dev/null || true
-
-          # Copy static assets
           cp -r static publish/static
-
-          # Copy data files
           mkdir -p publish/_data
           cp _data/papers.json publish/_data/
-
-          # Disable Jekyll so _data is not removed
           touch publish/.nojekyll
-
-      # --- DEBUG list ---
-      - name: List publish directory (debug)
-        run: |
-          echo "=== publish directory ==="
-          find publish -maxdepth 4 -type f -print
-
-      # --- Upload artifact for GitHub Pages ---
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./publish
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
