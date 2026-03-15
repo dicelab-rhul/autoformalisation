@@ -1711,7 +1711,8 @@
                 "url": "http://example.org/jec/1997/neuralphysics",
                 "llm": "MyLLM",
                 "language": "Ancient Greek",
-                "type": "whatever"
+                "type": "whatever",
+                "dataset": "tobehere"
             },
             "norm": {
                 "authors": [
@@ -1787,6 +1788,12 @@
                         "text": "whatever",
                         "tokens": [
                             "whatever"
+                        ]
+                    },
+                    "dataset": {
+                        "text": "tobehere",
+                        "tokens": [
+                            "tobehere"
                         ]
                     }
                 }
