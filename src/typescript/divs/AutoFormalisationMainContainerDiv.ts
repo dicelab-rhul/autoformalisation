@@ -84,6 +84,7 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         return ((!appliedFilters.llm || paper.llm === appliedFilters.llm)
             && (!appliedFilters.language || paper.language === appliedFilters.language)
             && (!appliedFilters.type || paper.type === appliedFilters.type)
+            && (!appliedFilters.dataset || paper.dataset === appliedFilters.dataset)
             && (appliedFilters.search
                 ? (paper.title?.toLowerCase().includes(appliedFilters.search.toLowerCase())
                     || paper.author?.toLowerCase().includes(appliedFilters.search.toLowerCase()))
@@ -97,6 +98,7 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
             .filter((p) => !appliedFilters.llm || p.llm === appliedFilters.llm)
             .filter((p) => !appliedFilters.language || p.language === appliedFilters.language)
             .filter((p) => !appliedFilters.type || p.type === appliedFilters.type)
+            .filter((p) => !appliedFilters.dataset || p.dataset === appliedFilters.dataset)
             .filter((p) => {
                 if (appliedFilters.search) {
                     const s: string = appliedFilters.search.toLowerCase();
