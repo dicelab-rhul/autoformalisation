@@ -19,6 +19,7 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     private readonly counterMessage: string;
     private readonly description: string;
     private packed: boolean;
+    private currentStatisticsDiv!: AutoFormalisationStatisticsDiv;
 
     public constructor(papers: Paper[], filters: Filters, topMessage: string, counterMessage: string, description: string) {
         AutoFormalisationValidator.ensureExists(papers, "The papers list cannot be null or undefined.");
@@ -71,6 +72,8 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
             }
         }
 
+        this.currentStatisticsDiv.destroyCharts();
+
         const statisticsDiv: AutoFormalisationStatisticsDiv = new AutoFormalisationStatisticsDiv(matchingPapers);
 
         statisticsDiv.pack();
@@ -79,6 +82,8 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         const existingStatisticsDiv: HTMLDivElement = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("statistics-div");
 
         existingStatisticsDiv.replaceWith(statisticsDiv.getDiv());
+
+        this.currentStatisticsDiv = statisticsDiv;
     }
 
     public doesPaperMatchFilters(paper: Paper, filters: Filters): boolean {
@@ -213,6 +218,8 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         statisticsDiv.show();
 
         this.div.appendChild(statisticsDiv.getDiv());
+
+        this.currentStatisticsDiv = statisticsDiv;
     }
 
     public pack(): void {

@@ -31,18 +31,33 @@ export class AutoFormalisationHTMLUtils {
         return p;
     }
 
+    private static isSafeUrl(url: string): boolean {
+        try {
+            const parsed = new URL(url, globalThis.location.href);
+
+            return parsed.protocol === "http:" || parsed.protocol === "https:";
+        } catch {
+            return false;
+        }
+    }
+
     public static createLink(url: string, label: string, classes?: ClassList): HTMLParagraphElement {
         const p = document.createElement("p");
-        const a = document.createElement("a");
 
-        a.href = url;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        a.textContent = label;
+        if (AutoFormalisationHTMLUtils.isSafeUrl(url)) {
+            const a = document.createElement("a");
+
+            a.href = url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = label;
+
+            p.appendChild(a);
+        } else {
+            p.textContent = `${label}: (invalid URL)`;
+        }
 
         AutoFormalisationHTMLUtils.addClassesIfAny(p, classes);
-
-        p.appendChild(a);
 
         return p;
     }

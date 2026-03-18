@@ -9,6 +9,8 @@ export class AutoFormalisationStatisticsDiv implements AutoFormalisationDiv {
     private readonly papers: Paper[];
     private yearChart!: HTMLCanvasElement;
     private llmChart!: HTMLCanvasElement;
+    private yearChartInstance: Chart | null = null;
+    private llmChartInstance: Chart | null = null;
     private packed: boolean;
 
     public constructor(papers: Paper[]) {
@@ -73,7 +75,7 @@ export class AutoFormalisationStatisticsDiv implements AutoFormalisationDiv {
 
         this.div.appendChild(this.yearChart);
 
-        const _chartYear: Chart = new Chart(this.yearChart, {
+        this.yearChartInstance = new Chart(this.yearChart, {
             type: "bar",
             data: {
                 labels: Object.keys(byYear),
@@ -96,7 +98,7 @@ export class AutoFormalisationStatisticsDiv implements AutoFormalisationDiv {
 
         this.div.appendChild(this.llmChart);
 
-        const _chartLLM: Chart = new Chart(this.llmChart, {
+        this.llmChartInstance = new Chart(this.llmChart, {
             type: "pie",
             data: {
                 labels: Object.keys(byLLM),
@@ -149,6 +151,18 @@ export class AutoFormalisationStatisticsDiv implements AutoFormalisationDiv {
         this.packed = true;
     }
 
+    public destroyCharts(): void {
+        if (this.yearChartInstance) {
+            this.yearChartInstance.destroy();
+            this.yearChartInstance = null;
+        }
+
+        if (this.llmChartInstance) {
+            this.llmChartInstance.destroy();
+            this.llmChartInstance = null;
+        }
+    }
+
     public unpack(): void {
         AutoFormalisationValidator.ensureExists(this.div, "Cannot unpack: the statistics div is null or undefined.");
 
@@ -161,6 +175,8 @@ export class AutoFormalisationStatisticsDiv implements AutoFormalisationDiv {
         if (!this.div.hidden) {
             throw new TypeError("Cannot unpack: the statistics div must be hidden before unpacking.");
         }
+
+        this.destroyCharts();
 
         AutoFormalisationHTMLUtils.clearElementChildren(this.div);
 

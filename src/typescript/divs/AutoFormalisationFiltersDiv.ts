@@ -139,6 +139,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
             this.llmFilterSelect.value = this.llmFilterSelect.options[0].value;
             this.languageFilterSelect.value = this.languageFilterSelect.options[0].value;
             this.typeFilterSelect.value = this.typeFilterSelect.options[0].value;
+            this.datasetFilterSelect.value = this.datasetFilterSelect.options[0].value;
             this.domainFilterSelect.value = this.domainFilterSelect.options[0].value;
 
             this.callback({

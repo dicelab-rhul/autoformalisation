@@ -9,6 +9,11 @@ export class AutoFormalisationPaperLoader {
 
         const url: URL = new URL(papersJsonPath, globalThis.location.href);
         const response: Response = await fetch(url.toString());
+
+        if (!response.ok) {
+            throw new Error(`Failed to load papers from ${papersJsonPath}: ${response.status} ${response.statusText}`);
+        }
+
         const jsonText: string = await response.text();
         const papers: Paper[] = JSON.parse(jsonText).map((p: any) => ({...p,title: p.title?.replaceAll(/[{}]/g, "") ?? p.title}));
         const uniqueLLMs: Set<string> = new Set();
