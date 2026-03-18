@@ -47,13 +47,14 @@ The site is automatically deployed on every push to `main` and refreshed weekly 
 
 ## Prerequisites
 
-- **Node.js** >= 20
-- **Yarn** (v1 classic)
-- **Python** >= 3.13 (only for the paper management CLI and database sync)
+- **Node.js** >= 20 (with [Corepack](https://nodejs.org/api/corepack.html) enabled)
+- **Yarn** >= 4 (managed automatically via `corepack` and the `packageManager` field in `package.json`)
+- **Python** >= 3.14 (only for the paper management CLI and database sync)
 
 ## Build
 
 ```bash
+corepack enable   # if not already enabled
 yarn install
 yarn build
 ```
@@ -84,7 +85,7 @@ Extracts the raw entries from `papers.json` into `_data/papers.json` (the file s
 
 The GitHub Actions workflow (`.github/workflows/update.yml`) runs on every push to `main` and weekly on a cron schedule. It:
 
-1. Installs JS and Python dependencies.
+1. Enables Corepack and installs JS dependencies via Yarn Berry.
 2. Builds the frontend (`yarn build`).
 3. Syncs the paper database.
 4. Commits any changes back to `main`.
