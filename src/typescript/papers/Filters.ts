@@ -3,5 +3,6 @@ export interface Filters {
     language: string;
     type: string;
     dataset: string;
+    domain: string;
     search: string;
 }

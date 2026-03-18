@@ -10,6 +10,7 @@ export interface Paper {
     language?: string;
     type?: string;
     dataset?: string;
+    domain?: string;
     url?: string;
     repository?: string;
     custom?: { [key: string]: any; };
