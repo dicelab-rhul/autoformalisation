@@ -20,7 +20,6 @@ const ttIntegrity = sri(ttFile);
 const cssIntegrityPlaceholder = "{{index_css_integrity}}";
 const jsIntegrityPlaceholder = "{{index_js_integrity}}";
 const ttIntegrityPlaceholder = "{{tt_integrity}}";
-const noncePlaceholder = "{{nonce_value}}";
 
 const templateHtmlPath = "template.html";
 const indexHtmlPath = "index.html";
@@ -34,10 +33,10 @@ html = await prettier.format(html, {
     useTabs: false,
 });
 
-// 2️⃣ Insert SRI hashes AFTER formatting
-html = html.replace(cssIntegrityPlaceholder, cssIntegrity);
-html = html.replace(jsIntegrityPlaceholder, jsIntegrity);
-html = html.replace(ttIntegrityPlaceholder, ttIntegrity);
+// 2️⃣ Insert SRI hashes AFTER formatting (integrity attributes + CSP meta tag)
+html = html.replaceAll(cssIntegrityPlaceholder, cssIntegrity);
+html = html.replaceAll(jsIntegrityPlaceholder, jsIntegrity);
+html = html.replaceAll(ttIntegrityPlaceholder, ttIntegrity);
 
 // 3️⃣ Collapse <script> tags
 html = html.replaceAll(/<script\b[\s\S]*?<\/script>/g, s => s.replaceAll(/\s*\n\s*/g, " "));
