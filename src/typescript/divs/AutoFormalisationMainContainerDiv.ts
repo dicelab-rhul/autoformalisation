@@ -16,18 +16,21 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     private readonly filtersDiv: AutoFormalisationFiltersDiv;
     private readonly filteredPapers: Paper[];
     private readonly topMessage: string;
-    private readonly description: string
+    private readonly counterMessage: string;
+    private readonly description: string;
     private packed: boolean;
 
-    public constructor(papers: Paper[], filters: Filters, topMessage: string, description: string) {
+    public constructor(papers: Paper[], filters: Filters, topMessage: string, counterMessage: string, description: string) {
         AutoFormalisationValidator.ensureExists(papers, "The papers list cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(papers, "The papers list cannot contain null or undefined entries.");
         AutoFormalisationValidator.ensureExists(filters, "The filters cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(topMessage, "The top message cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(counterMessage, "The counter message cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(description, "The description cannot be null or undefined.");
 
         this.filteredPapers = AutoFormalisationMainContainerDiv.filterPapers(papers, filters);
         this.topMessage = topMessage;
+        this.counterMessage = counterMessage;
         this.description = description;
 
         this.div = document.createElement("div");
@@ -35,7 +38,7 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         this.div.id = "main-container-div";
         this.div.hidden = true;
 
-        this.topMessageDiv = new AutoFormalisationTopMessageDiv(this.topMessage, this.description);
+        this.topMessageDiv = new AutoFormalisationTopMessageDiv(this.topMessage, this.counterMessage, this.description);
         this.filtersDiv = this.createFiltersDiv(papers);
         this.packed = false;
     }

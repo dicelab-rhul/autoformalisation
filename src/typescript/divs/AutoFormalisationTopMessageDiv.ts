@@ -5,14 +5,17 @@ import { AutoFormalisationHTMLUtils } from "../utils/AutoFormalisationHTMLUtils"
 export class AutoFormalisationTopMessageDiv implements AutoFormalisationDiv {
     private readonly div: HTMLDivElement;
     private readonly mainTitle: string;
+    private readonly counterMessage: string;
     private readonly message: string;
     private packed: boolean;
 
-    public constructor(mainTitle: string, message: string) {
+    public constructor(mainTitle: string, counterMessage: string, message: string) {
         AutoFormalisationValidator.ensureExists(mainTitle, "The main title cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(counterMessage, "The counter message cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(message, "The message cannot be null or undefined.");
 
         this.mainTitle = mainTitle;
+        this.counterMessage = counterMessage;
         this.message = message;
 
         this.div = document.createElement("div");
@@ -78,6 +81,7 @@ export class AutoFormalisationTopMessageDiv implements AutoFormalisationDiv {
         }
 
         AutoFormalisationValidator.ensureExists(this.mainTitle, "Cannot pack: the main title is null or undefined.");
+        AutoFormalisationValidator.ensureExists(this.counterMessage, "Cannot pack: the counter message is null or undefined.");
         AutoFormalisationValidator.ensureExists(this.message, "Cannot pack: the message is null or undefined.");
 
         this.addTitleAndMessageToDiv();
@@ -90,11 +94,16 @@ export class AutoFormalisationTopMessageDiv implements AutoFormalisationDiv {
 
         titleElement.textContent = this.mainTitle;
 
+        const counterMessageElement: HTMLParagraphElement = document.createElement("p");
+
+        counterMessageElement.textContent = this.counterMessage;
+
         const messageElement: HTMLParagraphElement = document.createElement("p");
 
         messageElement.textContent = this.message;
 
         this.div.appendChild(titleElement);
+        this.div.appendChild(counterMessageElement);
         this.div.appendChild(messageElement);
     }
 
