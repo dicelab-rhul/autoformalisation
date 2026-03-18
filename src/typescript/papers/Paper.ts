@@ -9,6 +9,8 @@ export interface Paper {
     llm?: string;
     language?: string;
     type?: string;
+    dataset?: string;
+    domain?: string;
     url?: string;
     repository?: string;
     custom?: { [key: string]: any; };

@@ -23,6 +23,16 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
     private typeFilterSelect!: HTMLSelectElement;
     private typeFilterOptions!: HTMLOptionElement[];
 
+    private readonly datasets: string[];
+    private datasetFilterLabel!: HTMLLabelElement;
+    private datasetFilterSelect!: HTMLSelectElement;
+    private datasetFilterOptions!: HTMLOptionElement[];
+
+    private readonly domains: string[];
+    private domainFilterLabel!: HTMLLabelElement;
+    private domainFilterSelect!: HTMLSelectElement;
+    private domainFilterOptions!: HTMLOptionElement[];
+
     private applyButton!: HTMLButtonElement;
     private clearButton!: HTMLButtonElement;
 
@@ -30,20 +40,26 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
 
     private packed: boolean;
 
-    public constructor(llms: string[], languages: string[], types: string[], callback: (filters: any) => void) {
+    public constructor(llms: string[], languages: string[], types: string[], datasets: string[], domains: string[], callback: (filters: any) => void) {
         AutoFormalisationValidator.ensureExists(llms, "LLMs cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(llms, "LLM values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(languages, "Languages cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(languages, "Language values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(types, "Types cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(types, "Type values cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(datasets, "Datasets cannot be null or undefined.");
+        AutoFormalisationValidator.ensureAllExist(datasets, "Dataset values cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(domains, "Domains cannot be null or undefined.");
+        AutoFormalisationValidator.ensureAllExist(domains, "Domain values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(callback, "Callback cannot be null or undefined.");
 
         this.llms = llms;
         this.languages = languages;
         this.types = types;
+        this.datasets = datasets;
+        this.domains = domains;
 
-        this.callback = callback;
+        this.callback = callback;  
 
         this.div = document.createElement("div");
 
@@ -82,6 +98,19 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.typeFilterSelect.name = "filter-type";
         this.typeFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.typeFilterSelect, new Set(this.types));
 
+        // Dataset Filter
+        this.datasetFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-dataset", "Dataset:");
+        this.datasetFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-dataset", []);
+        this.datasetFilterSelect.name = "filter-dataset";
+        this.datasetFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.datasetFilterSelect, new Set(this.datasets));
+        
+        // Domain Filter
+        this.domainFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-domain", "Domain:");
+        this.domainFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-domain", []);
+        this.domainFilterSelect.name = "filter-domain";
+        this.domainFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.domainFilterSelect, new Set(this.domains));
+
+
         // Apply Button
         this.applyButton = document.createElement("button");
         this.applyButton.textContent = "Apply Filters";
@@ -93,7 +122,9 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
                 search: this.searchInput.value,
                 llm: this.llmFilterSelect.value,
                 language: this.languageFilterSelect.value,
-                type: this.typeFilterSelect.value
+                type: this.typeFilterSelect.value,
+                dataset: this.datasetFilterSelect.value,
+                domain: this.domainFilterSelect.value
             });
         });
 
@@ -108,12 +139,15 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
             this.llmFilterSelect.value = this.llmFilterSelect.options[0].value;
             this.languageFilterSelect.value = this.languageFilterSelect.options[0].value;
             this.typeFilterSelect.value = this.typeFilterSelect.options[0].value;
+            this.domainFilterSelect.value = this.domainFilterSelect.options[0].value;
 
             this.callback({
                 search: "",
                 llm: "",
                 language: "",
-                type: ""
+                type: "",
+                dataset: "",
+                domain: ""
             });
         });
     }
@@ -203,6 +237,16 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.div.appendChild(this.typeFilterLabel);
         this.div.appendChild(this.typeFilterSelect);
 
+        // Dataset Filter
+        AutoFormalisationFiltersDiv.appendOptionsToSelect(this.datasetFilterSelect, this.datasetFilterOptions);
+        this.div.appendChild(this.datasetFilterLabel);
+        this.div.appendChild(this.datasetFilterSelect);
+
+         // Domain Filter
+        AutoFormalisationFiltersDiv.appendOptionsToSelect(this.domainFilterSelect, this.domainFilterOptions);
+        this.div.appendChild(this.domainFilterLabel);
+        this.div.appendChild(this.domainFilterSelect);
+
         // Buttons in a new line
         this.div.appendChild(document.createElement("br"));
         this.div.appendChild(this.applyButton);
@@ -229,6 +273,10 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         AutoFormalisationValidator.ensureAllExist(this.languageFilterOptions);
         AutoFormalisationValidator.ensureAllExist([this.typeFilterLabel, this.typeFilterSelect]);
         AutoFormalisationValidator.ensureAllExist(this.typeFilterOptions);
+        AutoFormalisationValidator.ensureAllExist([this.datasetFilterLabel, this.datasetFilterSelect]);
+        AutoFormalisationValidator.ensureAllExist(this.datasetFilterOptions);
+        AutoFormalisationValidator.ensureAllExist([this.domainFilterLabel, this.domainFilterSelect]);
+        AutoFormalisationValidator.ensureAllExist(this.domainFilterOptions);
         AutoFormalisationValidator.ensureExists(this.applyButton);
         AutoFormalisationValidator.ensureExists(this.clearButton);
 
