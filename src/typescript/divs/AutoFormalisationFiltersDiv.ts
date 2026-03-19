@@ -128,6 +128,15 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
             });
         });
 
+        // Allow pressing Enter in the search input to apply filters
+        this.searchInput.addEventListener("keydown", (event: KeyboardEvent) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+
+                this.applyButton.click();
+            }
+        });
+
         // Clear Button
         this.clearButton = document.createElement("button");
         this.clearButton.textContent = "Clear Filters";
