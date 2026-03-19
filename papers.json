@@ -9268,7 +9268,7 @@
                 "title": "Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought",
                 "year": "2026",
                 "doi": "",
-                "url": "",
+                "url": "https://arxiv.org/abs/2603.05488",
                 "journal": "arXiv preprint arXiv:2603.05488",
                 "booktitle": "",
                 "venue": "arXiv preprint arXiv:2603.05488",
@@ -9303,7 +9303,7 @@
                 ],
                 "year": 2026,
                 "doi": null,
-                "url": null,
+                "url": "https://arxiv.org/abs/2603.05488",
                 "venue": "arxiv preprint arxiv260305488",
                 "venue_tokens": [
                     "arxiv",
