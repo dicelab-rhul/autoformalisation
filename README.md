@@ -16,34 +16,40 @@ The site is automatically deployed on every push to `main` and refreshed weekly 
 ## Project Structure
 
 ```text
-├── template.html                # HTML template with SRI/CSP placeholders
-├── index.html                   # Generated at build time (do not edit)
-├── build-sri.js                 # Build script: computes SRI hashes, injects CSP, generates index.html
-├── package.json                 # Node dependencies and build script
-├── papers.json                  # Master paper database (raw + normalised entries)
+├── template.html                               # HTML template with SRI/CSP placeholders
+├── package.json                                # Node dependencies and build script
+├── tsconfig.json                               # TypeScript configuration
+├── papers.bib                                  # BibTeX source entries
+├── papers.json                                 # Master paper database (raw + normalised entries)
 ├── _data/
-│   └── papers.json              # Deployed paper list (raw entries only, synced from papers.json)
+│   ├── papers.json                             # Deployed paper list (raw entries only, synced from papers.json)
+│   └── papers.json.bak                         # Backup created before sync overwrites _data/papers.json
 ├── src/
 │   ├── python/
-│   │   ├── add_paper.py         # CLI tool to add a paper interactively
-|   |   ├── bibtex_loader.py     # BibTeX parsing and normalisation logic
-│   │   ├── normaliser.py        # BibTeX entry normalisation (text, authors, LaTeX stripping)
-│   │   ├── duplicate_checker.py # Fuzzy duplicate detection
-│   │   └── sync_database.py     # Sync papers.json → _data/papers.json
+│   │   ├── add_paper.py                        # CLI tool to add a paper interactively
+│   │   ├── bibtex_loader.py                    # BibTeX parsing and normalisation logic
+│   │   ├── normaliser.py                       # BibTeX entry normalisation (text, authors, LaTeX stripping)
+│   │   ├── duplicate_checker.py                # Fuzzy duplicate detection
+│   │   └── sync_database.py                    # Sync papers.json → _data/papers.json
 │   └── typescript/
-│       ├── index.ts              # Entry point
-│       ├── Main.ts               # App bootstrap
-│       ├── divs/                 # UI components (filters, papers, statistics, top message)
-│       ├── papers/               # Paper model, loader, filters
-│       └── utils/                # HTML utilities, validation
+│       ├── build-sri.ts                        # Build script source (SRI + CSP injection)
+│       ├── index.ts                            # Entry point
+│       ├── Main.ts                             # App bootstrap
+│       ├── divs/                               # UI components (filters, papers, statistics, top message)
+│       ├── papers/                             # Paper model, loader, filters
+│       └── utils/                              # HTML utilities, validation
 ├── static/
 │   ├── css/index.css
-│   ├── images/                   # Favicon and images
-│   └── js/                       # Built JS bundle + Trusted Types polyfill
-├── add_paper.sh                  # Shell wrapper for add_paper.py
-├── sync_database.sh              # Shell wrapper for sync_database.py
+│   ├── images/                                 # Favicon and images
+│   └── js/
+│       ├── build-sri.mjs                       # Build script runtime used by yarn build. Generated at build time (do not edit).
+│       ├── index.js                            # Bundled frontend output. Generated at build time (do not edit).
+│       └── trusted_types_enforced_polyfill.js  # Trusted Types polyfill.
+├── add_paper.sh                                # Shell wrapper for add_paper.py
+├── sync_database.sh                            # Shell wrapper for sync_database.py
+├── index.html                                  # Generated at build time (do not edit).
 └── .github/workflows/
-    └── update.yml                # CI/CD: build, sync, commit, deploy to GitHub Pages
+    └── update.yml                              # CI/CD: build, sync, commit, deploy to GitHub Pages
 ```
 
 ## Prerequisites
