@@ -110,7 +110,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.domainFilterSelect.name = "filter-domain";
         this.domainFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.domainFilterSelect, new Set(this.domains));
 
-
         // Apply Button
         this.applyButton = document.createElement("button");
         this.applyButton.textContent = "Apply Filters";

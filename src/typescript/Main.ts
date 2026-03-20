@@ -13,7 +13,7 @@ export class Main {
         const counterMessage: string = `Papers: ${papers.length} | LLMs: ${llmCount} | Languages: ${languageCount}`;
         const description: string = "Explore this collection of papers on LLMs. Use the filters to narrow down your search and find papers that match your interests.";
         const mainContainerDiv: AutoFormalisationMainContainerDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), mainMessage, counterMessage, description);
-    
+
         mainContainerDiv.pack();
 
         document.body.appendChild(mainContainerDiv.getDiv());

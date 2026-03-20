@@ -44,6 +44,9 @@ html = html.replaceAll(/<script\b[\s\S]*?<\/script>/g, (s: string): string => s.
 // Collapse <link> tags
 html = html.replaceAll(/<link\b[\s\S]*?>/g, (s: string): string => s.replaceAll(/\s*\n\s*/g, " "));
 
+// Collapse <meta> tags
+html = html.replaceAll(/<meta\b[\s\S]*?>/g, (s: string): string => s.replaceAll(/\s*\n\s*/g, " "));
+
 writeFileSync(indexHtmlPath, html, "utf-8");
 
-console.log("index.html updated successfully");
+console.log("Successfully generated index.html from template.html with SRI integrity attributes and CSP meta tag.");

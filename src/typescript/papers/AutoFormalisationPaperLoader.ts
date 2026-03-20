@@ -18,12 +18,17 @@ export class AutoFormalisationPaperLoader {
         const papers: Paper[] = JSON.parse(jsonText).map((p: any) => ({...p,title: p.title?.replaceAll(/[{}]/g, "") ?? p.title}));
         const uniqueLLMs: Set<string> = new Set();
         const uniqueLanguages: Set<string> = new Set();
-        
+
         papers.forEach(paper => {
-            if (paper.llm) uniqueLLMs.add(paper.llm);
-            if (paper.language) uniqueLanguages.add(paper.language);
+            if (paper.llm) {
+                uniqueLLMs.add(paper.llm);
+            }
+
+            if (paper.language) {
+                uniqueLanguages.add(paper.language);
+            }
         });
-        
+
         const llmCount: number = uniqueLLMs.size;
         const languageCount: number = uniqueLanguages.size;
 

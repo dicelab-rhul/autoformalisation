@@ -46,6 +46,7 @@ The site is automatically deployed on every push to `main` and refreshed weekly 
 │       ├── index.js                            # Bundled frontend output. Generated at build time (do not edit).
 │       └── trusted_types_enforced_polyfill.js  # Trusted Types polyfill.
 ├── add_paper.sh                                # Shell wrapper for add_paper.py
+├── build.sh                                    # Shell wrapper for yarn build
 ├── sync_database.sh                            # Shell wrapper for sync_database.py
 ├── index.html                                  # Generated at build time (do not edit).
 └── .github/workflows/
@@ -61,16 +62,15 @@ The site is automatically deployed on every push to `main` and refreshed weekly 
 ## Build
 
 ```bash
-corepack enable   # if not already enabled
-yarn install
-yarn build
+./build.sh
 ```
 
 This will:
 
-1. Bundle the TypeScript source into `static/js/index.js` via esbuild.
-2. Compute SHA-384 hashes for all static assets.
-3. Generate `index.html` from `template.html` with SRI integrity attributes and a CSP `<meta>` tag.
+1. Transpile `src/typescript/build-sri.ts` to `static/js/build-sri.mjs` using esbuild.
+2. Bundle the rest of the TypeScript source into `static/js/index.js` via esbuild.
+3. Compute SHA-384 hashes for all static assets.
+4. Generate `index.html` from `template.html` with SRI integrity attributes and a CSP `<meta>` tag.
 
 ## Adding a Paper
 
