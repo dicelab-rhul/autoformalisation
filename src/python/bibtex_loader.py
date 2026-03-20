@@ -23,10 +23,6 @@ class BibTeXLoader():
         self.__convert_bib_entries(entries)
         self.__save_output()
 
-    # ----------------------------
-    # Loading / splitting entries
-    # ----------------------------
-
     def __load_bib_database(self) -> list[str]:
         if not os.path.isfile(self.__bibtex_file):
             raise FileNotFoundError(f"{self.__bibtex_file} not found.")
@@ -55,10 +51,6 @@ class BibTeXLoader():
                     start = -1
 
         return entries
-
-    # ----------------------------
-    # Parsing
-    # ----------------------------
 
     def __parse_bibtex_entry(self, bibtex: str) -> tuple[str, str, dict[str, str]]:
         text: str = bibtex.strip()
@@ -171,10 +163,6 @@ class BibTeXLoader():
 
         raise ValueError("Unbalanced quotes")
 
-    # ----------------------------
-    # Conversion
-    # ----------------------------
-
     def __infer_type(self, entrytype: str) -> str:
         mapping: dict[str, str] = {
             "article": "Article",
@@ -209,10 +197,6 @@ class BibTeXLoader():
             normalised_entry: NormalisedEntry = self.__normaliser.normalise_bibtex_entry(raw)
 
             self.__converted_entries.append(normalised_entry)
-
-    # ----------------------------
-    # Output
-    # ----------------------------
 
     def __save_output(self) -> None:
         existing_papers_data: dict[str, list[NormalisedEntry]] = {"entries": []}
