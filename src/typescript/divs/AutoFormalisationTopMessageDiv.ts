@@ -76,6 +76,7 @@ export class AutoFormalisationTopMessageDiv implements AutoFormalisationDiv {
 
             return;
         }
+
         if (!this.div.hidden) {
             throw new TypeError("Cannot pack: the paper div must be hidden before packing.");
         }
@@ -115,6 +116,7 @@ export class AutoFormalisationTopMessageDiv implements AutoFormalisationDiv {
 
             return;
         }
+
         if (!this.div.hidden) {
             throw new TypeError("Cannot unpack: the paper div must be hidden before unpacking.");
         }
