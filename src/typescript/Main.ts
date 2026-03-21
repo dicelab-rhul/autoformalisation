@@ -16,8 +16,18 @@ export class Main {
 
         mainContainerDiv.pack();
 
+        Main.removeCommentsFromBody();
+
         document.body.appendChild(mainContainerDiv.getDiv());
 
         mainContainerDiv.show();
+    }
+
+    public static removeCommentsFromBody(): void {
+        for (const node of Array.from(document.body.childNodes)) {
+            if (node.nodeType === Node.COMMENT_NODE) {
+                node.remove();
+            }
+        }
     }
 }
