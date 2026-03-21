@@ -8,27 +8,29 @@ export class Main {
     private constructor() {}
 
     public static async main(): Promise<void> {
-        if (document.cookie.includes("WelcomeMessageAlreadySeen=true")) {
+        const cookieName: string = "WelcomeMessageAlreadySeen";
+        const cookieValue: string = "true";
+
+        Main.removeCommentsFromBody();
+
+        if (document.cookie.includes(`${cookieName}=${cookieValue}`)) {
             Main.initializeApp();
         }
         else {
             const welcomeMessage: string = "Welcome to the Awesome LLM Papers collection! This website is a curated collection of papers on Large Language Models (LLMs). We have gathered a wide range of papers covering various aspects of LLMs, including their architecture, training methods, applications, and ethical considerations. We hope you find this collection useful for your research and exploration of LLMs. Feel free to explore the papers and use the filters to find papers that match your interests. Enjoy your journey through the world of LLMs!";
 
-            document.cookie = "WelcomeMessageAlreadySeen=true; max-age=31536000; SameSite=Strict; secure";
-
-            Main.showWelcomeMessage(welcomeMessage);
+            Main.showWelcomeMessage(welcomeMessage, cookieName, cookieValue);
         }
     }
 
-    private static showWelcomeMessage(message: string): void {
-        const welcomeDiv: AutoFormalisationWelcomeDiv = new AutoFormalisationWelcomeDiv(message, Main.initializeApp.bind(this));
-
-        Main.removeCommentsFromBody();
+    private static showWelcomeMessage(message: string, cookieName: string, cookieValue: string): void {
+        const welcomeDiv: AutoFormalisationWelcomeDiv = new AutoFormalisationWelcomeDiv(message, cookieName, cookieValue, Main.initializeApp.bind(this));
 
         welcomeDiv.pack();
-        welcomeDiv.show();
 
         document.body.appendChild(welcomeDiv.getDiv());
+
+        welcomeDiv.show();
     }
 
     private static async initializeApp(): Promise<void> {
@@ -40,8 +42,6 @@ export class Main {
         const mainContainerDiv: AutoFormalisationMainContainerDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), mainMessage, counterMessage, description);
 
         mainContainerDiv.pack();
-
-        Main.removeCommentsFromBody();
 
         document.body.appendChild(mainContainerDiv.getDiv());
 

@@ -8,8 +8,10 @@ export class AutoFormalisationWelcomeDiv implements AutoFormalisationDiv {
     private readonly closeButton: HTMLButtonElement;
     private packed: boolean;
 
-    public constructor(message: string, buttonCallback: () => void) {
+    public constructor(message: string, cookieName: string, cookieValue: string, buttonCallback: () => void) {
         AutoFormalisationValidator.ensureExists(message, "The message cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(cookieName, "The cookie name cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(cookieValue, "The cookie value cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(buttonCallback, "The button callback cannot be null or undefined.");
 
         this.div = document.createElement("div");
@@ -28,6 +30,8 @@ export class AutoFormalisationWelcomeDiv implements AutoFormalisationDiv {
         this.closeButton.addEventListener("click", () => {
             this.hide();
             this.unpack();
+
+            document.cookie = `${cookieName}=${cookieValue}; max-age=31536000; SameSite=Strict; secure`;
 
             buttonCallback();
         });
