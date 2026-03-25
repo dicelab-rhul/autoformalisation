@@ -33,6 +33,11 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
     private domainFilterSelect!: HTMLSelectElement;
     private domainFilterOptions!: HTMLOptionElement[];
 
+    private readonly repositories: string[];
+    private repositoryFilterLabel!: HTMLLabelElement;
+    private repositoryFilterSelect!: HTMLSelectElement;
+    private repositoryFilterOptions!: HTMLOptionElement[];
+
     private applyButton!: HTMLButtonElement;
     private clearButton!: HTMLButtonElement;
 
@@ -40,7 +45,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
 
     private packed: boolean;
 
-    public constructor(llms: string[], languages: string[], types: string[], goals: string[], domains: string[], callback: (filters: any) => void) {
+    public constructor(llms: string[], languages: string[], types: string[], goals: string[], domains: string[], repositories: string[], callback: (filters: any) => void) {
         AutoFormalisationValidator.ensureExists(llms, "LLMs cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(llms, "LLM values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(languages, "Languages cannot be null or undefined.");
@@ -51,6 +56,8 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         AutoFormalisationValidator.ensureAllExist(goals, "Dataset values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(domains, "Domains cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(domains, "Domain values cannot be null or undefined.");
+        AutoFormalisationValidator.ensureExists(repositories, "Domains cannot be null or undefined.");
+        AutoFormalisationValidator.ensureAllExist(repositories, "Domain values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(callback, "Callback cannot be null or undefined.");
 
         this.llms = llms;
@@ -58,6 +65,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.types = types;
         this.goals = goals;
         this.domains = domains;
+        this.repositories = repositories;
 
         this.callback = callback;  
 
@@ -98,8 +106,8 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.typeFilterSelect.name = "filter-type";
         this.typeFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.typeFilterSelect, new Set(this.types));
 
-        // Dataset Filter
-        this.goalFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-goal", "Goals:");
+        // Goal Filter
+        this.goalFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-goal", "Goal:");
         this.goalFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-goal", []);
         this.goalFilterSelect.name = "filter-goal";
         this.goalFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.goalFilterSelect, new Set(this.goals));
@@ -109,6 +117,12 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.domainFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-domain", []);
         this.domainFilterSelect.name = "filter-domain";
         this.domainFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.domainFilterSelect, new Set(this.domains));
+
+        // Repository Filter
+        this.repositoryFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-repository", "Repository:");
+        this.repositoryFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-repository", []);
+        this.repositoryFilterSelect.name = "filter-repository";
+        this.repositoryFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.repositoryFilterSelect, new Set(this.repositories));
 
         // Apply Button
         this.applyButton = document.createElement("button");
@@ -123,7 +137,8 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
                 language: this.languageFilterSelect.value,
                 type: this.typeFilterSelect.value,
                 dataset: this.goalFilterSelect.value,
-                domain: this.domainFilterSelect.value
+                domain: this.domainFilterSelect.value,
+                repository: this.llmFilterSelect.value
             });
         });
 
@@ -149,6 +164,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
             this.typeFilterSelect.value = this.typeFilterSelect.options[0].value;
             this.goalFilterSelect.value = this.goalFilterSelect.options[0].value;
             this.domainFilterSelect.value = this.domainFilterSelect.options[0].value;
+            this.repositoryFilterSelect.value = this.repositoryFilterSelect.options[0].value;
 
             this.callback({
                 search: "",
@@ -156,7 +172,8 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
                 language: "",
                 type: "",
                 goal: "",
-                domain: ""
+                domain: "",
+                repository: ""
             });
         });
     }
@@ -247,15 +264,20 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.div.appendChild(this.typeFilterLabel);
         this.div.appendChild(this.typeFilterSelect);
 
-        // Dataset Filter
+        // Goal Filter
         AutoFormalisationFiltersDiv.appendOptionsToSelect(this.goalFilterSelect, this.goalFilterOptions);
         this.div.appendChild(this.goalFilterLabel);
         this.div.appendChild(this.goalFilterSelect);
 
-         // Domain Filter
+        // Domain Filter
         AutoFormalisationFiltersDiv.appendOptionsToSelect(this.domainFilterSelect, this.domainFilterOptions);
         this.div.appendChild(this.domainFilterLabel);
         this.div.appendChild(this.domainFilterSelect);
+
+        // Repository Filter
+        AutoFormalisationFiltersDiv.appendOptionsToSelect(this.repositoryFilterSelect, this.repositoryFilterOptions);
+        this.div.appendChild(this.repositoryFilterLabel);
+        this.div.appendChild(this.repositoryFilterSelect);
 
         // Buttons in a new line
         this.div.appendChild(document.createElement("br"));
@@ -287,6 +309,8 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         AutoFormalisationValidator.ensureAllExist(this.goalFilterOptions);
         AutoFormalisationValidator.ensureAllExist([this.domainFilterLabel, this.domainFilterSelect]);
         AutoFormalisationValidator.ensureAllExist(this.domainFilterOptions);
+        AutoFormalisationValidator.ensureAllExist([this.repositoryFilterLabel, this.repositoryFilterSelect]);
+        AutoFormalisationValidator.ensureAllExist(this.repositoryFilterOptions);
         AutoFormalisationValidator.ensureExists(this.applyButton);
         AutoFormalisationValidator.ensureExists(this.clearButton);
 

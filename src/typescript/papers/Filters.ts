@@ -4,5 +4,6 @@ export interface Filters {
     type: string;
     goal: string;
     domain: string;
+    repository: string;
     search: string;
 }

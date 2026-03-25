@@ -6,5 +6,6 @@ export class EmptyFilters implements Filters {
     public type: string = "";
     public goal: string = "";
     public domain: string = "";
+    public repository: string = "";
     public search: string = "";
 }
