@@ -9,7 +9,7 @@ export interface Paper {
     llm?: string;
     language?: string;
     type?: string;
-    dataset?: string;
+    goal?: string;
     domain?: string;
     url?: string;
     repository?: string;

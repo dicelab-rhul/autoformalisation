@@ -2,7 +2,8 @@ export interface Filters {
     llm: string;
     language: string;
     type: string;
-    dataset: string;
+    goal: string;
     domain: string;
+    repository: string;
     search: string;
 }

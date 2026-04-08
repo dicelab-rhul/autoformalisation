@@ -30,7 +30,7 @@ export class AutoFormalisationPaperLoader {
             llm:       AutoFormalisationPaperLoader.toOptionalStr(obj["llm"]),
             language:  AutoFormalisationPaperLoader.toOptionalStr(obj["language"]),
             type:      AutoFormalisationPaperLoader.toOptionalStr(obj["type"]),
-            dataset:   AutoFormalisationPaperLoader.toOptionalStr(obj["dataset"]),
+            goal:   AutoFormalisationPaperLoader.toOptionalStr(obj["goal"]),
             domain:    AutoFormalisationPaperLoader.toOptionalStr(obj["domain"]),
             url:       AutoFormalisationPaperLoader.toOptionalStr(obj["url"]),
             repository: AutoFormalisationPaperLoader.toOptionalStr(obj["repository"]),
