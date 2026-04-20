@@ -113,7 +113,7 @@ export class AutoFormalisationPaperDiv implements AutoFormalisationDiv {
             { key: "llm", label: "LLM" },
             { key: "language", label: "Language" },
             { key: "type", label: "Type" },
-            { key: "domain", label: "Domain" },
+            { key: "area", label: "Area" },
             { key: "goal", label: "Goal" },
             { key: "repository", label: "Repository" },
             { key: "url", label: "Paper", isLink: true },

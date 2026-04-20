@@ -231,6 +231,7 @@ a:hover {
     font-size: 13px;
     outline: none;
     transition: border-color 0.15s;
+    width: 160px;
 }
 
 #filter-search:focus {
@@ -246,6 +247,7 @@ a:hover {
     font-size: 13px;
     outline: none;
     transition: border-color 0.15s;
+    width: 160px;
 }
 
 #filters-div select:focus {

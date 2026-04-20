@@ -3,7 +3,7 @@ export interface Filters {
     language: string;
     type: string;
     goal: string;
-    domain: string;
+    area: string;
     repository: string;
     search: string;
 }
