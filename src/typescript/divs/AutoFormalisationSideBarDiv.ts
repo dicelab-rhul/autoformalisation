@@ -16,10 +16,15 @@ export class AutoFormalisationSidebarDiv {
         // Title
         const titleDiv = document.createElement("div");
         titleDiv.id = "sidebar-title";
-        titleDiv.innerHTML = `
-            <h1>Autoformalization Papers</h1>
-            <p>A curated repository of research on translating informal language into formal representations for automated reasoning and verification.</p>
-        `;
+
+        const h1 = document.createElement("h1");
+        h1.textContent = "Autoformalization Papers";
+        titleDiv.appendChild(h1);
+
+        const p = document.createElement("p");
+        p.textContent = "A curated repository of research on translating informal language into formal representations for automated reasoning and verification.";
+        titleDiv.appendChild(p);
+
         this.div.appendChild(titleDiv);
 
         // Nav
@@ -35,7 +40,13 @@ export class AutoFormalisationSidebarDiv {
         for (const item of items) {
             const btn = document.createElement("button");
             btn.className = "nav-item";
-            btn.innerHTML = `<span class="nav-icon">${item.icon}</span>${item.label}`;
+
+            const iconSpan = document.createElement("span");
+            iconSpan.className = "nav-icon";
+            iconSpan.textContent = item.icon;
+            btn.appendChild(iconSpan);
+            btn.appendChild(document.createTextNode(item.label));
+
             if (item.page === this.activePage) btn.classList.add("active");
 
             btn.addEventListener("click", () => {
