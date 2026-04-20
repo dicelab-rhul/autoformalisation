@@ -8,11 +8,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
     private searchLabel!: HTMLLabelElement;
     private searchInput!: HTMLInputElement;
 
-    private readonly llms: string[];
-    private llmFilterLabel!: HTMLLabelElement;
-    private llmFilterSelect!: HTMLSelectElement;
-    private llmFilterOptions!: HTMLOptionElement[];
-
     private readonly languages: string[];
     private languageFilterLabel!: HTMLLabelElement;
     private languageFilterSelect!: HTMLSelectElement;
@@ -45,9 +40,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
 
     private packed: boolean;
 
-    public constructor(llms: string[], languages: string[], types: string[], goals: string[], areas: string[], repositories: string[], callback: (filters: any) => void) {
-        AutoFormalisationValidator.ensureExists(llms, "LLMs cannot be null or undefined.");
-        AutoFormalisationValidator.ensureAllExist(llms, "LLM values cannot be null or undefined.");
+    public constructor(languages: string[], types: string[], goals: string[], areas: string[], repositories: string[], callback: (filters: any) => void) {
         AutoFormalisationValidator.ensureExists(languages, "Languages cannot be null or undefined.");
         AutoFormalisationValidator.ensureAllExist(languages, "Language values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(types, "Types cannot be null or undefined.");
@@ -60,14 +53,13 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         AutoFormalisationValidator.ensureAllExist(repositories, "Repositories values cannot be null or undefined.");
         AutoFormalisationValidator.ensureExists(callback, "Callback cannot be null or undefined.");
 
-        this.llms = llms;
         this.languages = languages;
         this.types = types;
         this.goals = goals;
         this.areas = areas;
         this.repositories = repositories;
 
-        this.callback = callback;  
+        this.callback = callback;
 
         this.div = document.createElement("div");
 
@@ -88,12 +80,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.searchInput.id = "filter-search";
         this.searchInput.name = "filter-search";
 
-        // LLM Filter
-        this.llmFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-llm", "LLM:");
-        this.llmFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-llm", []);
-        this.llmFilterSelect.name = "filter-llm";
-        this.llmFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.llmFilterSelect, new Set(this.llms));
-
         // Language Filter
         this.languageFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-lang", "Language:");
         this.languageFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-lang", []);
@@ -111,7 +97,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.goalFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-goal", []);
         this.goalFilterSelect.name = "filter-goal";
         this.goalFilterOptions = AutoFormalisationFiltersDiv.createOptionElements(this.goalFilterSelect, new Set(this.goals));
-        
+
         // Area Filter
         this.areaFilterLabel = AutoFormalisationHTMLUtils.createLabel("filter-area", "Area:");
         this.areaFilterSelect = AutoFormalisationHTMLUtils.createSelectElement("filter-area", []);
@@ -133,7 +119,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
 
             this.callback({
                 search: this.searchInput.value,
-                llm: this.llmFilterSelect.value,
                 language: this.languageFilterSelect.value,
                 type: this.typeFilterSelect.value,
                 goal: this.goalFilterSelect.value,
@@ -159,7 +144,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
             console.log("Clear Filters button clicked.");
 
             this.searchInput.value = this.searchInput.defaultValue;
-            this.llmFilterSelect.value = this.llmFilterSelect.options[0].value;
             this.languageFilterSelect.value = this.languageFilterSelect.options[0].value;
             this.typeFilterSelect.value = this.typeFilterSelect.options[0].value;
             this.goalFilterSelect.value = this.goalFilterSelect.options[0].value;
@@ -168,7 +152,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
 
             this.callback({
                 search: "",
-                llm: "",
                 language: "",
                 type: "",
                 goal: "",
@@ -249,11 +232,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         this.div.appendChild(this.searchInput);
         this.div.appendChild(document.createElement("br"));
 
-        // LLM Filter
-        AutoFormalisationFiltersDiv.appendOptionsToSelect(this.llmFilterSelect, this.llmFilterOptions);
-        this.div.appendChild(this.llmFilterLabel);
-        this.div.appendChild(this.llmFilterSelect);
-
         // Language Filter
         AutoFormalisationFiltersDiv.appendOptionsToSelect(this.languageFilterSelect, this.languageFilterOptions);
         this.div.appendChild(this.languageFilterLabel);
@@ -299,8 +277,6 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
         }
 
         AutoFormalisationValidator.ensureAllExist([this.searchLabel, this.searchInput]);
-        AutoFormalisationValidator.ensureAllExist([this.llmFilterLabel, this.llmFilterSelect]);
-        AutoFormalisationValidator.ensureAllExist(this.llmFilterOptions);
         AutoFormalisationValidator.ensureAllExist([this.languageFilterLabel, this.languageFilterSelect]);
         AutoFormalisationValidator.ensureAllExist(this.languageFilterOptions);
         AutoFormalisationValidator.ensureAllExist([this.typeFilterLabel, this.typeFilterSelect]);

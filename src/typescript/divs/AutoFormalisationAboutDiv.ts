@@ -22,7 +22,7 @@ export class AutoFormalisationAboutDiv {
     }
     private addSection(title: string, html: string): void {
         const section = document.createElement("div");
-        section.className = "about-section";
+        section.className = "home-section";
         section.innerHTML = `<h2>${title}</h2>${html}`;
         this.div.appendChild(section);
     }

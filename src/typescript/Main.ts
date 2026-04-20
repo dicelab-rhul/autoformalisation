@@ -34,6 +34,7 @@ export class Main {
         const sidebar = new AutoFormalisationSidebarDiv((page: Page) => {
             homePage.hide();
             browseDiv.getDiv().hidden = true;
+            about.hide();
 
             if (page === "home") {
                 homePage.show();
