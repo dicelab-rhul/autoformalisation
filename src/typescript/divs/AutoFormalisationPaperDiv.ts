@@ -96,11 +96,11 @@ export class AutoFormalisationPaperDiv implements AutoFormalisationDiv {
         this.div.appendChild(h3);
 
         const meta: HTMLParagraphElement = document.createElement("p");
-        const strong: HTMLElement = document.createElement("strong");
+        const authorSpan: HTMLElement = document.createElement("span");
+        authorSpan.className = "bold-text";
+        authorSpan.textContent = this.paper.author ?? "";
 
-        strong.textContent = this.paper.author ?? "";
-
-        meta.appendChild(strong);
+        meta.appendChild(authorSpan);
         meta.appendChild(document.createTextNode(` (${this.paper.year ?? ""})`));
 
         this.div.appendChild(meta);
@@ -113,7 +113,7 @@ export class AutoFormalisationPaperDiv implements AutoFormalisationDiv {
             { key: "llm", label: "LLM" },
             { key: "language", label: "Language" },
             { key: "type", label: "Type" },
-            { key: "domain", label: "Domain" },
+            { key: "area", label: "Area" },
             { key: "goal", label: "Goal" },
             { key: "repository", label: "Repository" },
             { key: "url", label: "Paper", isLink: true },

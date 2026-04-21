@@ -1,58 +1,54 @@
 import { AutoFormalisationMainContainerDiv } from "./divs/AutoFormalisationMainContainerDiv";
 import { AutoFormalisationPaperLoader } from "./papers/AutoFormalisationPaperLoader";
+import { AutoFormalisationSidebarDiv, Page } from "./divs/AutoFormalisationSideBarDiv";
+import { AutoFormalisationHomePageDiv } from "./divs/AutoFormalisationHomePageDiv";
 import { Paper } from "./papers/Paper";
 import { EmptyFilters } from "./papers/EmptyFilters";
-import { AutoFormalisationWelcomeDiv } from "./divs/AutoFormalisationWelcomeDiv";
+import { AutoFormalisationAboutDiv } from "./divs/AutoFormalisationAboutDiv";
 
 export class Main {
     private constructor() {}
 
     public static async main(): Promise<void> {
-        const cookieName: string = "WelcomeMessageAlreadySeen";
-        const cookieValue: string = "true";
-
-        Main.removeCommentsFromBody();
-
-        if (document.cookie.includes(`${cookieName}=${cookieValue}`)) {
-            Main.initializeApp();
-        }
-        else {
-            const welcomeMessage: string = "Welcome to the Awesome LLM Papers collection! This website is a curated collection of papers on Large Language Models (LLMs). We have gathered a wide range of papers covering various aspects of LLMs, including their architecture, training methods, applications, and ethical considerations. We hope you find this collection useful for your research and exploration of LLMs. Feel free to explore the papers and use the filters to find papers that match your interests. Enjoy your journey through the world of LLMs!";
-
-            Main.showWelcomeMessage(welcomeMessage, cookieName, cookieValue);
-        }
-    }
-
-    private static showWelcomeMessage(message: string, cookieName: string, cookieValue: string): void {
-        const welcomeDiv: AutoFormalisationWelcomeDiv = new AutoFormalisationWelcomeDiv(message, cookieName, cookieValue, Main.initializeApp.bind(this));
-
-        welcomeDiv.pack();
-
-        document.body.appendChild(welcomeDiv.getDiv());
-
-        welcomeDiv.show();
-    }
-
-    private static async initializeApp(): Promise<void> {
         const papersJsonPath: string = "_data/papers.json";
-        const [papers, llmCount, languageCount]: [Paper[], number, number] = await AutoFormalisationPaperLoader.loadPapers(papersJsonPath);
-        const mainMessage: string = "Awesome LLM papers";
-        const counterMessage: string = `Papers: ${papers.length} | LLMs: ${llmCount} | Languages: ${languageCount}`;
-        const description: string = "Explore this collection of papers on LLMs. Use the filters to narrow down your search and find papers that match your interests.";
-        const mainContainerDiv: AutoFormalisationMainContainerDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), mainMessage, counterMessage, description);
+        const [papers] = await AutoFormalisationPaperLoader.loadPapers(papersJsonPath);
 
-        mainContainerDiv.pack();
+        // Main content wrapper
+        const mainContent = document.createElement("div");
+        mainContent.id = "main-content";
 
-        document.body.appendChild(mainContainerDiv.getDiv());
+        // Pages
+        const homePage = new AutoFormalisationHomePageDiv();
+        const browseDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), "Browse Papers", "", "Filter and search the autoformalization paper catalogue.");
+        const about = new AutoFormalisationAboutDiv();
 
-        mainContainerDiv.show();
-    }
+        browseDiv.pack();
+        browseDiv.getDiv().hidden = true;
+        about.getDiv().hidden = true;
 
-    public static removeCommentsFromBody(): void {
-        for (const node of Array.from(document.body.childNodes)) {
-            if (node.nodeType === Node.COMMENT_NODE) {
-                node.remove();
+        mainContent.appendChild(homePage.getDiv());
+        mainContent.appendChild(browseDiv.getDiv());
+        mainContent.appendChild(about.getDiv());
+
+        // Sidebar
+        const sidebar = new AutoFormalisationSidebarDiv((page: Page) => {
+            homePage.hide();
+            browseDiv.getDiv().hidden = true;
+            about.hide();
+
+            if (page === "home") {
+                homePage.show();
+            } else if (page === "browse") {
+                browseDiv.getDiv().hidden = false;
+                browseDiv.show();
+            } else if (page === "about") {
+                about.getDiv().hidden = false;
+                about.show();
             }
-        }
+            // trends, contribute, about — add pages later
+        });
+
+        document.body.appendChild(sidebar.getDiv());
+        document.body.appendChild(mainContent);
     }
 }

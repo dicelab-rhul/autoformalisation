@@ -6,12 +6,12 @@
         "title": "Towards a {Mathematics} {Formalisation} {Assistant} using {Large} {Language} {Models}",
         "year": "2022",
         "doi": "10.48550/arXiv.2211.07524",
-        "url": "https://arxiv.org/abs/2211.07524",
+        "url": "http://arxiv.org/abs/2211.07524",
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
         "goal": "Translation",
         "type": "Article",
         "repository": "NA"
@@ -27,8 +27,8 @@
         "journal": "arXiv preprint arXiv:2210.12283",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
         "goal": "Proof guidance",
         "type": "Article",
         "repository": "https://github.com/albertqjiang/draft_sketch_prove"
@@ -44,8 +44,8 @@
         "journal": "Advances in Neural Information Processing Systems",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
+        "area": "Interactive Theorem Proving",
+        "language": "Lean;Isabelle/HOL",
         "goal": "Improving autoformalization",
         "type": "Article",
         "repository": "https://github.com/albertqjiang/MMA"
@@ -61,8 +61,8 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
         "goal": "Improving autoformalization",
         "type": "Article",
         "repository": "https://github.com/Miracle-Messi/Isa-AutoFormal"
@@ -78,11 +78,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/XiaoyangLiu-sjtu/ATLAS"
     },
     {
         "id": "liu_rethinking_2024",
@@ -95,11 +95,11 @@
         "journal": "",
         "booktitle": "Proceedings of The Thirteenth International Conference on Learning Representations",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/Purewhite2019/rethinking_autoformalization"
     },
     {
         "id": "murphy_autoformalizing_2024",
@@ -112,11 +112,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Translation",
+        "type": "Aricle",
+        "repository": "https://github.com/loganrjmurphy/LeanEuclid"
     },
     {
         "id": "wu_autoformalization_2022",
@@ -129,28 +129,11 @@
         "journal": "Advances in Neural Information Processing Systems",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "xin2025ape",
-        "entrytype": "article",
-        "authors": "Xin, Huajian and Li, Luming and Jin, Xiaoran and Fleuriot, Jacques and Li, Wenda",
-        "title": "APE-Bench I: Towards File-level Automated Proof Engineering of Formal Math Libraries",
-        "year": "2025",
-        "doi": "",
-        "url": "",
-        "journal": "arXiv preprint arXiv:2504.19110",
-        "booktitle": "",
-        "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "ying_lean_2024",
@@ -163,11 +146,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://huggingface.co/datasets/internlm/Lean-Workbook"
     },
     {
         "id": "zhang_consistent_2024",
@@ -180,11 +163,11 @@
         "journal": "",
         "booktitle": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/lanzhang128/retrieval_augmented_autoformalization"
     },
     {
         "id": "zhang_formalizing_2025",
@@ -197,11 +180,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/lanzhang128/definition_autoformalization"
     },
     {
         "id": "zhou_dont_2024",
@@ -214,11 +197,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "ITP",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/jinpz/dtv"
     },
     {
         "id": "chen_nl2tl_2023",
@@ -231,11 +214,11 @@
         "journal": "",
         "booktitle": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
         "venue": "",
-        "domain": "Temporal logic",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/yongchao98/NL2TL"
     },
     {
         "id": "cllamp2024extract",
@@ -248,11 +231,11 @@
         "journal": "",
         "booktitle": "Proceedings of the ICAPS Workshop on Knowledge Engineering for Planning and Scheduling (KEPS)",
         "venue": "",
-        "domain": "Planning",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation,Other",
+        "type": "Article",
+        "repository": "https://github.com/ronwalf/CLLaMP"
     },
     {
         "id": "evaluating2024capabilities",
@@ -265,11 +248,11 @@
         "journal": "",
         "booktitle": "CEUR WORKSHOP PROCEEDINGS",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "chaturvedi2024learning",
@@ -282,11 +265,11 @@
         "journal": "arXiv preprint arXiv:2410.03203",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Translation;Improving autoformalization",
+        "type": "Article",
+        "repository": "https://huggingface.co/akshay107/nl-to-fol"
     },
     {
         "id": "kambhampati_position_2024",
@@ -299,11 +282,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Other",
+        "type": "Position",
+        "repository": "NA"
     },
     {
         "id": "lalwani_autoformalizing_2024",
@@ -316,11 +299,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/lovishchopra/NL2FOL"
     },
     {
         "id": "li2023logiclm",
@@ -333,11 +316,11 @@
         "journal": "",
         "booktitle": "The 2023 Conference on Empirical Methods in Natural Language Processing",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic; Constraint Satisfaction;Logic Programming;SAT",
+        "language": "Custom",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/teacherpeterpan/Logic-LLM"
     },
     {
         "id": "lin2025code4logic",
@@ -350,11 +333,11 @@
         "journal": "",
         "booktitle": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "liu_lang2ltl-2_2024",
@@ -367,11 +350,11 @@
         "journal": "",
         "booktitle": "2024 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots} and {Systems} ({IROS})",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation;Grounding",
+        "type": "Article",
+        "repository": "https://spatiotemporal-ground.github.io/"
     },
     {
         "id": "liu2025safe",
@@ -384,11 +367,11 @@
         "journal": "arXiv preprint arXiv:2506.04592",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/liuchengwucn/Safe"
     },
     {
         "id": "mavrogiannis_cook2ltl_2024",
@@ -401,11 +384,11 @@
         "journal": "",
         "booktitle": "2024 {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation;Grounding",
+        "type": "Article",
+        "repository": "https://github.com/angmavrogiannis/Cook2LTL"
     },
     {
         "id": "mensfelt_gama_2024",
@@ -418,10 +401,10 @@
         "journal": "",
         "booktitle": "Proceedings of the European Conference on Artificial Intelligence (ECAI)",
         "venue": "",
-        "domain": "Normal Logic Programs",
-        "target formalism": "",
-        "goal": "Verified reasoning",
-        "type": "TBA",
+        "area": "Logic Programs;Game Theory",
+        "language": "Prolog",
+        "goal": "Translation;Verified reasoning",
+        "type": "Article",
         "repository": "https://github.com/dicelab-rhul/GAMA"
     },
     {
@@ -435,11 +418,11 @@
         "journal": "",
         "booktitle": "Intelligent Computer Mathematics: 13th International Conference, CICM 2020, Bertinoro, Italy, July 26--31, 2020, Proceedings 13",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Other",
+        "language": "NA",
+        "goal": "Other",
+        "type": "Position",
+        "repository": "NA"
     },
     {
         "id": "yang2024formal",
@@ -452,11 +435,11 @@
         "journal": "arXiv preprint arXiv:2412.16075",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Other",
+        "language": "NA",
+        "goal": "Other",
+        "type": "Position",
+        "repository": "NA"
     },
     {
         "id": "aghzal_survey_2025",
@@ -469,11 +452,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "NA",
+        "goal": "Other",
+        "type": "Survey",
+        "repository": "NA"
     },
     {
         "id": "babaei_llm4ol_2024",
@@ -486,11 +469,11 @@
         "journal": "",
         "booktitle": "LLMs4OL 2024: The 1st Large Language Models for Ontology Learning Challenge at the 23rd ISWC, \\emph{Co-located with the 23rd International Semantic Web Conference {(ISWC} 2024)}, Baltimore, Maryland, USA, November 11-15, 2024",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/HamedBabaei/LLMs4OL-Challenge-ISWC2024"
     },
     {
         "id": "caufield_structured_2024",
@@ -503,11 +486,11 @@
         "journal": "Bioinform.",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/monarch-initiative/ontogpt"
     },
     {
         "id": "chan_lean-ing_2025",
@@ -520,11 +503,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "cunningham_towards_2023",
@@ -537,11 +520,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Coq",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/not-gary/autoformalization"
     },
     {
         "id": "doumanas_sar_2024",
@@ -554,11 +537,11 @@
         "journal": "",
         "booktitle": "Artificial Intelligence Applications and Innovations - 20th {IFIP} {WG} 12.5 International Conference, {AIAI} 2024, Corfu, Greece, June 27-30, 2024, Proceedings, Part {IV}",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "ells_commonsense_2024",
@@ -571,11 +554,11 @@
         "journal": "",
         "booktitle": "Neural-Symbolic Learning and Reasoning - 18th International Conference, NeSy 2024, Barcelona, Spain, September 9-12, 2024, Proceedings, Part {II}",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/kastle-lab/commonsense-micropatterns/"
     },
     {
         "id": "groza_ontology_2023",
@@ -588,11 +571,11 @@
         "journal": "",
         "booktitle": "25th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing, {SYNASC} 2023, Nancy, France, September 11-14, 2023",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "jiang_language_2025",
@@ -605,11 +588,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean;Isabelle/HOL",
+        "goal": "Translation",
+        "type": "Thesis",
+        "repository": "NA"
     },
     {
         "id": "li_large_2025",
@@ -622,11 +605,11 @@
         "journal": "",
         "booktitle": "Proceedings of the Special Session on Harmonising Generative {AI} and Semantic Web Technologies {(HGAIS} 2024)",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Survey",
+        "repository": "NA"
     },
     {
         "id": "lippolis_ontology_2025",
@@ -639,11 +622,11 @@
         "journal": "",
         "booktitle": "The Semantic Web - 22nd European Semantic Web Conference, {ESWC} 2025, Portoroz, Slovenia, June 1-5, 2025, Proceedings, Part {I}",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/dersuchendee/Onto-Generation"
     },
     {
         "id": "liu_llmp_2023",
@@ -656,11 +639,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/Cranial-XIX/llm-pddl"
     },
     {
         "id": "lu_process-driven_2024",
@@ -673,11 +656,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/rookie-joe/PDA"
     },
     {
         "id": "patel_new_2023",
@@ -690,28 +673,28 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/jlab-nlp/arxiv2formal"
     },
     {
         "id": "poiroux_improving_2024",
         "entrytype": "misc",
-        "authors": "Poiroux, Auguste and Weiss, Gail and Kunčak, Viktor and Bosselut, Antoine",
-        "title": "Improving {Autoformalization} using {Type} {Checking}",
-        "year": "2024",
-        "doi": "10.48550/ARXIV.2406.07222",
+        "authors": "Auguste Poiroux and Gail Weiss and Viktor Kunčak and Antoine Bosselut",
+        "title": "Reliable Evaluation and Benchmarks for Statement Autoformalization",
+        "year": "2025",
+        "doi": "",
         "url": "https://arxiv.org/abs/2406.07222",
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/augustepoiroux/RLMEval"
     },
     {
         "id": "saaedizade_navigating_2024",
@@ -724,11 +707,11 @@
         "journal": "",
         "booktitle": "The Semantic Web - 21st International Conference, {ESWC} 2024, Hersonissos, Crete, Greece, May 26-30, 2024, Proceedings, Part {I}",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/LiUSemWeb/LLMs4OntologyDev-ESWC2024"
     },
     {
         "id": "sadeq_leveraging_2025",
@@ -741,11 +724,11 @@
         "journal": "CoRR",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Knowledge Graphs",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "tang_domain_2023",
@@ -758,11 +741,11 @@
         "journal": "",
         "booktitle": "26th {IEEE} International Conference on Intelligent Transportation Systems, {ITSC} 2023, Bilbao, Spain, September 24-28, 2023",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Ontologies",
+        "language": "OWL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "zhang_extract_2024",
@@ -775,11 +758,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Knowledge Graphs",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/clear-nus/edc"
     },
     {
         "id": "azerbayev_proofnet_2023",
@@ -792,28 +775,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "poiroux2024typecheck",
-        "entrytype": "article",
-        "authors": "Poiroux, Auguste and Weiss, Gail and Kun{\\v{c}}ak, Viktor and Bosselut, Antoine",
-        "title": "Improving Autoformalization using Type Checking",
-        "year": "2024",
-        "doi": "",
-        "url": "",
-        "journal": "arXiv preprint arXiv:2406.07222",
-        "booktitle": "",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Benchmark",
+        "type": "Article",
+        "repository": "https://github.com/zhangir-azerbayev/ProofNet"
     },
     {
         "id": "liu2024rethinking",
@@ -826,11 +792,11 @@
         "journal": "",
         "booktitle": "The Thirteenth International Conference on Learning Representations (ICLR)",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/Purewhite2019/rethinking_autoformalization"
     },
     {
         "id": "deng_natural_2025",
@@ -843,11 +809,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Game Theory",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/zczlsde/GameInterpreter"
     },
     {
         "id": "hu2024stepproof",
@@ -860,11 +826,11 @@
         "journal": "arXiv preprint arXiv:2506.10558",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Isabelle/HOL",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "hahn_formal_2022",
@@ -877,11 +843,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic;Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "han_folio_2022",
@@ -894,11 +860,28 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Benchmark",
+        "type": "Article",
+        "repository": "https://github.com/Yale-LILY/FOLIO"
+    },
+    {
+        "id": "li2025logic",
+        "entrytype": "article",
+        "authors": "Li, Naiqi and Liu, Peiyuan and Liu, Zheng and Dai, Tao and Jiang, Yong and Xia, Shu-Tao",
+        "title": "Logic-of-Thought: Empowering Large Language Models with Logic Programs for Solving Puzzles in Natural Language",
+        "year": "2025",
+        "doi": "",
+        "url": "https://arxiv.org/abs/2505.16114",
+        "journal": "arXiv preprint arXiv:2505.16114",
+        "booktitle": "",
+        "venue": "",
+        "area": "Answer Set Programming",
+        "language": "Clingo",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/naiqili/Logic-of-Thought"
     },
     {
         "id": "ryu_divide_2024",
@@ -911,11 +894,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/Hyun-Ryu/clover"
     },
     {
         "id": "smirnov_generating_2024",
@@ -928,11 +911,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/HRI-EU/pddl-domains"
     },
     {
         "id": "thatikonda_strategies_2024",
@@ -945,11 +928,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/RamyaKeerthy/Translation-NL2FOL"
     },
     {
         "id": "wang_conformalnl2ltl_2025",
@@ -958,15 +941,15 @@
         "title": "{ConformalNL2LTL}: {Translating} {Natural} {Language} {Instructions} into {Temporal} {Logic} {Formulas} with {Conformal} {Correctness} {Guarantees}",
         "year": "2025",
         "doi": "10.48550/arXiv.2504.21022",
-        "url": "https://arxiv.org/abs/2504.21022",
+        "url": "http://arxiv.org/abs/2504.21022",
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/kantaroslab/ConformalNL2LTL"
     },
     {
         "id": "weng2025autoformalization",
@@ -979,11 +962,11 @@
         "journal": "arXiv preprint arXiv:2505.23486",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "NA",
+        "goal": "Other",
+        "type": "Survey",
+        "repository": "NA"
     },
     {
         "id": "xu_learning_2024",
@@ -996,11 +979,11 @@
         "journal": "",
         "booktitle": "2024 {IEEE} 24th {International} {Conference} on {Software} {Quality}, {Reliability} and {Security} ({QRS})",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "brunello2025evaluating",
@@ -1013,11 +996,11 @@
         "journal": "",
         "booktitle": "Proceedings of the Logic and Engineering of Natural Language Semantics (LENLS) Workshop 2025",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "guan2023leveraging",
@@ -1030,11 +1013,11 @@
         "journal": "Advances in Neural Information Processing Systems",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/GuanSuns/LLMs-World-Models-for-Planning"
     },
     {
         "id": "hu_text2world_2025",
@@ -1047,11 +1030,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Benchmark",
+        "type": "Article",
+        "repository": "https://github.com/Aaron617/text2world"
     },
     {
         "id": "huang_limit_2024",
@@ -1064,28 +1047,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "li2025logicofthought",
-        "entrytype": "article",
-        "authors": "Li, Naiqi and Liu, Peiyuan and Liu, Zheng and Dai, Tao and Jiang, Yong and Xia, Shu-Tao",
-        "title": "Logic-of-Thought: Empowering Large Language Models with Logic Programs for Solving Puzzles in Natural Language",
-        "year": "2025",
-        "doi": "",
-        "url": "https://arxiv.org/abs/2505.16114",
-        "journal": "arXiv preprint arXiv:2505.16114",
-        "booktitle": "",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/CassieHuang22/llm-as-pddl-formalizer"
     },
     {
         "id": "lin_text2motion_2023",
@@ -1098,11 +1064,11 @@
         "journal": "Autonomous Robots",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "mahdavi_leveraging_2024",
@@ -1115,28 +1081,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "mahdavi_leveraging_2024-1",
-        "entrytype": "misc",
-        "authors": "Mahdavi, Sadegh and Aoki, Raquel and Tang, Keyi and Cao, Yanshuai",
-        "title": "Leveraging {Environment} {Interaction} for {Automated} {PDDL} {Translation} and {Planning} with {Large} {Language} {Models}",
-        "year": "2024",
-        "doi": "10.48550/ARXIV.2407.12979",
-        "url": "https://arxiv.org/abs/2407.12979",
-        "journal": "",
-        "booktitle": "",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/BorealisAI/llm-pddl-planning"
     },
     {
         "id": "oswald_large_2024",
@@ -1149,11 +1098,11 @@
         "journal": "Proceedings of the International Conference on Automated Planning and Scheduling",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation;Benchmark",
+        "type": "Article",
+        "repository": "https://github.com/IBM/NL2PDDL"
     },
     {
         "id": "silver_generalized_2024",
@@ -1166,11 +1115,11 @@
         "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "Custom",
+        "goal": "Other",
+        "type": "Article",
+        "repository": "https://github.com/tomsilver/llm-genplan"
     },
     {
         "id": "soroco2025pde",
@@ -1183,28 +1132,11 @@
         "journal": "arXiv preprint arXiv:2502.00963",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "stein2024automating",
-        "entrytype": "inproceedings",
-        "authors": "Katharina Stein and Daniel Fi{\\v{s}}er and J{\\\"o}rg Hoffmann and Alexander Koller",
-        "title": "Automating the Generation of Prompts for LLM-based Action Choice in PDDL Planning",
-        "year": "2024",
-        "doi": "",
-        "url": "https://arxiv.org/abs/2311.09830",
-        "journal": "",
-        "booktitle": "Proceedings of the ICAPS Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Temporal Logic",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/delta-lab-ai/pde-controller"
     },
     {
         "id": "wang2025let",
@@ -1217,11 +1149,11 @@
         "journal": "arXiv preprint arXiv:2505.23703",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/RickySkywalker/HybridReasoning"
     },
     {
         "id": "xie_translating_2023",
@@ -1234,11 +1166,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/clear-nus/gpt-pddl"
     },
     {
         "id": "de_la_rosa_trip-pal_2024",
@@ -1251,11 +1183,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation;Verified reasoning",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "lee_safeguarding_2025",
@@ -1268,11 +1200,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/VeriSafeAgent/VeriSafeAgent"
     },
     {
         "id": "liu2025atlas",
@@ -1285,11 +1217,11 @@
         "journal": "arXiv preprint arXiv:2502.05567",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Improving autoformalization",
+        "type": "Article",
+        "repository": "https://github.com/XiaoyangLiu-sjtu/ATLAS"
     },
     {
         "id": "lu2024formalalign",
@@ -1302,11 +1234,11 @@
         "journal": "",
         "booktitle": "The Thirteenth International Conference on Learning Representations (ICLR)",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Benchmark",
+        "type": "Article",
+        "repository": "https://github.com/rookie-joe/formalalign"
     },
     {
         "id": "mensfelt_autoformalization_2024",
@@ -1319,11 +1251,28 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "Normal Logic Programs",
-        "target formalism": "",
-        "goal": "Translation",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Logic Programs;Game Theory",
+        "language": "Prolog",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/dicelab-rhul/game-formaliser"
+    },
+    {
+        "id": "mensfelt2024lelma",
+        "entrytype": "inproceedings",
+        "authors": "Agnieszka Mensfelt and Kostas Stathis and Vince Trencsenyi",
+        "title": "Towards Logically Sound Natural Language Reasoning with Logic-Enhanced Language Model Agents",
+        "year": "2025",
+        "doi": "10.1109/ICTAI66417.2025.00122",
+        "url": "",
+        "journal": "",
+        "booktitle": "Proceedings of the 2025 IEEE 37th International Conference on Tools with Artificial Intelligence",
+        "venue": "",
+        "area": "Logic Programs;Game Theory",
+        "language": "Prolog",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/dicelab-rhul/LELMA"
     },
     {
         "id": "olausson_linc_2023",
@@ -1336,11 +1285,11 @@
         "journal": "",
         "booktitle": "Proceedings of the 2023 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/benlipkin/linc"
     },
     {
         "id": "quan_verification_2024",
@@ -1353,11 +1302,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Isabelle/HOL",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/neuro-symbolic-ai/explanation_refinement"
     },
     {
         "id": "sikes_creating_2025",
@@ -1370,28 +1319,11 @@
         "journal": "",
         "booktitle": "AAAI 2025 Workshop LM4Plan",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "soroco2025pdecontroller",
-        "entrytype": "article",
-        "authors": "Soroco, Mauricio and Song, Jialin and Xia, Mengzhou and Emond, Kye and Sun, Weiran and Chen, Wuyang",
-        "title": "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
-        "year": "2025",
-        "doi": "",
-        "url": "https://arxiv.org/abs/2502.00963",
-        "journal": "arXiv preprint arXiv:2502.00963",
-        "booktitle": "",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Planning",
+        "language": "PDDL",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "wang2020exploration",
@@ -1404,28 +1336,11 @@
         "journal": "",
         "booktitle": "Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "wang2025conformalnl2ltl",
-        "entrytype": "article",
-        "authors": "Wang, Jun and Sundarsingh, David Smith and Deshmukh, Jyotirmoy V. and Kantaros, Yiannis",
-        "title": "ConformalNL2LTL: Translating Natural Language Instructions into Temporal Logic Formulas with Conformal Correctness Guarantees",
-        "year": "2025",
-        "doi": "",
-        "url": "https://arxiv.org/abs/2504.21022",
-        "journal": "arXiv preprint arXiv:2504.21022",
-        "booktitle": "",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Mizar",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "yang_coupling_2023",
@@ -1438,11 +1353,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Answer Set Programming",
+        "language": "Clingo",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/azreasoners/LLM-ASP"
     },
     {
         "id": "yang_harnessing_2023",
@@ -1455,11 +1370,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "First Order Logic",
+        "language": "Custom",
+        "goal": "Verified reasoning",
+        "type": "Article",
+        "repository": "https://github.com/gblackout/LogicLLaMA"
     },
     {
         "id": "yu2025formalmathbenchmarkingformalmathematical",
@@ -1472,11 +1387,11 @@
         "journal": "",
         "booktitle": "",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean;Isabelle/HOL",
+        "goal": "Benchmark",
+        "type": "Article",
+        "repository": "https://github.com/Sphere-AI-Lab/FormalMATH-Bench"
     },
     {
         "id": "zhao_nl2ctl_2024",
@@ -1489,11 +1404,11 @@
         "journal": "",
         "booktitle": "Formal {Methods} and {Software} {Engineering}",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Formal Methods",
+        "language": "Custom",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "gadgil2022towards",
@@ -1506,11 +1421,11 @@
         "journal": "",
         "booktitle": "36th Conference on Neural Information Processing Systems (NeurIPS 2022) Workshop on MATH-AI",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "kaliszyk2014developing",
@@ -1523,11 +1438,11 @@
         "journal": "",
         "booktitle": "International Conference on Intelligent Computer Mathematics",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "HOL Light; Mizar",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "kaliszyk2015learning",
@@ -1540,11 +1455,11 @@
         "journal": "",
         "booktitle": "Interactive Theorem Proving: 6th International Conference, ITP 2015, Nanjing, China, August 24-27, 2015, Proceedings 6",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "HOL Light",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "karatarakisleveraging",
@@ -1557,11 +1472,11 @@
         "journal": "",
         "booktitle": "9th Conference on Artificial Intelligence and Theorem Proving (AITP)",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Lean",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "https://github.com/mkaratarakis/autoformalization-LLMs"
     },
     {
         "id": "wang2018first",
@@ -1574,28 +1489,11 @@
         "journal": "",
         "booktitle": "Intelligent Computer Mathematics: 11th International Conference, CICM 2018, Hagenberg, Austria, August 13-17, 2018, Proceedings 11",
         "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
-    },
-    {
-        "id": "wang2025kimina",
-        "entrytype": "article",
-        "authors": "Wang, Haiming and Unsal, Mert and Lin, Xiaohan and Baksys, Mantas and Liu, Junqi and Santos, Marco Dos and Sung, Flood and Vinyes, Marina and Ying, Zhenzhe and Zhu, Zekai and others",
-        "title": "Kimina-prover preview: Towards large formal reasoning models with reinforcement learning",
-        "year": "2025",
-        "doi": "",
-        "url": "",
-        "journal": "arXiv preprint arXiv:2504.11354",
-        "booktitle": "",
-        "venue": "",
-        "domain": "TBA",
-        "target formalism": "",
-        "goal": "TBA",
-        "type": "TBA",
-        "repository": "TBA"
+        "area": "Interactive Theorem Proving",
+        "language": "Mizar",
+        "goal": "Translation",
+        "type": "Article",
+        "repository": "NA"
     },
     {
         "id": "boppana2026reasoning",

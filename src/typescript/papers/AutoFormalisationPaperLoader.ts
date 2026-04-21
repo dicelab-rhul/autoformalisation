@@ -31,7 +31,7 @@ export class AutoFormalisationPaperLoader {
             language:  AutoFormalisationPaperLoader.toOptionalStr(obj["language"]),
             type:      AutoFormalisationPaperLoader.toOptionalStr(obj["type"]),
             goal:   AutoFormalisationPaperLoader.toOptionalStr(obj["goal"]),
-            domain:    AutoFormalisationPaperLoader.toOptionalStr(obj["domain"]),
+            area:      AutoFormalisationPaperLoader.toOptionalStr(obj["area"]),
             url:       AutoFormalisationPaperLoader.toOptionalStr(obj["url"]),
             repository: AutoFormalisationPaperLoader.toOptionalStr(obj["repository"]),
         };

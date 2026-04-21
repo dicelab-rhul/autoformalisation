@@ -1,9 +1,8 @@
 export interface Filters {
-    llm: string;
     language: string;
     type: string;
     goal: string;
-    domain: string;
+    area: string;
     repository: string;
     search: string;
 }
