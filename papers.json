@@ -8,7 +8,7 @@
                 "title": "Towards a {Mathematics} {Formalisation} {Assistant} using {Large} {Language} {Models}",
                 "year": "2022",
                 "doi": "10.48550/arXiv.2211.07524",
-                "url": "http://arxiv.org/abs/2211.07524",
+                "url": "https://arxiv.org/abs/2211.07524",
                 "journal": "",
                 "booktitle": "",
                 "venue": "",
@@ -36,7 +36,7 @@
                 ],
                 "year": 2022,
                 "doi": "10.48550/arxiv.2211.07524",
-                "url": "http://arxiv.org/abs/2211.07524",
+                "url": "https://arxiv.org/abs/2211.07524",
                 "venue": "",
                 "venue_tokens": [],
                 "custom": {
@@ -693,9 +693,9 @@
                         ]
                     },
                     "type": {
-                        "text": "aricle",
+                        "text": "article",
                         "tokens": [
-                            "aricle"
+                            "article"
                         ]
                     },
                     "repository": {
@@ -5636,7 +5636,7 @@
                 "title": "{ConformalNL2LTL}: {Translating} {Natural} {Language} {Instructions} into {Temporal} {Logic} {Formulas} with {Conformal} {Correctness} {Guarantees}",
                 "year": "2025",
                 "doi": "10.48550/arXiv.2504.21022",
-                "url": "http://arxiv.org/abs/2504.21022",
+                "url": "https://arxiv.org/abs/2504.21022",
                 "journal": "",
                 "booktitle": "",
                 "venue": "",
@@ -5668,7 +5668,7 @@
                 ],
                 "year": 2025,
                 "doi": "10.48550/arxiv.2504.21022",
-                "url": "http://arxiv.org/abs/2504.21022",
+                "url": "https://arxiv.org/abs/2504.21022",
                 "venue": "",
                 "venue_tokens": [],
                 "custom": {
@@ -5716,9 +5716,9 @@
                         ]
                     },
                     "repository": {
-                        "text": "httpsgithubcomkantaroslabconformalnl2ltl",
+                        "text": "https://github.com/kantaroslab/ConformalNL2LTL",
                         "tokens": [
-                            "httpsgithubcomkantaroslabconformalnl2ltl"
+                            "https://github.com/kantaroslab/ConformalNL2LTL"
                         ]
                     }
                 }
