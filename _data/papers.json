@@ -115,7 +115,7 @@
         "area": "Interactive Theorem Proving",
         "language": "Lean",
         "goal": "Translation",
-        "type": "Aricle",
+        "type": "Article",
         "repository": "https://github.com/loganrjmurphy/LeanEuclid"
     },
     {
