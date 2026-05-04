@@ -2,13 +2,13 @@ import { AutoFormalisationDiv } from "./AutoFormalisationDiv";
 import { AutoFormalisationValidator } from "../utils/AutoFormalisationValidator";
 import { AutoFormalisationHTMLUtils } from "../utils/AutoFormalisationHTMLUtils";
 import { AutoFormalisationTopMessageDiv } from "./AutoFormalisationTopMessageDiv";
-import { AutoFormalisationStatisticsDiv } from "./AutoFormalisationStatisticsDiv";
 import { AutoFormalisationPaperDiv } from "./AutoFormalisationPaperDiv";
 import { Paper } from "../papers/Paper";
 import { Filters } from "../papers/Filters";
 import { EmptyFilters } from "../papers/EmptyFilters";
 import { AutoFormalisationPapersDiv } from "./AutoFormalisationPapersDiv";
 import { AutoFormalisationFiltersDiv } from "./AutoFormalisationFiltersDiv";
+import { AutoFormalisationPaginationDiv } from "./AutoFormalisationPaginationDiv";
 
 export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     private readonly div: HTMLDivElement;
@@ -19,7 +19,10 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     private readonly counterMessage: string;
     private readonly description: string;
     private packed: boolean;
-    private currentStatisticsDiv!: AutoFormalisationStatisticsDiv;
+    private currentPage: number = 1;
+    private readonly pageSize: number = 20;
+    private currentlyVisiblePapers: Paper[] = [];
+    private currentPaginationDiv!: AutoFormalisationPaginationDiv;
 
     public constructor(papers: Paper[], filters: Filters, topMessage: string, counterMessage: string, description: string) {
         AutoFormalisationValidator.ensureExists(papers, "The papers list cannot be null or undefined.");
@@ -30,6 +33,7 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         AutoFormalisationValidator.ensureExists(description, "The description cannot be null or undefined.");
 
         this.filteredPapers = AutoFormalisationMainContainerDiv.filterPapers(papers, filters);
+        this.currentlyVisiblePapers = [...this.filteredPapers];
         this.topMessage = topMessage;
         this.counterMessage = counterMessage;
         this.description = description;
@@ -45,45 +49,48 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     }
 
     private filtersCallback(filters: Filters): void {
-        // For all paper divs, if doesPaperMatchFilters is true, show, else hide
-        // Then, update statistics div
-        const matchingPapers: Paper[] = [];
+        this.currentlyVisiblePapers = this.filteredPapers.filter(p => this.doesPaperMatchFilters(p, filters));
+        this.currentPage = 1;
+        this.refreshPapersDiv();
+        this.refreshPaginationDiv();
+    }
 
-        for (const child of this.div.children) {
-            if (child.id === "papers-div") {
-                const papersDiv: HTMLDivElement = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("papers-div");
+    private refreshPapersDiv(): void {
+        const start = (this.currentPage - 1) * this.pageSize;
+        const pageSlice = this.currentlyVisiblePapers.slice(start, start + this.pageSize);
+        const paperDivs: AutoFormalisationPaperDiv[] = pageSlice.map(p => new AutoFormalisationPaperDiv(p));
+        const newPapersDiv = new AutoFormalisationPapersDiv(paperDivs);
 
-                for (const paperChild of papersDiv.children) {
-                    const paperID: string = paperChild.id.replace("paper-div-", "");
-                    const paper: Paper | undefined = this.filteredPapers.find(p => p.id === paperID);
+        newPapersDiv.pack();
+        newPapersDiv.show();
 
-                    if (!paper) {
-                        (paperChild as HTMLDivElement).hidden = true;
-                    }
-                    else if (this.doesPaperMatchFilters(paper, filters)) {
-                        (paperChild as HTMLDivElement).hidden = false;
+        const existing = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("papers-div");
 
-                        matchingPapers.push(paper);
-                    }
-                    else {
-                        (paperChild as HTMLDivElement).hidden = true;
-                    }
-                }
-            }
-        }
+        existing.replaceWith(newPapersDiv.getDiv());
+    }
 
-        this.currentStatisticsDiv.destroyCharts();
+    private refreshPaginationDiv(): void {
+        const newPaginationDiv = new AutoFormalisationPaginationDiv(
+            this.currentlyVisiblePapers.length,
+            this.currentPage,
+            this.pageSize,
+            (page) => this.goToPage(page)
+        );
 
-        const statisticsDiv: AutoFormalisationStatisticsDiv = new AutoFormalisationStatisticsDiv(matchingPapers);
+        newPaginationDiv.pack();
+        newPaginationDiv.show();
 
-        statisticsDiv.pack();
-        statisticsDiv.show();
+        const existing = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("pagination-div");
 
-        const existingStatisticsDiv: HTMLDivElement = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("statistics-div");
+        existing.replaceWith(newPaginationDiv.getDiv());
 
-        existingStatisticsDiv.replaceWith(statisticsDiv.getDiv());
+        this.currentPaginationDiv = newPaginationDiv;
+    }
 
-        this.currentStatisticsDiv = statisticsDiv;
+    private goToPage(page: number): void {
+        this.currentPage = page;
+        this.refreshPapersDiv();
+        this.refreshPaginationDiv();
     }
 
     public doesPaperMatchFilters(paper: Paper, filters: Filters): boolean {
@@ -195,14 +202,9 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     }
 
     private packAndAppendPapersDiv(): void {
-        const paperDivs: AutoFormalisationPaperDiv[] = [];
-
-        for (const paper of this.filteredPapers) {
-            const paperDiv: AutoFormalisationPaperDiv = new AutoFormalisationPaperDiv(paper);
-
-            paperDivs.push(paperDiv);
-        }
-
+        const start = (this.currentPage - 1) * this.pageSize;
+        const pageSlice = this.currentlyVisiblePapers.slice(start, start + this.pageSize);
+        const paperDivs: AutoFormalisationPaperDiv[] = pageSlice.map(p => new AutoFormalisationPaperDiv(p));
         const papersDiv: AutoFormalisationPapersDiv = new AutoFormalisationPapersDiv(paperDivs);
 
         papersDiv.pack();
@@ -211,15 +213,20 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         this.div.appendChild(papersDiv.getDiv());
     }
 
-    private packAndAppendStatisticsDiv(): void {
-        const statisticsDiv: AutoFormalisationStatisticsDiv = new AutoFormalisationStatisticsDiv(this.filteredPapers);
+    private packAndAppendPaginationDiv(): void {
+        const paginationDiv = new AutoFormalisationPaginationDiv(
+            this.currentlyVisiblePapers.length,
+            this.currentPage,
+            this.pageSize,
+            (page) => this.goToPage(page)
+        );
 
-        statisticsDiv.pack();
-        statisticsDiv.show();
+        paginationDiv.pack();
+        paginationDiv.show();
 
-        this.div.appendChild(statisticsDiv.getDiv());
+        this.currentPaginationDiv = paginationDiv;
 
-        this.currentStatisticsDiv = statisticsDiv;
+        this.div.appendChild(paginationDiv.getDiv());
     }
 
     public pack(): void {
@@ -240,7 +247,7 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
         this.packAndAppendTopMessageDiv();
         this.packAndAppendFiltersDiv();
         this.packAndAppendPapersDiv();
-        this.packAndAppendStatisticsDiv();
+        this.packAndAppendPaginationDiv();
 
         this.packed = true;
     }
