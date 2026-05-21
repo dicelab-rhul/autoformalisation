@@ -6,6 +6,7 @@ A curated, filterable catalogue of papers on Large Language Models, deployed as 
 
 The site is automatically deployed on every push to `main` and refreshed weekly via a scheduled GitHub Actions workflow.
 
+https://dicelab-rhul.github.io/autoformalisation/
 ## Features
 
 - **Filterable paper browser** — filter by LLM, language, type, dataset, domain, or free-text search.
