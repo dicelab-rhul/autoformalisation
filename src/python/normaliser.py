@@ -15,7 +15,7 @@ class Normaliser():
 
         entry_id: str = self.__normalise_entry_id_field()
         entry_type: str = self.__normalise_entry_type_field()
-        authors = self.__normalise_authors_field(auth_field=self.__bibtex_entry.get("author") or self.__bibtex_entry.get("authors"))
+        authors = self.__normalise_authors_field(auth_field=self.__bibtex_entry.get("author")) or self.__normalise_authors_field(self.__bibtex_entry.get("authors"))
         title_dict: dict[str, str | list[str]] = self.__normalise_title_field(self.__bibtex_entry.get("title"))
         title: str = cast(str, title_dict["text"])
         title_tokens: list[str] = cast(list[str], title_dict["tokens"])
