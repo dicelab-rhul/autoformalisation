@@ -21,7 +21,25 @@
             "norm": {
                 "id": "agrawal_towards_2022",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "agrawal ayush and gadgil siddhartha and goyal navin and narayanan ashvni and tadipatri anand",
+                    "tokens": [
+                        "agrawal",
+                        "ayush",
+                        "and",
+                        "gadgil",
+                        "siddhartha",
+                        "and",
+                        "goyal",
+                        "navin",
+                        "and",
+                        "narayanan",
+                        "ashvni",
+                        "and",
+                        "tadipatri",
+                        "anand"
+                    ]
+                },
                 "title": "towards a mathematics formalisation assistant using large language models",
                 "title_tokens": [
                     "towards",
@@ -115,7 +133,39 @@
             "norm": {
                 "id": "jiang2022draft",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "jiang albert q and welleck sean and zhou jin peng and li wenda and liu jiacheng and jamnik mateja and lacroix timothee and wu yuhuai and lample guillaume",
+                    "tokens": [
+                        "jiang",
+                        "albert",
+                        "q",
+                        "and",
+                        "welleck",
+                        "sean",
+                        "and",
+                        "zhou",
+                        "jin",
+                        "peng",
+                        "and",
+                        "li",
+                        "wenda",
+                        "and",
+                        "liu",
+                        "jiacheng",
+                        "and",
+                        "jamnik",
+                        "mateja",
+                        "and",
+                        "lacroix",
+                        "timothee",
+                        "and",
+                        "wu",
+                        "yuhuai",
+                        "and",
+                        "lample",
+                        "guillaume"
+                    ]
+                },
                 "title": "draft sketch and prove guiding formal theorem provers with informal proofs",
                 "title_tokens": [
                     "draft",
@@ -230,7 +280,20 @@
             "norm": {
                 "id": "jiang2024multi",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "jiang albert q and li wenda and jamnik mateja",
+                    "tokens": [
+                        "jiang",
+                        "albert",
+                        "q",
+                        "and",
+                        "li",
+                        "wenda",
+                        "and",
+                        "jamnik",
+                        "mateja"
+                    ]
+                },
                 "title": "multilanguage diversity benefits autoformalization",
                 "title_tokens": [
                     "multilanguage",
@@ -322,7 +385,31 @@
             "norm": {
                 "id": "li_autoformalize_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "li zenan and wu yifan and li zhaoyu and wei xinming and zhang xian and yang fan and ma xiaoxing",
+                    "tokens": [
+                        "li",
+                        "zenan",
+                        "and",
+                        "wu",
+                        "yifan",
+                        "and",
+                        "li",
+                        "zhaoyu",
+                        "and",
+                        "wei",
+                        "xinming",
+                        "and",
+                        "zhang",
+                        "xian",
+                        "and",
+                        "yang",
+                        "fan",
+                        "and",
+                        "ma",
+                        "xiaoxing"
+                    ]
+                },
                 "title": "autoformalize mathematical statements by symbolic equivalence and semantic consistency",
                 "title_tokens": [
                     "autoformalize",
@@ -423,7 +510,34 @@
             "norm": {
                 "id": "liu_atlas_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "liu xiaoyang and bao kangjie and zhang jiashuo and liu yunqi and chen yu and liu yuntian and jiao yang and luo tao",
+                    "tokens": [
+                        "liu",
+                        "xiaoyang",
+                        "and",
+                        "bao",
+                        "kangjie",
+                        "and",
+                        "zhang",
+                        "jiashuo",
+                        "and",
+                        "liu",
+                        "yunqi",
+                        "and",
+                        "chen",
+                        "yu",
+                        "and",
+                        "liu",
+                        "yuntian",
+                        "and",
+                        "jiao",
+                        "yang",
+                        "and",
+                        "luo",
+                        "tao"
+                    ]
+                },
                 "title": "atlas autoformalizing theorems through lifting augmentation and synthesis of data",
                 "title_tokens": [
                     "atlas",
@@ -528,7 +642,25 @@
             "norm": {
                 "id": "liu_rethinking_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "liu qi and zheng xinhao and lu xudong and cao qinxiang and yan junchi",
+                    "tokens": [
+                        "liu",
+                        "qi",
+                        "and",
+                        "zheng",
+                        "xinhao",
+                        "and",
+                        "lu",
+                        "xudong",
+                        "and",
+                        "cao",
+                        "qinxiang",
+                        "and",
+                        "yan",
+                        "junchi"
+                    ]
+                },
                 "title": "rethinking and improving autoformalization towards a faithful metric and a dependency retrievalbased approach",
                 "title_tokens": [
                     "rethinking",
@@ -637,7 +769,28 @@
             "norm": {
                 "id": "murphy_autoformalizing_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "murphy logan and yang kaiyu and sun jialiang and li zhaoyu and anandkumar anima and si xujie",
+                    "tokens": [
+                        "murphy",
+                        "logan",
+                        "and",
+                        "yang",
+                        "kaiyu",
+                        "and",
+                        "sun",
+                        "jialiang",
+                        "and",
+                        "li",
+                        "zhaoyu",
+                        "and",
+                        "anandkumar",
+                        "anima",
+                        "and",
+                        "si",
+                        "xujie"
+                    ]
+                },
                 "title": "autoformalizing euclidean geometry",
                 "title_tokens": [
                     "autoformalizing",
@@ -728,7 +881,32 @@
             "norm": {
                 "id": "wu_autoformalization_2022",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "wu yuhuai and jiang albert qiaochu and li wenda and rabe markus and staats charles and jamnik mateja and szegedy christian",
+                    "tokens": [
+                        "wu",
+                        "yuhuai",
+                        "and",
+                        "jiang",
+                        "albert",
+                        "qiaochu",
+                        "and",
+                        "li",
+                        "wenda",
+                        "and",
+                        "rabe",
+                        "markus",
+                        "and",
+                        "staats",
+                        "charles",
+                        "and",
+                        "jamnik",
+                        "mateja",
+                        "and",
+                        "szegedy",
+                        "christian"
+                    ]
+                },
                 "title": "autoformalization with large language models",
                 "title_tokens": [
                     "autoformalization",
@@ -832,7 +1010,28 @@
             "norm": {
                 "id": "ying_lean_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "ying huaiyuan and wu zijian and geng yihan and wang jiayu and lin dahua and chen kai",
+                    "tokens": [
+                        "ying",
+                        "huaiyuan",
+                        "and",
+                        "wu",
+                        "zijian",
+                        "and",
+                        "geng",
+                        "yihan",
+                        "and",
+                        "wang",
+                        "jiayu",
+                        "and",
+                        "lin",
+                        "dahua",
+                        "and",
+                        "chen",
+                        "kai"
+                    ]
+                },
                 "title": "lean workbook a largescale lean problem set formalized from natural language math problems",
                 "title_tokens": [
                     "lean",
@@ -934,7 +1133,19 @@
             "norm": {
                 "id": "zhang_consistent_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "zhang lan and quan xin and freitas andre",
+                    "tokens": [
+                        "zhang",
+                        "lan",
+                        "and",
+                        "quan",
+                        "xin",
+                        "and",
+                        "freitas",
+                        "andre"
+                    ]
+                },
                 "title": "consistent autoformalization for constructing mathematical libraries",
                 "title_tokens": [
                     "consistent",
@@ -1034,7 +1245,19 @@
             "norm": {
                 "id": "zhang_formalizing_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "zhang lan and valentino marco and freitas andre",
+                    "tokens": [
+                        "zhang",
+                        "lan",
+                        "and",
+                        "valentino",
+                        "marco",
+                        "and",
+                        "freitas",
+                        "andre"
+                    ]
+                },
                 "title": "formalizing complex mathematical statements with llms a study on mathematical definitions",
                 "title_tokens": [
                     "formalizing",
@@ -1124,7 +1347,30 @@
             "norm": {
                 "id": "zhou_dont_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "zhou jin peng and staats charles and li wenda and szegedy christian and weinberger kilian q and wu yuhuai",
+                    "tokens": [
+                        "zhou",
+                        "jin",
+                        "peng",
+                        "and",
+                        "staats",
+                        "charles",
+                        "and",
+                        "li",
+                        "wenda",
+                        "and",
+                        "szegedy",
+                        "christian",
+                        "and",
+                        "weinberger",
+                        "kilian",
+                        "q",
+                        "and",
+                        "wu",
+                        "yuhuai"
+                    ]
+                },
                 "title": "dont trust verify grounding llm quantitative reasoning with autoformalization",
                 "title_tokens": [
                     "dont",
@@ -1224,7 +1470,22 @@
             "norm": {
                 "id": "chen_nl2tl_2023",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "chen yongchao and gandhi rujul and zhang yang and fan chuchu",
+                    "tokens": [
+                        "chen",
+                        "yongchao",
+                        "and",
+                        "gandhi",
+                        "rujul",
+                        "and",
+                        "zhang",
+                        "yang",
+                        "and",
+                        "fan",
+                        "chuchu"
+                    ]
+                },
                 "title": "nl2tl transforming natural languages to temporal logics using large language models",
                 "title_tokens": [
                     "nl2tl",
@@ -1329,7 +1590,22 @@
             "norm": {
                 "id": "cllamp2024extract",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "oates tim and alford ron and johnson shawn and hall cory",
+                    "tokens": [
+                        "oates",
+                        "tim",
+                        "and",
+                        "alford",
+                        "ron",
+                        "and",
+                        "johnson",
+                        "shawn",
+                        "and",
+                        "hall",
+                        "cory"
+                    ]
+                },
                 "title": "using large language models to extract planning knowledge from unstructured text",
                 "title_tokens": [
                     "using",
@@ -1434,7 +1710,10 @@
             "norm": {
                 "id": "evaluating2024capabilities",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "",
+                    "tokens": []
+                },
                 "title": "evaluating llms capabilities at natural language to logic translation",
                 "title_tokens": [
                     "evaluating",
@@ -1517,7 +1796,16 @@
             "norm": {
                 "id": "chaturvedi2024learning",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "chaturvedi akshay and asher nicholas",
+                    "tokens": [
+                        "chaturvedi",
+                        "akshay",
+                        "and",
+                        "asher",
+                        "nicholas"
+                    ]
+                },
                 "title": "learning semantic structure through firstorderlogic translation",
                 "title_tokens": [
                     "learning",
@@ -1588,7 +1876,7 @@
                 "id": "kambhampati_position_2024",
                 "entrytype": "inproceedings",
                 "authors": "Kambhampati, Subbarao and Valmeekam, Karthik and Guan, Lin and Verma, Mudit and Stechly, Kaya and Bhambri, Siddhant and Saldyt, Lucas Paul and Murthy, Anil B.",
-                "title": "Position: {LLMs} {Can}’t {Plan}, {But} {Can} {Help} {Planning} in {LLM}-{Modulo} {Frameworks}",
+                "title": "Position: {LLMs} {Can}\u2019t {Plan}, {But} {Can} {Help} {Planning} in {LLM}-{Modulo} {Frameworks}",
                 "year": "2024",
                 "doi": "",
                 "url": "https://openreview.net/forum?id=Th8JPEmH4z",
@@ -1604,7 +1892,36 @@
             "norm": {
                 "id": "kambhampati_position_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "kambhampati subbarao and valmeekam karthik and guan lin and verma mudit and stechly kaya and bhambri siddhant and saldyt lucas paul and murthy anil b",
+                    "tokens": [
+                        "kambhampati",
+                        "subbarao",
+                        "and",
+                        "valmeekam",
+                        "karthik",
+                        "and",
+                        "guan",
+                        "lin",
+                        "and",
+                        "verma",
+                        "mudit",
+                        "and",
+                        "stechly",
+                        "kaya",
+                        "and",
+                        "bhambri",
+                        "siddhant",
+                        "and",
+                        "saldyt",
+                        "lucas",
+                        "paul",
+                        "and",
+                        "murthy",
+                        "anil",
+                        "b"
+                    ]
+                },
                 "title": "position llms cant plan but can help planning in llmmodulo frameworks",
                 "title_tokens": [
                     "position",
@@ -1709,7 +2026,28 @@
             "norm": {
                 "id": "lalwani_autoformalizing_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "lalwani abhinav and kim tasha and chopra lovish and hahn christopher and jin zhijing and sachan mrinmaya",
+                    "tokens": [
+                        "lalwani",
+                        "abhinav",
+                        "and",
+                        "kim",
+                        "tasha",
+                        "and",
+                        "chopra",
+                        "lovish",
+                        "and",
+                        "hahn",
+                        "christopher",
+                        "and",
+                        "jin",
+                        "zhijing",
+                        "and",
+                        "sachan",
+                        "mrinmaya"
+                    ]
+                },
                 "title": "autoformalizing natural language to firstorder logic a case study in logical fallacy detection",
                 "title_tokens": [
                     "autoformalizing",
@@ -1811,7 +2149,23 @@
             "norm": {
                 "id": "li2023logiclm",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "liangming pan and alon albalak and xinyi wang and william yang wang",
+                    "tokens": [
+                        "liangming",
+                        "pan",
+                        "and",
+                        "alon",
+                        "albalak",
+                        "and",
+                        "xinyi",
+                        "wang",
+                        "and",
+                        "william",
+                        "yang",
+                        "wang"
+                    ]
+                },
                 "title": "logiclm empowering large language models with symbolic solvers for faithful logical reasoning",
                 "title_tokens": [
                     "logiclm",
@@ -1921,7 +2275,13 @@
             "norm": {
                 "id": "lin2025code4logic",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "liu junnan",
+                    "tokens": [
+                        "liu",
+                        "junnan"
+                    ]
+                },
                 "title": "fewshot natural language to firstorder logic translation via incontext learning",
                 "title_tokens": [
                     "fewshot",
@@ -2030,7 +2390,26 @@
             "norm": {
                 "id": "liu_lang2ltl-2_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "liu jason xinyu and shah ankit and konidaris george and tellex stefanie and paulius david",
+                    "tokens": [
+                        "liu",
+                        "jason",
+                        "xinyu",
+                        "and",
+                        "shah",
+                        "ankit",
+                        "and",
+                        "konidaris",
+                        "george",
+                        "and",
+                        "tellex",
+                        "stefanie",
+                        "and",
+                        "paulius",
+                        "david"
+                    ]
+                },
                 "title": "lang2ltl2 grounding spatiotemporal navigation commands using large language and visionlanguage models",
                 "title_tokens": [
                     "lang2ltl2",
@@ -2137,7 +2516,40 @@
             "norm": {
                 "id": "liu2025safe",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "liu chengwu and yuan ye and yin yichun and xu yan and xu xin and chen zaoyu and wang yasheng and shang lifeng and liu qun and zhang ming",
+                    "tokens": [
+                        "liu",
+                        "chengwu",
+                        "and",
+                        "yuan",
+                        "ye",
+                        "and",
+                        "yin",
+                        "yichun",
+                        "and",
+                        "xu",
+                        "yan",
+                        "and",
+                        "xu",
+                        "xin",
+                        "and",
+                        "chen",
+                        "zaoyu",
+                        "and",
+                        "wang",
+                        "yasheng",
+                        "and",
+                        "shang",
+                        "lifeng",
+                        "and",
+                        "liu",
+                        "qun",
+                        "and",
+                        "zhang",
+                        "ming"
+                    ]
+                },
                 "title": "safe enhancing mathematical reasoning in large language models via retrospective stepaware formal verification",
                 "title_tokens": [
                     "safe",
@@ -2255,7 +2667,19 @@
             "norm": {
                 "id": "mavrogiannis_cook2ltl_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "mavrogiannis angelos and mavrogiannis christoforos and aloimonos yiannis",
+                    "tokens": [
+                        "mavrogiannis",
+                        "angelos",
+                        "and",
+                        "mavrogiannis",
+                        "christoforos",
+                        "and",
+                        "aloimonos",
+                        "yiannis"
+                    ]
+                },
                 "title": "cook2ltl translating cooking recipes to ltl formulae using large language models",
                 "title_tokens": [
                     "cook2ltl",
@@ -2354,7 +2778,19 @@
             "norm": {
                 "id": "mensfelt_gama_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "agnieszka mensfelt and kostas stathis and vince trencsenyi",
+                    "tokens": [
+                        "agnieszka",
+                        "mensfelt",
+                        "and",
+                        "kostas",
+                        "stathis",
+                        "and",
+                        "vince",
+                        "trencsenyi"
+                    ]
+                },
                 "title": "generative agents for multiagent autoformalization of interaction scenarios",
                 "title_tokens": [
                     "generative",
@@ -2452,7 +2888,13 @@
             "norm": {
                 "id": "szegedy2020promising",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "szegedy christian",
+                    "tokens": [
+                        "szegedy",
+                        "christian"
+                    ]
+                },
                 "title": "a promising path towards autoformalization and general artificial intelligence",
                 "title_tokens": [
                     "a",
@@ -2548,7 +2990,31 @@
             "norm": {
                 "id": "yang2024formal",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "yang kaiyu and poesia gabriel and he jingxuan and li wenda and lauter kristin and chaudhuri swarat and song dawn",
+                    "tokens": [
+                        "yang",
+                        "kaiyu",
+                        "and",
+                        "poesia",
+                        "gabriel",
+                        "and",
+                        "he",
+                        "jingxuan",
+                        "and",
+                        "li",
+                        "wenda",
+                        "and",
+                        "lauter",
+                        "kristin",
+                        "and",
+                        "chaudhuri",
+                        "swarat",
+                        "and",
+                        "song",
+                        "dawn"
+                    ]
+                },
                 "title": "formal mathematical reasoning a new frontier in ai",
                 "title_tokens": [
                     "formal",
@@ -2649,7 +3115,23 @@
             "norm": {
                 "id": "aghzal_survey_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "aghzal mohamed and plaku erion and stein gregory j and yao ziyu",
+                    "tokens": [
+                        "aghzal",
+                        "mohamed",
+                        "and",
+                        "plaku",
+                        "erion",
+                        "and",
+                        "stein",
+                        "gregory",
+                        "j",
+                        "and",
+                        "yao",
+                        "ziyu"
+                    ]
+                },
                 "title": "a survey on large language models for automated planning",
                 "title_tokens": [
                     "a",
@@ -2739,7 +3221,23 @@
             "norm": {
                 "id": "babaei_llm4ol_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "hamed babaei giglou and jennifer dsouza and sameer sadruddin and soren auer",
+                    "tokens": [
+                        "hamed",
+                        "babaei",
+                        "giglou",
+                        "and",
+                        "jennifer",
+                        "dsouza",
+                        "and",
+                        "sameer",
+                        "sadruddin",
+                        "and",
+                        "soren",
+                        "auer"
+                    ]
+                },
                 "title": "llms4ol 2024 datasets toward ontology learning with large language models",
                 "title_tokens": [
                     "llms4ol",
@@ -2862,7 +3360,55 @@
             "norm": {
                 "id": "caufield_structured_2024",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "j harry caufield and harshad hegde and vincent emonet and nomi l harris and marcin p joachimiak and nicolas matentzoglu and hyeongsik kim and sierra a t moxon and justin t reese and melissa a haendel and peter n robinson and christopher j mungall",
+                    "tokens": [
+                        "j",
+                        "harry",
+                        "caufield",
+                        "and",
+                        "harshad",
+                        "hegde",
+                        "and",
+                        "vincent",
+                        "emonet",
+                        "and",
+                        "nomi",
+                        "l",
+                        "harris",
+                        "and",
+                        "marcin",
+                        "p",
+                        "joachimiak",
+                        "and",
+                        "nicolas",
+                        "matentzoglu",
+                        "and",
+                        "hyeongsik",
+                        "kim",
+                        "and",
+                        "sierra",
+                        "a",
+                        "t",
+                        "moxon",
+                        "and",
+                        "justin",
+                        "t",
+                        "reese",
+                        "and",
+                        "melissa",
+                        "a",
+                        "haendel",
+                        "and",
+                        "peter",
+                        "n",
+                        "robinson",
+                        "and",
+                        "christopher",
+                        "j",
+                        "mungall"
+                    ]
+                },
                 "title": "structured prompt interrogation and recursive extraction of semantics spires a method for populating knowledge bases using zeroshot learning",
                 "title_tokens": [
                     "structured",
@@ -2995,7 +3541,30 @@
             "norm": {
                 "id": "chan_lean-ing_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "chan willy and souliman michael and nordhagen jakob and miranda brando and obbad elyas and koyejo kai fronsdal sanmi",
+                    "tokens": [
+                        "chan",
+                        "willy",
+                        "and",
+                        "souliman",
+                        "michael",
+                        "and",
+                        "nordhagen",
+                        "jakob",
+                        "and",
+                        "miranda",
+                        "brando",
+                        "and",
+                        "obbad",
+                        "elyas",
+                        "and",
+                        "koyejo",
+                        "kai",
+                        "fronsdal",
+                        "sanmi"
+                    ]
+                },
                 "title": "leaning on quality how highquality data beats diverse multilingual data in autoformalization",
                 "title_tokens": [
                     "leaning",
@@ -3098,7 +3667,20 @@
             "norm": {
                 "id": "cunningham_towards_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "cunningham garett and bunescu razvan c and juedes david",
+                    "tokens": [
+                        "cunningham",
+                        "garett",
+                        "and",
+                        "bunescu",
+                        "razvan",
+                        "c",
+                        "and",
+                        "juedes",
+                        "david"
+                    ]
+                },
                 "title": "towards autoformalization of mathematics and code correctness experiments with elementary proofs",
                 "title_tokens": [
                     "towards",
@@ -3189,7 +3771,23 @@
             "norm": {
                 "id": "doumanas_sar_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "dimitrios doumanas and andreas soularidis and konstantinos kotis and george a vouros",
+                    "tokens": [
+                        "dimitrios",
+                        "doumanas",
+                        "and",
+                        "andreas",
+                        "soularidis",
+                        "and",
+                        "konstantinos",
+                        "kotis",
+                        "and",
+                        "george",
+                        "a",
+                        "vouros"
+                    ]
+                },
                 "title": "integrating llms in the engineering of a sar ontology",
                 "title_tokens": [
                     "integrating",
@@ -3301,7 +3899,22 @@
             "norm": {
                 "id": "ells_commonsense_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "andrew eells and brandon dave and pascal hitzler and cogan shimizu",
+                    "tokens": [
+                        "andrew",
+                        "eells",
+                        "and",
+                        "brandon",
+                        "dave",
+                        "and",
+                        "pascal",
+                        "hitzler",
+                        "and",
+                        "cogan",
+                        "shimizu"
+                    ]
+                },
                 "title": "commonsense ontology micropatterns",
                 "title_tokens": [
                     "commonsense",
@@ -3402,7 +4015,16 @@
             "norm": {
                 "id": "groza_ontology_2023",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "patricia mateiu and adrian groza",
+                    "tokens": [
+                        "patricia",
+                        "mateiu",
+                        "and",
+                        "adrian",
+                        "groza"
+                    ]
+                },
                 "title": "ontology engineering with large language models",
                 "title_tokens": [
                     "ontology",
@@ -3501,7 +4123,13 @@
             "norm": {
                 "id": "jiang_language_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "jiang qiaochu",
+                    "tokens": [
+                        "jiang",
+                        "qiaochu"
+                    ]
+                },
                 "title": "language models for verifiable mathematical automation interaction integration and autoformalization",
                 "title_tokens": [
                     "language",
@@ -3584,7 +4212,28 @@
             "norm": {
                 "id": "li_large_2025",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "daniel garijo and maria povedavillalon and elvira amadordominguez and ziyuan wang and raul garciacastro and oscar corcho",
+                    "tokens": [
+                        "daniel",
+                        "garijo",
+                        "and",
+                        "maria",
+                        "povedavillalon",
+                        "and",
+                        "elvira",
+                        "amadordominguez",
+                        "and",
+                        "ziyuan",
+                        "wang",
+                        "and",
+                        "raul",
+                        "garciacastro",
+                        "and",
+                        "oscar",
+                        "corcho"
+                    ]
+                },
                 "title": "llms for ontology engineering a landscape of tasks and benchmarking challenges",
                 "title_tokens": [
                     "llms",
@@ -3697,7 +4346,37 @@
             "norm": {
                 "id": "lippolis_ontology_2025",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "anna sofia lippolis and mohammad javad saeedizade and robin keskisarkka and sara zuppiroli and miguel ceriani and aldo gangemi and eva blomqvist and andrea giovanni nuzzolese",
+                    "tokens": [
+                        "anna",
+                        "sofia",
+                        "lippolis",
+                        "and",
+                        "mohammad",
+                        "javad",
+                        "saeedizade",
+                        "and",
+                        "robin",
+                        "keskisarkka",
+                        "and",
+                        "sara",
+                        "zuppiroli",
+                        "and",
+                        "miguel",
+                        "ceriani",
+                        "and",
+                        "aldo",
+                        "gangemi",
+                        "and",
+                        "eva",
+                        "blomqvist",
+                        "and",
+                        "andrea",
+                        "giovanni",
+                        "nuzzolese"
+                    ]
+                },
                 "title": "ontology generation using large language models",
                 "title_tokens": [
                     "ontology",
@@ -3817,7 +4496,31 @@
             "norm": {
                 "id": "liu_llmp_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "liu bo and jiang yuqian and zhang xiaohan and liu qiang and zhang shiqi and biswas joydeep and stone peter",
+                    "tokens": [
+                        "liu",
+                        "bo",
+                        "and",
+                        "jiang",
+                        "yuqian",
+                        "and",
+                        "zhang",
+                        "xiaohan",
+                        "and",
+                        "liu",
+                        "qiang",
+                        "and",
+                        "zhang",
+                        "shiqi",
+                        "and",
+                        "biswas",
+                        "joydeep",
+                        "and",
+                        "stone",
+                        "peter"
+                    ]
+                },
                 "title": "llmp empowering large language models with optimal planning proficiency",
                 "title_tokens": [
                     "llmp",
@@ -3915,7 +4618,49 @@
             "norm": {
                 "id": "lu_process-driven_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "lu jianqiao and wan yingjia and liu zhengying and huang yinya and xiong jing and liu chengwu and shen jianhao and jin hui and zhang jipeng and wang haiming and yang zhicheng and tang jing and guo zhijiang",
+                    "tokens": [
+                        "lu",
+                        "jianqiao",
+                        "and",
+                        "wan",
+                        "yingjia",
+                        "and",
+                        "liu",
+                        "zhengying",
+                        "and",
+                        "huang",
+                        "yinya",
+                        "and",
+                        "xiong",
+                        "jing",
+                        "and",
+                        "liu",
+                        "chengwu",
+                        "and",
+                        "shen",
+                        "jianhao",
+                        "and",
+                        "jin",
+                        "hui",
+                        "and",
+                        "zhang",
+                        "jipeng",
+                        "and",
+                        "wang",
+                        "haiming",
+                        "and",
+                        "yang",
+                        "zhicheng",
+                        "and",
+                        "tang",
+                        "jing",
+                        "and",
+                        "guo",
+                        "zhijiang"
+                    ]
+                },
                 "title": "processdriven autoformalization in lean 4",
                 "title_tokens": [
                     "processdriven",
@@ -4029,7 +4774,19 @@
             "norm": {
                 "id": "patel_new_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "patel nilay and saha rahul and flanigan jeffrey",
+                    "tokens": [
+                        "patel",
+                        "nilay",
+                        "and",
+                        "saha",
+                        "rahul",
+                        "and",
+                        "flanigan",
+                        "jeffrey"
+                    ]
+                },
                 "title": "a new approach towards autoformalization",
                 "title_tokens": [
                     "a",
@@ -4097,7 +4854,7 @@
             "raw": {
                 "id": "poiroux_improving_2024",
                 "entrytype": "misc",
-                "authors": "Auguste Poiroux and Gail Weiss and Viktor Kunčak and Antoine Bosselut",
+                "authors": "Auguste Poiroux and Gail Weiss and Viktor Kun\u010dak and Antoine Bosselut",
                 "title": "Reliable Evaluation and Benchmarks for Statement Autoformalization",
                 "year": "2025",
                 "doi": "",
@@ -4114,7 +4871,22 @@
             "norm": {
                 "id": "poiroux_improving_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "auguste poiroux and gail weiss and viktor kuncak and antoine bosselut",
+                    "tokens": [
+                        "auguste",
+                        "poiroux",
+                        "and",
+                        "gail",
+                        "weiss",
+                        "and",
+                        "viktor",
+                        "kuncak",
+                        "and",
+                        "antoine",
+                        "bosselut"
+                    ]
+                },
                 "title": "reliable evaluation and benchmarks for statement autoformalization",
                 "title_tokens": [
                     "reliable",
@@ -4204,7 +4976,17 @@
             "norm": {
                 "id": "saaedizade_navigating_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "mohammad javad saeedizade and eva blomqvist",
+                    "tokens": [
+                        "mohammad",
+                        "javad",
+                        "saeedizade",
+                        "and",
+                        "eva",
+                        "blomqvist"
+                    ]
+                },
                 "title": "navigating ontology development with large language models",
                 "title_tokens": [
                     "navigating",
@@ -4304,7 +5086,17 @@
             "norm": {
                 "id": "sadeq_leveraging_2025",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "mohammad sadeq abolhasani and rong pan",
+                    "tokens": [
+                        "mohammad",
+                        "sadeq",
+                        "abolhasani",
+                        "and",
+                        "rong",
+                        "pan"
+                    ]
+                },
                 "title": "leveraging llm for automated ontology extraction and knowledge graph generation",
                 "title_tokens": [
                     "leveraging",
@@ -4392,7 +5184,32 @@
             "norm": {
                 "id": "tang_domain_2023",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "yun tang and antonio anastasio bruto da costa and xizhe zhang and patrick irvine and siddartha khastgir and paul a jennings",
+                    "tokens": [
+                        "yun",
+                        "tang",
+                        "and",
+                        "antonio",
+                        "anastasio",
+                        "bruto",
+                        "da",
+                        "costa",
+                        "and",
+                        "xizhe",
+                        "zhang",
+                        "and",
+                        "patrick",
+                        "irvine",
+                        "and",
+                        "siddartha",
+                        "khastgir",
+                        "and",
+                        "paul",
+                        "a",
+                        "jennings"
+                    ]
+                },
                 "title": "domain knowledge distillation from large language model an empirical study in the autonomous driving domain",
                 "title_tokens": [
                     "domain",
@@ -4513,7 +5330,16 @@
             "norm": {
                 "id": "zhang_extract_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "zhang bowen and soh harold",
+                    "tokens": [
+                        "zhang",
+                        "bowen",
+                        "and",
+                        "soh",
+                        "harold"
+                    ]
+                },
                 "title": "extract define canonicalize an llmbased framework for knowledge graph construction",
                 "title_tokens": [
                     "extract",
@@ -4598,7 +5424,29 @@
             "norm": {
                 "id": "azerbayev_proofnet_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "azerbayev zhangir and piotrowski bartosz and schoelkopf hailey and ayers edward w and radev dragomir and avigad jeremy",
+                    "tokens": [
+                        "azerbayev",
+                        "zhangir",
+                        "and",
+                        "piotrowski",
+                        "bartosz",
+                        "and",
+                        "schoelkopf",
+                        "hailey",
+                        "and",
+                        "ayers",
+                        "edward",
+                        "w",
+                        "and",
+                        "radev",
+                        "dragomir",
+                        "and",
+                        "avigad",
+                        "jeremy"
+                    ]
+                },
                 "title": "proofnet autoformalizing and formally proving undergraduatelevel mathematics",
                 "title_tokens": [
                     "proofnet",
@@ -4678,7 +5526,7 @@
                 "id": "liu2024rethinking",
                 "entrytype": "inproceedings",
                 "authors": "Qi Liu and Xinhao Zheng and Xudong Lu and Qinxiang Cao and Junchi Yan",
-                "title": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval‑based Approach",
+                "title": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval\u2011based Approach",
                 "year": "2025",
                 "doi": "",
                 "url": "https://openreview.net/forum?id=hUb2At2DsQ",
@@ -4694,7 +5542,25 @@
             "norm": {
                 "id": "liu2024rethinking",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "qi liu and xinhao zheng and xudong lu and qinxiang cao and junchi yan",
+                    "tokens": [
+                        "qi",
+                        "liu",
+                        "and",
+                        "xinhao",
+                        "zheng",
+                        "and",
+                        "xudong",
+                        "lu",
+                        "and",
+                        "qinxiang",
+                        "cao",
+                        "and",
+                        "junchi",
+                        "yan"
+                    ]
+                },
                 "title": "rethinking and improving autoformalization towards a faithful metric and a dependency retrievalbased approach",
                 "title_tokens": [
                     "rethinking",
@@ -4802,7 +5668,19 @@
             "norm": {
                 "id": "deng_natural_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "deng shilong and wang yongzhao and savani rahul",
+                    "tokens": [
+                        "deng",
+                        "shilong",
+                        "and",
+                        "wang",
+                        "yongzhao",
+                        "and",
+                        "savani",
+                        "rahul"
+                    ]
+                },
                 "title": "from natural language to extensiveform game representations",
                 "title_tokens": [
                     "from",
@@ -4887,7 +5765,23 @@
             "norm": {
                 "id": "hu2024stepproof",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "hu xiaolin and zhou qinghua and grechuk bogdan and tyukin ivan y",
+                    "tokens": [
+                        "hu",
+                        "xiaolin",
+                        "and",
+                        "zhou",
+                        "qinghua",
+                        "and",
+                        "grechuk",
+                        "bogdan",
+                        "and",
+                        "tyukin",
+                        "ivan",
+                        "y"
+                    ]
+                },
                 "title": "stepproof stepbystep verification of natural language mathematical proofs",
                 "title_tokens": [
                     "stepproof",
@@ -4983,7 +5877,29 @@
             "norm": {
                 "id": "hahn_formal_2022",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "hahn christopher and schmitt frederik and tillman julia j and metzger niklas and siber julian and finkbeiner bernd",
+                    "tokens": [
+                        "hahn",
+                        "christopher",
+                        "and",
+                        "schmitt",
+                        "frederik",
+                        "and",
+                        "tillman",
+                        "julia",
+                        "j",
+                        "and",
+                        "metzger",
+                        "niklas",
+                        "and",
+                        "siber",
+                        "julian",
+                        "and",
+                        "finkbeiner",
+                        "bernd"
+                    ]
+                },
                 "title": "formal specifications from natural language",
                 "title_tokens": [
                     "formal",
@@ -5078,7 +5994,117 @@
             "norm": {
                 "id": "han_folio_2022",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "han simeng and schoelkopf hailey and zhao yilun and qi zhenting and riddell martin and zhou wenfei and coady james and peng david and qiao yujie and benson luke and sun lucy and wardlesolano alex and szabo hannah and zubova ekaterina and burtell matthew and fan jonathan and liu yixin and wong brian and sailor malcolm and ni ansong and nan linyong and kasai jungo and yu tao and zhang rui and fabbri alexander r and kryscinski wojciech and yavuz semih and liu ye and lin xi victoria and joty shafiq and zhou yingbo and xiong caiming and ying rex and cohan arman and radev dragomir",
+                    "tokens": [
+                        "han",
+                        "simeng",
+                        "and",
+                        "schoelkopf",
+                        "hailey",
+                        "and",
+                        "zhao",
+                        "yilun",
+                        "and",
+                        "qi",
+                        "zhenting",
+                        "and",
+                        "riddell",
+                        "martin",
+                        "and",
+                        "zhou",
+                        "wenfei",
+                        "and",
+                        "coady",
+                        "james",
+                        "and",
+                        "peng",
+                        "david",
+                        "and",
+                        "qiao",
+                        "yujie",
+                        "and",
+                        "benson",
+                        "luke",
+                        "and",
+                        "sun",
+                        "lucy",
+                        "and",
+                        "wardlesolano",
+                        "alex",
+                        "and",
+                        "szabo",
+                        "hannah",
+                        "and",
+                        "zubova",
+                        "ekaterina",
+                        "and",
+                        "burtell",
+                        "matthew",
+                        "and",
+                        "fan",
+                        "jonathan",
+                        "and",
+                        "liu",
+                        "yixin",
+                        "and",
+                        "wong",
+                        "brian",
+                        "and",
+                        "sailor",
+                        "malcolm",
+                        "and",
+                        "ni",
+                        "ansong",
+                        "and",
+                        "nan",
+                        "linyong",
+                        "and",
+                        "kasai",
+                        "jungo",
+                        "and",
+                        "yu",
+                        "tao",
+                        "and",
+                        "zhang",
+                        "rui",
+                        "and",
+                        "fabbri",
+                        "alexander",
+                        "r",
+                        "and",
+                        "kryscinski",
+                        "wojciech",
+                        "and",
+                        "yavuz",
+                        "semih",
+                        "and",
+                        "liu",
+                        "ye",
+                        "and",
+                        "lin",
+                        "xi",
+                        "victoria",
+                        "and",
+                        "joty",
+                        "shafiq",
+                        "and",
+                        "zhou",
+                        "yingbo",
+                        "and",
+                        "xiong",
+                        "caiming",
+                        "and",
+                        "ying",
+                        "rex",
+                        "and",
+                        "cohan",
+                        "arman",
+                        "and",
+                        "radev",
+                        "dragomir"
+                    ]
+                },
                 "title": "folio natural language reasoning with firstorder logic",
                 "title_tokens": [
                     "folio",
@@ -5262,7 +6288,28 @@
             "norm": {
                 "id": "li2025logic",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "li naiqi and liu peiyuan and liu zheng and dai tao and jiang yong and xia shutao",
+                    "tokens": [
+                        "li",
+                        "naiqi",
+                        "and",
+                        "liu",
+                        "peiyuan",
+                        "and",
+                        "liu",
+                        "zheng",
+                        "and",
+                        "dai",
+                        "tao",
+                        "and",
+                        "jiang",
+                        "yong",
+                        "and",
+                        "xia",
+                        "shutao"
+                    ]
+                },
                 "title": "logicofthought empowering large language models with logic programs for solving puzzles in natural language",
                 "title_tokens": [
                     "logicofthought",
@@ -5368,7 +6415,23 @@
             "norm": {
                 "id": "ryu_divide_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "ryu hyun and kim gyeongman and lee hyemin s and yang eunho",
+                    "tokens": [
+                        "ryu",
+                        "hyun",
+                        "and",
+                        "kim",
+                        "gyeongman",
+                        "and",
+                        "lee",
+                        "hyemin",
+                        "s",
+                        "and",
+                        "yang",
+                        "eunho"
+                    ]
+                },
                 "title": "divide and translate compositional firstorder logic translation and verification for complex logical reasoning",
                 "title_tokens": [
                     "divide",
@@ -5464,7 +6527,22 @@
             "norm": {
                 "id": "smirnov_generating_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "smirnov pavel and joublin frank and ceravola antonello and gienger michael",
+                    "tokens": [
+                        "smirnov",
+                        "pavel",
+                        "and",
+                        "joublin",
+                        "frank",
+                        "and",
+                        "ceravola",
+                        "antonello",
+                        "and",
+                        "gienger",
+                        "michael"
+                    ]
+                },
                 "title": "generating consistent pddl domains with large language models",
                 "title_tokens": [
                     "generating",
@@ -5552,7 +6630,23 @@
             "norm": {
                 "id": "thatikonda_strategies_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "thatikonda ramya keerthy and han jiuzhou and buntine wray and shareghi ehsan",
+                    "tokens": [
+                        "thatikonda",
+                        "ramya",
+                        "keerthy",
+                        "and",
+                        "han",
+                        "jiuzhou",
+                        "and",
+                        "buntine",
+                        "wray",
+                        "and",
+                        "shareghi",
+                        "ehsan"
+                    ]
+                },
                 "title": "strategies for improving nltofol translation with llms data generation incremental finetuning and verification",
                 "title_tokens": [
                     "strategies",
@@ -5649,7 +6743,24 @@
             "norm": {
                 "id": "wang_conformalnl2ltl_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "wang jun and sundarsingh david smith and deshmukh jyotirmoy v and kantaros yiannis",
+                    "tokens": [
+                        "wang",
+                        "jun",
+                        "and",
+                        "sundarsingh",
+                        "david",
+                        "smith",
+                        "and",
+                        "deshmukh",
+                        "jyotirmoy",
+                        "v",
+                        "and",
+                        "kantaros",
+                        "yiannis"
+                    ]
+                },
                 "title": "conformalnl2ltl translating natural language instructions into temporal logic formulas with conformal correctness guarantees",
                 "title_tokens": [
                     "conformalnl2ltl",
@@ -5745,7 +6856,31 @@
             "norm": {
                 "id": "weng2025autoformalization",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "weng ke and du lun and li sirui and lu wangyue and sun haozhe and liu hengyu and zhang tiancheng",
+                    "tokens": [
+                        "weng",
+                        "ke",
+                        "and",
+                        "du",
+                        "lun",
+                        "and",
+                        "li",
+                        "sirui",
+                        "and",
+                        "lu",
+                        "wangyue",
+                        "and",
+                        "sun",
+                        "haozhe",
+                        "and",
+                        "liu",
+                        "hengyu",
+                        "and",
+                        "zhang",
+                        "tiancheng"
+                    ]
+                },
                 "title": "autoformalization in the era of large language models a survey",
                 "title_tokens": [
                     "autoformalization",
@@ -5850,7 +6985,19 @@
             "norm": {
                 "id": "xu_learning_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "xu yilongfei and feng jincao and miao weikai",
+                    "tokens": [
+                        "xu",
+                        "yilongfei",
+                        "and",
+                        "feng",
+                        "jincao",
+                        "and",
+                        "miao",
+                        "weikai"
+                    ]
+                },
                 "title": "learning from failures translation of natural language requirements into linear temporal logic with large language models",
                 "title_tokens": [
                     "learning",
@@ -5957,7 +7104,28 @@
             "norm": {
                 "id": "brunello2025evaluating",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "brunello andrea and ferrarese riccardo and geatti luca and marzano enrico and montanari andrea and saccomanno nicola",
+                    "tokens": [
+                        "brunello",
+                        "andrea",
+                        "and",
+                        "ferrarese",
+                        "riccardo",
+                        "and",
+                        "geatti",
+                        "luca",
+                        "and",
+                        "marzano",
+                        "enrico",
+                        "and",
+                        "montanari",
+                        "andrea",
+                        "and",
+                        "saccomanno",
+                        "nicola"
+                    ]
+                },
                 "title": "evaluating llms capabilities at natural language to logic translation a preliminary investigation",
                 "title_tokens": [
                     "evaluating",
@@ -6071,7 +7239,22 @@
             "norm": {
                 "id": "guan2023leveraging",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "guan lin and valmeekam karthik and sreedharan sarath and kambhampati subbarao",
+                    "tokens": [
+                        "guan",
+                        "lin",
+                        "and",
+                        "valmeekam",
+                        "karthik",
+                        "and",
+                        "sreedharan",
+                        "sarath",
+                        "and",
+                        "kambhampati",
+                        "subbarao"
+                    ]
+                },
                 "title": "leveraging pretrained large language models to construct and utilize world models for modelbased task planning",
                 "title_tokens": [
                     "leveraging",
@@ -6173,7 +7356,40 @@
             "norm": {
                 "id": "hu_text2world_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "hu mengkang and chen tianxing and zou yude and lei yuheng and chen qiguang and li ming and mu yao and zhang hongyuan and shao wenqi and luo ping",
+                    "tokens": [
+                        "hu",
+                        "mengkang",
+                        "and",
+                        "chen",
+                        "tianxing",
+                        "and",
+                        "zou",
+                        "yude",
+                        "and",
+                        "lei",
+                        "yuheng",
+                        "and",
+                        "chen",
+                        "qiguang",
+                        "and",
+                        "li",
+                        "ming",
+                        "and",
+                        "mu",
+                        "yao",
+                        "and",
+                        "zhang",
+                        "hongyuan",
+                        "and",
+                        "shao",
+                        "wenqi",
+                        "and",
+                        "luo",
+                        "ping"
+                    ]
+                },
                 "title": "text2world benchmarking large language models for symbolic world model generation",
                 "title_tokens": [
                     "text2world",
@@ -6281,7 +7497,16 @@
             "norm": {
                 "id": "huang_limit_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "huang cassie and zhang li",
+                    "tokens": [
+                        "huang",
+                        "cassie",
+                        "and",
+                        "zhang",
+                        "li"
+                    ]
+                },
                 "title": "on the limit of language models as planning formalizers",
                 "title_tokens": [
                     "on",
@@ -6364,7 +7589,25 @@
             "norm": {
                 "id": "lin_text2motion_2023",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "lin kevin and agia christopher and migimatsu toki and pavone marco and bohg jeannette",
+                    "tokens": [
+                        "lin",
+                        "kevin",
+                        "and",
+                        "agia",
+                        "christopher",
+                        "and",
+                        "migimatsu",
+                        "toki",
+                        "and",
+                        "pavone",
+                        "marco",
+                        "and",
+                        "bohg",
+                        "jeannette"
+                    ]
+                },
                 "title": "text2motion from natural language instructions to feasible plans",
                 "title_tokens": [
                     "text2motion",
@@ -6458,7 +7701,22 @@
             "norm": {
                 "id": "mahdavi_leveraging_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "mahdavi sadegh and aoki raquel and tang keyi and cao yanshuai",
+                    "tokens": [
+                        "mahdavi",
+                        "sadegh",
+                        "and",
+                        "aoki",
+                        "raquel",
+                        "and",
+                        "tang",
+                        "keyi",
+                        "and",
+                        "cao",
+                        "yanshuai"
+                    ]
+                },
                 "title": "leveraging environment interaction for automated pddl translation and planning with large language models",
                 "title_tokens": [
                     "leveraging",
@@ -6551,7 +7809,28 @@
             "norm": {
                 "id": "oswald_large_2024",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "oswald james and srinivas kavitha and kokel harsha and lee junkyu and katz michael and sohrabi shirin",
+                    "tokens": [
+                        "oswald",
+                        "james",
+                        "and",
+                        "srinivas",
+                        "kavitha",
+                        "and",
+                        "kokel",
+                        "harsha",
+                        "and",
+                        "lee",
+                        "junkyu",
+                        "and",
+                        "katz",
+                        "michael",
+                        "and",
+                        "sohrabi",
+                        "shirin"
+                    ]
+                },
                 "title": "large language models as planning domain generators",
                 "title_tokens": [
                     "large",
@@ -6655,7 +7934,29 @@
             "norm": {
                 "id": "silver_generalized_2024",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "silver tom and dan soham and srinivas kavitha and tenenbaum joshua b and kaelbling leslie and katz michael",
+                    "tokens": [
+                        "silver",
+                        "tom",
+                        "and",
+                        "dan",
+                        "soham",
+                        "and",
+                        "srinivas",
+                        "kavitha",
+                        "and",
+                        "tenenbaum",
+                        "joshua",
+                        "b",
+                        "and",
+                        "kaelbling",
+                        "leslie",
+                        "and",
+                        "katz",
+                        "michael"
+                    ]
+                },
                 "title": "generalized planning in pddl domains with pretrained large language models",
                 "title_tokens": [
                     "generalized",
@@ -6761,7 +8062,28 @@
             "norm": {
                 "id": "soroco2025pde",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "soroco mauricio and song jialin and xia mengzhou and emond kye and sun weiran and chen wuyang",
+                    "tokens": [
+                        "soroco",
+                        "mauricio",
+                        "and",
+                        "song",
+                        "jialin",
+                        "and",
+                        "xia",
+                        "mengzhou",
+                        "and",
+                        "emond",
+                        "kye",
+                        "and",
+                        "sun",
+                        "weiran",
+                        "and",
+                        "chen",
+                        "wuyang"
+                    ]
+                },
                 "title": "pdecontroller llms for autoformalization and reasoning of pdes",
                 "title_tokens": [
                     "pdecontroller",
@@ -6860,7 +8182,24 @@
             "norm": {
                 "id": "wang2025let",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "wang ruida and li yuxin and fung yi r may and zhang tong",
+                    "tokens": [
+                        "wang",
+                        "ruida",
+                        "and",
+                        "li",
+                        "yuxin",
+                        "and",
+                        "fung",
+                        "yi",
+                        "r",
+                        "may",
+                        "and",
+                        "zhang",
+                        "tong"
+                    ]
+                },
                 "title": "lets reason formally naturalformal hybrid reasoning enhances llms math capability",
                 "title_tokens": [
                     "lets",
@@ -6959,7 +8298,28 @@
             "norm": {
                 "id": "xie_translating_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "xie yaqi and yu chen and zhu tongyao and bai jinbin and gong ze and soh harold",
+                    "tokens": [
+                        "xie",
+                        "yaqi",
+                        "and",
+                        "yu",
+                        "chen",
+                        "and",
+                        "zhu",
+                        "tongyao",
+                        "and",
+                        "bai",
+                        "jinbin",
+                        "and",
+                        "gong",
+                        "ze",
+                        "and",
+                        "soh",
+                        "harold"
+                    ]
+                },
                 "title": "translating natural language to planning goals with largelanguage models",
                 "title_tokens": [
                     "translating",
@@ -7054,7 +8414,27 @@
             "norm": {
                 "id": "de_la_rosa_trip-pal_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "de la rosa tomas and gopalakrishnan sriram and pozanco alberto and zeng zhen and borrajo daniel",
+                    "tokens": [
+                        "de",
+                        "la",
+                        "rosa",
+                        "tomas",
+                        "and",
+                        "gopalakrishnan",
+                        "sriram",
+                        "and",
+                        "pozanco",
+                        "alberto",
+                        "and",
+                        "zeng",
+                        "zhen",
+                        "and",
+                        "borrajo",
+                        "daniel"
+                    ]
+                },
                 "title": "trippal travel planning with guarantees by combining large language models and automated planners",
                 "title_tokens": [
                     "trippal",
@@ -7153,7 +8533,37 @@
             "norm": {
                 "id": "lee_safeguarding_2025",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "lee jungjae and lee dongjae and choi chihun and im youngmin and wi jaeyoung and heo kihong and oh sangeun and lee sunjae and shin insik",
+                    "tokens": [
+                        "lee",
+                        "jungjae",
+                        "and",
+                        "lee",
+                        "dongjae",
+                        "and",
+                        "choi",
+                        "chihun",
+                        "and",
+                        "im",
+                        "youngmin",
+                        "and",
+                        "wi",
+                        "jaeyoung",
+                        "and",
+                        "heo",
+                        "kihong",
+                        "and",
+                        "oh",
+                        "sangeun",
+                        "and",
+                        "lee",
+                        "sunjae",
+                        "and",
+                        "shin",
+                        "insik"
+                    ]
+                },
                 "title": "safeguarding mobile gui agent via logicbased action verification",
                 "title_tokens": [
                     "safeguarding",
@@ -7259,7 +8669,34 @@
             "norm": {
                 "id": "liu2025atlas",
                 "entrytype": "article",
-                "authors": [],
+                "authors": {
+                    "text": "liu xiaoyang and bao kangjie and zhang jiashuo and liu yunqi and chen yu and liu yuntian and jiao yang and luo tao",
+                    "tokens": [
+                        "liu",
+                        "xiaoyang",
+                        "and",
+                        "bao",
+                        "kangjie",
+                        "and",
+                        "zhang",
+                        "jiashuo",
+                        "and",
+                        "liu",
+                        "yunqi",
+                        "and",
+                        "chen",
+                        "yu",
+                        "and",
+                        "liu",
+                        "yuntian",
+                        "and",
+                        "jiao",
+                        "yang",
+                        "and",
+                        "luo",
+                        "tao"
+                    ]
+                },
                 "title": "atlas autoformalizing theorems through lifting augmentation and synthesis of data",
                 "title_tokens": [
                     "atlas",
@@ -7368,7 +8805,28 @@
             "norm": {
                 "id": "lu2024formalalign",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "jianqiao lu and yingjia wan and yinya huang and jing xiong and zhengying liu and zhijiang guo",
+                    "tokens": [
+                        "jianqiao",
+                        "lu",
+                        "and",
+                        "yingjia",
+                        "wan",
+                        "and",
+                        "yinya",
+                        "huang",
+                        "and",
+                        "jing",
+                        "xiong",
+                        "and",
+                        "zhengying",
+                        "liu",
+                        "and",
+                        "zhijiang",
+                        "guo"
+                    ]
+                },
                 "title": "formalalign automated alignment evaluation for autoformalization",
                 "title_tokens": [
                     "formalalign",
@@ -7471,7 +8929,19 @@
             "norm": {
                 "id": "mensfelt_autoformalization_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "mensfelt agnieszka and stathis kostas and trencsenyi vince",
+                    "tokens": [
+                        "mensfelt",
+                        "agnieszka",
+                        "and",
+                        "stathis",
+                        "kostas",
+                        "and",
+                        "trencsenyi",
+                        "vince"
+                    ]
+                },
                 "title": "autoformalization of game descriptions using large language models",
                 "title_tokens": [
                     "autoformalization",
@@ -7559,7 +9029,19 @@
             "norm": {
                 "id": "mensfelt2024lelma",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "agnieszka mensfelt and kostas stathis and vince trencsenyi",
+                    "tokens": [
+                        "agnieszka",
+                        "mensfelt",
+                        "and",
+                        "kostas",
+                        "stathis",
+                        "and",
+                        "vince",
+                        "trencsenyi"
+                    ]
+                },
                 "title": "towards logically sound natural language reasoning with logicenhanced language model agents",
                 "title_tokens": [
                     "towards",
@@ -7664,7 +9146,31 @@
             "norm": {
                 "id": "olausson_linc_2023",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "olausson theo and gu alex and lipkin ben and zhang cedegao and solarlezama armando and tenenbaum joshua and levy roger",
+                    "tokens": [
+                        "olausson",
+                        "theo",
+                        "and",
+                        "gu",
+                        "alex",
+                        "and",
+                        "lipkin",
+                        "ben",
+                        "and",
+                        "zhang",
+                        "cedegao",
+                        "and",
+                        "solarlezama",
+                        "armando",
+                        "and",
+                        "tenenbaum",
+                        "joshua",
+                        "and",
+                        "levy",
+                        "roger"
+                    ]
+                },
                 "title": "linc a neurosymbolic approach for logical reasoning by combining language models with firstorder logic provers",
                 "title_tokens": [
                     "linc",
@@ -7767,7 +9273,7 @@
             "raw": {
                 "id": "quan_verification_2024",
                 "entrytype": "misc",
-                "authors": "Quan, Xin and Valentino, Marco and Dennis, Louise A. and Freitas, André",
+                "authors": "Quan, Xin and Valentino, Marco and Dennis, Louise A. and Freitas, Andr\u00e9",
                 "title": "Verification and {Refinement} of {Natural} {Language} {Explanations} through {LLM}-{Symbolic} {Theorem} {Proving}",
                 "year": "2024",
                 "doi": "10.48550/ARXIV.2405.01379",
@@ -7784,7 +9290,23 @@
             "norm": {
                 "id": "quan_verification_2024",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "quan xin and valentino marco and dennis louise a and freitas andre",
+                    "tokens": [
+                        "quan",
+                        "xin",
+                        "and",
+                        "valentino",
+                        "marco",
+                        "and",
+                        "dennis",
+                        "louise",
+                        "a",
+                        "and",
+                        "freitas",
+                        "andre"
+                    ]
+                },
                 "title": "verification and refinement of natural language explanations through llmsymbolic theorem proving",
                 "title_tokens": [
                     "verification",
@@ -7879,7 +9401,26 @@
             "norm": {
                 "id": "sikes_creating_2025",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "sikes kelsey and finemorris morgan and sreedharan sarath and smith leslie n and roberts mak",
+                    "tokens": [
+                        "sikes",
+                        "kelsey",
+                        "and",
+                        "finemorris",
+                        "morgan",
+                        "and",
+                        "sreedharan",
+                        "sarath",
+                        "and",
+                        "smith",
+                        "leslie",
+                        "n",
+                        "and",
+                        "roberts",
+                        "mak"
+                    ]
+                },
                 "title": "creating pddl models from javascript using llms preliminary results",
                 "title_tokens": [
                     "creating",
@@ -7977,7 +9518,22 @@
             "norm": {
                 "id": "wang2020exploration",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "wang qingxiang and brown chad and kaliszyk cezary and urban josef",
+                    "tokens": [
+                        "wang",
+                        "qingxiang",
+                        "and",
+                        "brown",
+                        "chad",
+                        "and",
+                        "kaliszyk",
+                        "cezary",
+                        "and",
+                        "urban",
+                        "josef"
+                    ]
+                },
                 "title": "exploration of neural machine translation in autoformalization of mathematics in mizar",
                 "title_tokens": [
                     "exploration",
@@ -8084,7 +9640,19 @@
             "norm": {
                 "id": "yang_coupling_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "yang zhun and ishay adam and lee joohyung",
+                    "tokens": [
+                        "yang",
+                        "zhun",
+                        "and",
+                        "ishay",
+                        "adam",
+                        "and",
+                        "lee",
+                        "joohyung"
+                    ]
+                },
                 "title": "coupling large language models with logic programming for robust and general reasoning from text",
                 "title_tokens": [
                     "coupling",
@@ -8178,7 +9746,25 @@
             "norm": {
                 "id": "yang_harnessing_2023",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "yang yuan and xiong siheng and payani ali and shareghi ehsan and fekri faramarz",
+                    "tokens": [
+                        "yang",
+                        "yuan",
+                        "and",
+                        "xiong",
+                        "siheng",
+                        "and",
+                        "payani",
+                        "ali",
+                        "and",
+                        "shareghi",
+                        "ehsan",
+                        "and",
+                        "fekri",
+                        "faramarz"
+                    ]
+                },
                 "title": "harnessing the power of large language models for natural language to firstorder logic translation",
                 "title_tokens": [
                     "harnessing",
@@ -8278,7 +9864,49 @@
             "norm": {
                 "id": "yu2025formalmathbenchmarkingformalmathematical",
                 "entrytype": "misc",
-                "authors": [],
+                "authors": {
+                    "text": "zhouliang yu and ruotian peng and keyi ding and yizhe li and zhongyuan peng and minghao liu and yifan zhang and zheng yuan and huajian xin and wenhao huang and yandong wen and ge zhang and weiyang liu",
+                    "tokens": [
+                        "zhouliang",
+                        "yu",
+                        "and",
+                        "ruotian",
+                        "peng",
+                        "and",
+                        "keyi",
+                        "ding",
+                        "and",
+                        "yizhe",
+                        "li",
+                        "and",
+                        "zhongyuan",
+                        "peng",
+                        "and",
+                        "minghao",
+                        "liu",
+                        "and",
+                        "yifan",
+                        "zhang",
+                        "and",
+                        "zheng",
+                        "yuan",
+                        "and",
+                        "huajian",
+                        "xin",
+                        "and",
+                        "wenhao",
+                        "huang",
+                        "and",
+                        "yandong",
+                        "wen",
+                        "and",
+                        "ge",
+                        "zhang",
+                        "and",
+                        "weiyang",
+                        "liu"
+                    ]
+                },
                 "title": "formalmath benchmarking formal mathematical reasoning of large language models",
                 "title_tokens": [
                     "formalmath",
@@ -8396,7 +10024,28 @@
             "norm": {
                 "id": "zhao_nl2ctl_2024",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "zhao mengyan and tao ran and huang yanhong and shi jianqi and qin shengchao and yang yang",
+                    "tokens": [
+                        "zhao",
+                        "mengyan",
+                        "and",
+                        "tao",
+                        "ran",
+                        "and",
+                        "huang",
+                        "yanhong",
+                        "and",
+                        "shi",
+                        "jianqi",
+                        "and",
+                        "qin",
+                        "shengchao",
+                        "and",
+                        "yang",
+                        "yang"
+                    ]
+                },
                 "title": "nl2ctl automatic generation of formal requirements specifications via large language models",
                 "title_tokens": [
                     "nl2ctl",
@@ -8500,7 +10149,26 @@
             "norm": {
                 "id": "gadgil2022towards",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "gadgil siddhartha and tadipatri anand rao and agrawal ayush and narayanan ashvni and goyal navin",
+                    "tokens": [
+                        "gadgil",
+                        "siddhartha",
+                        "and",
+                        "tadipatri",
+                        "anand",
+                        "rao",
+                        "and",
+                        "agrawal",
+                        "ayush",
+                        "and",
+                        "narayanan",
+                        "ashvni",
+                        "and",
+                        "goyal",
+                        "navin"
+                    ]
+                },
                 "title": "towards automating formalisation of theorem statements using large language models",
                 "title_tokens": [
                     "towards",
@@ -8609,7 +10277,22 @@
             "norm": {
                 "id": "kaliszyk2014developing",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "kaliszyk cezary and urban josef and vyskocil jiri and geuvers herman",
+                    "tokens": [
+                        "kaliszyk",
+                        "cezary",
+                        "and",
+                        "urban",
+                        "josef",
+                        "and",
+                        "vyskocil",
+                        "jiri",
+                        "and",
+                        "geuvers",
+                        "herman"
+                    ]
+                },
                 "title": "developing corpusbased translation methods between informal and formal mathematics project description",
                 "title_tokens": [
                     "developing",
@@ -8711,7 +10394,19 @@
             "norm": {
                 "id": "kaliszyk2015learning",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "kaliszyk cezary and urban josef and vyskocil jiri",
+                    "tokens": [
+                        "kaliszyk",
+                        "cezary",
+                        "and",
+                        "urban",
+                        "josef",
+                        "and",
+                        "vyskocil",
+                        "jiri"
+                    ]
+                },
                 "title": "learning to parse on aligned corpora rough diamond",
                 "title_tokens": [
                     "learning",
@@ -8815,7 +10510,13 @@
             "norm": {
                 "id": "karatarakisleveraging",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "karatarakis michail",
+                    "tokens": [
+                        "karatarakis",
+                        "michail"
+                    ]
+                },
                 "title": "leveraging large language models for autoformalizing theorems a case study",
                 "title_tokens": [
                     "leveraging",
@@ -8908,7 +10609,19 @@
             "norm": {
                 "id": "wang2018first",
                 "entrytype": "inproceedings",
-                "authors": [],
+                "authors": {
+                    "text": "wang qingxiang and kaliszyk cezary and urban josef",
+                    "tokens": [
+                        "wang",
+                        "qingxiang",
+                        "and",
+                        "kaliszyk",
+                        "cezary",
+                        "and",
+                        "urban",
+                        "josef"
+                    ]
+                },
                 "title": "first experiments with neural translation of informal to formal mathematics",
                 "title_tokens": [
                     "first",
@@ -8988,6 +10701,82 @@
                         "tokens": [
                             "na"
                         ]
+                    }
+                }
+            }
+        },
+        {
+            "raw": {
+                "id": "boppana2026reasoning",
+                "entrytype": "article",
+                "authors": "Boppana, Siddharth and Ma, Annabel and Loeffler, Max and Sarfati, Raphael and Bigelow, Eric and Geiger, Atticus and Lewis, Owen and Merullo, Jack",
+                "title": "Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought",
+                "year": "2026",
+                "doi": "",
+                "url": "https://arxiv.org/abs/2603.05488",
+                "journal": "arXiv preprint arXiv:2603.05488",
+                "booktitle": "",
+                "venue": "arXiv preprint arXiv:2603.05488",
+                "domain": "",
+                "target formalism": "",
+                "goal": "",
+                "type": "Article",
+                "repository": ""
+            },
+            "norm": {
+                "id": "boppana2026reasoning",
+                "entrytype": "article",
+                "authors": [
+                    "bigelow eric",
+                    "boppana siddharth",
+                    "geiger atticus",
+                    "lewis owen",
+                    "loeffler max",
+                    "ma annabel",
+                    "merullo jack",
+                    "sarfati raphael"
+                ],
+                "title": "reasoning theater disentangling model beliefs from chainofthought",
+                "title_tokens": [
+                    "reasoning",
+                    "theater",
+                    "disentangling",
+                    "model",
+                    "beliefs",
+                    "from",
+                    "chainofthought"
+                ],
+                "year": 2026,
+                "doi": null,
+                "url": "https://arxiv.org/abs/2603.05488",
+                "venue": "arxiv preprint arxiv260305488",
+                "venue_tokens": [
+                    "arxiv",
+                    "preprint",
+                    "arxiv260305488"
+                ],
+                "custom": {
+                    "domain": {
+                        "text": "",
+                        "tokens": []
+                    },
+                    "target formalism": {
+                        "text": "",
+                        "tokens": []
+                    },
+                    "goal": {
+                        "text": "",
+                        "tokens": []
+                    },
+                    "type": {
+                        "text": "article",
+                        "tokens": [
+                            "article"
+                        ]
+                    },
+                    "repository": {
+                        "text": "",
+                        "tokens": []
                     }
                 }
             }
