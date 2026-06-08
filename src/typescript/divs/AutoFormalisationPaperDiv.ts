@@ -121,7 +121,7 @@ export class AutoFormalisationPaperDiv implements AutoFormalisationDiv {
         ];
 
         for (const field of fields) {
-            const value = this.paper[field.key];
+            const value: Paper[keyof Paper] = this.paper[field.key];
 
             if (!value) {
                 continue;

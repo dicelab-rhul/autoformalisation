@@ -76,9 +76,9 @@ export class AutoFormalisationPaginationDiv implements AutoFormalisationDiv {
             throw new TypeError("Cannot pack: the pagination div must be hidden before packing.");
         }
 
-        const totalPages = Math.ceil(this.totalPapers / this.pageSize);
+        const totalPages: number = Math.ceil(this.totalPapers / this.pageSize);
 
-        const prevButton = document.createElement("button");
+        const prevButton: HTMLButtonElement = document.createElement("button");
         prevButton.textContent = "← Prev";
         prevButton.className = "pagination-button";
         prevButton.disabled = this.currentPage <= 1;
@@ -87,11 +87,11 @@ export class AutoFormalisationPaginationDiv implements AutoFormalisationDiv {
             document.getElementById("papers-div")?.scrollIntoView({ behavior: "smooth", block: "start" });
         });
 
-        const info = document.createElement("span");
+        const info: HTMLSpanElement = document.createElement("span");
         info.className = "pagination-info";
         info.textContent = `Page ${this.currentPage} of ${totalPages} (${this.totalPapers} papers)`;
 
-        const nextButton = document.createElement("button");
+        const nextButton: HTMLButtonElement = document.createElement("button");
         nextButton.textContent = "Next →";
         nextButton.className = "pagination-button";
         nextButton.disabled = this.currentPage >= totalPages;

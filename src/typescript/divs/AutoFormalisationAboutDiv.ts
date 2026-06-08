@@ -8,25 +8,25 @@ export class AutoFormalisationAboutDiv {
     }
 
     private build(): void {
-        const section = document.createElement("div");
+        const section: HTMLDivElement = document.createElement("div");
         section.className = "home-section";
 
-        const h2 = document.createElement("h2");
+        const h2: HTMLHeadingElement = document.createElement("h2");
         h2.textContent = "What is autoformalization?";
         section.appendChild(h2);
 
-        const p1 = document.createElement("p");
+        const p1: HTMLParagraphElement = document.createElement("p");
         p1.textContent = "Autoformalization is the automatic transformation of informal or semi-formal language into a formal language that supports automated reasoning or verification. Although the term originated in the formalization of mathematics with interactive theorem provers, it can more broadly be seen as a form of semantic parsing in which the output is a formal, machine-interpretable representation.";
         section.appendChild(p1);
 
-        const p2 = document.createElement("p");
+        const p2: HTMLParagraphElement = document.createElement("p");
         p2.textContent = "In this sense, autoformalization refers to the translation of such language into any machine-executable formal language used for knowledge representation and reasoning.";
         section.appendChild(p2);
 
-        const exampleBlock = document.createElement("div");
+        const exampleBlock: HTMLDivElement = document.createElement("div");
         exampleBlock.className = "example-block";
 
-        const exampleLabel = document.createElement("span");
+        const exampleLabel: HTMLSpanElement = document.createElement("span");
         exampleLabel.className = "bold-text";
         exampleLabel.textContent = "Example:";
         exampleBlock.appendChild(exampleLabel);
@@ -34,11 +34,11 @@ export class AutoFormalisationAboutDiv {
         exampleBlock.appendChild(document.createTextNode("From"));
         exampleBlock.appendChild(document.createElement("br"));
 
-        const em = document.createElement("em");
+        const em: HTMLElement = document.createElement("em");
         em.textContent = '"All humans are mortal. Socrates is a human. Therefore, Socrates is mortal."';
         exampleBlock.appendChild(em);
 
-        const code = document.createElement("code");
+        const code: HTMLElement = document.createElement("code");
         code.textContent = "∀x (Human(x) → Mortal(x)), Human(Socrates), Mortal(Socrates).";
         exampleBlock.appendChild(code);
         exampleBlock.appendChild(document.createElement("br"));

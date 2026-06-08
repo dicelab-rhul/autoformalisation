@@ -15,14 +15,14 @@ export class Main {
         const [papers] = await AutoFormalisationPaperLoader.loadPapers(papersJsonPath);
 
         // Main content wrapper
-        const mainContent = document.createElement("div");
+        const mainContent: HTMLDivElement = document.createElement("div");
         mainContent.id = "main-content";
 
         // Pages
-        const homePage = new AutoFormalisationHomePageDiv();
-        const browseDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), "Browse Papers", "", "Filter and search the autoformalization paper catalogue.");
-        const about = new AutoFormalisationAboutDiv();
-        const statisticsPage = new AutoFormalisationStatisticsDiv(papers);
+        const homePage: AutoFormalisationHomePageDiv = new AutoFormalisationHomePageDiv();
+        const browseDiv: AutoFormalisationMainContainerDiv = new AutoFormalisationMainContainerDiv(papers, new EmptyFilters(), "Browse Papers", "", "Filter and search the autoformalization paper catalogue.");
+        const about: AutoFormalisationAboutDiv = new AutoFormalisationAboutDiv();
+        const statisticsPage: AutoFormalisationStatisticsDiv = new AutoFormalisationStatisticsDiv(papers);
 
         browseDiv.pack();
         browseDiv.getDiv().hidden = true;
@@ -36,7 +36,7 @@ export class Main {
         mainContent.appendChild(statisticsPage.getDiv());
 
         // Sidebar
-        const sidebar = new AutoFormalisationSidebarDiv((page: Page) => {
+        const sidebar: AutoFormalisationSidebarDiv = new AutoFormalisationSidebarDiv((page: Page) => {
             homePage.hide();
             browseDiv.getDiv().hidden = true;
             about.hide();

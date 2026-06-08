@@ -56,31 +56,31 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     }
 
     private refreshPapersDiv(): void {
-        const start = (this.currentPage - 1) * this.pageSize;
-        const pageSlice = this.currentlyVisiblePapers.slice(start, start + this.pageSize);
+        const start: number = (this.currentPage - 1) * this.pageSize;
+        const pageSlice: Paper[] = this.currentlyVisiblePapers.slice(start, start + this.pageSize);
         const paperDivs: AutoFormalisationPaperDiv[] = pageSlice.map(p => new AutoFormalisationPaperDiv(p));
-        const newPapersDiv = new AutoFormalisationPapersDiv(paperDivs);
+        const newPapersDiv: AutoFormalisationPapersDiv = new AutoFormalisationPapersDiv(paperDivs);
 
         newPapersDiv.pack();
         newPapersDiv.show();
 
-        const existing = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("papers-div");
+        const existing: HTMLDivElement = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("papers-div");
 
         existing.replaceWith(newPapersDiv.getDiv());
     }
 
     private refreshPaginationDiv(): void {
-        const newPaginationDiv = new AutoFormalisationPaginationDiv(
+        const newPaginationDiv: AutoFormalisationPaginationDiv = new AutoFormalisationPaginationDiv(
             this.currentlyVisiblePapers.length,
             this.currentPage,
             this.pageSize,
-            (page) => this.goToPage(page)
+            (page: number) => this.goToPage(page)
         );
 
         newPaginationDiv.pack();
         newPaginationDiv.show();
 
-        const existing = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("pagination-div");
+        const existing: HTMLDivElement = AutoFormalisationHTMLUtils.getElementByIdOrThrow<HTMLDivElement>("pagination-div");
 
         existing.replaceWith(newPaginationDiv.getDiv());
 
@@ -202,8 +202,8 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     }
 
     private packAndAppendPapersDiv(): void {
-        const start = (this.currentPage - 1) * this.pageSize;
-        const pageSlice = this.currentlyVisiblePapers.slice(start, start + this.pageSize);
+        const start: number = (this.currentPage - 1) * this.pageSize;
+        const pageSlice: Paper[] = this.currentlyVisiblePapers.slice(start, start + this.pageSize);
         const paperDivs: AutoFormalisationPaperDiv[] = pageSlice.map(p => new AutoFormalisationPaperDiv(p));
         const papersDiv: AutoFormalisationPapersDiv = new AutoFormalisationPapersDiv(paperDivs);
 
@@ -214,11 +214,11 @@ export class AutoFormalisationMainContainerDiv implements AutoFormalisationDiv {
     }
 
     private packAndAppendPaginationDiv(): void {
-        const paginationDiv = new AutoFormalisationPaginationDiv(
+        const paginationDiv: AutoFormalisationPaginationDiv = new AutoFormalisationPaginationDiv(
             this.currentlyVisiblePapers.length,
             this.currentPage,
             this.pageSize,
-            (page) => this.goToPage(page)
+            (page: number) => this.goToPage(page)
         );
 
         paginationDiv.pack();

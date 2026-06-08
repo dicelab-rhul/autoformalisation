@@ -14,21 +14,21 @@ export class AutoFormalisationSidebarDiv {
 
     private build(): void {
         // Title
-        const titleDiv = document.createElement("div");
+        const titleDiv: HTMLDivElement = document.createElement("div");
         titleDiv.id = "sidebar-title";
 
-        const h1 = document.createElement("h1");
+        const h1: HTMLHeadingElement = document.createElement("h1");
         h1.textContent = "Autoformalization Papers";
         titleDiv.appendChild(h1);
 
-        const p = document.createElement("p");
+        const p: HTMLParagraphElement = document.createElement("p");
         p.textContent = "A curated repository of research on translating informal language into formal representations for automated reasoning and verification.";
         titleDiv.appendChild(p);
 
         this.div.appendChild(titleDiv);
 
         // Nav
-        const nav = document.createElement("nav");
+        const nav: HTMLElement = document.createElement("nav");
         const items: { page: Page; icon: string; label: string }[] = [
             { page: "home",       icon: "🏠", label: "Home" },
             { page: "browse",     icon: "📄", label: "Browse Papers" },
@@ -38,10 +38,10 @@ export class AutoFormalisationSidebarDiv {
         ];
 
         for (const item of items) {
-            const btn = document.createElement("button");
+            const btn: HTMLButtonElement = document.createElement("button");
             btn.className = "nav-item";
 
-            const iconSpan = document.createElement("span");
+            const iconSpan: HTMLSpanElement = document.createElement("span");
             iconSpan.className = "nav-icon";
             iconSpan.textContent = item.icon;
             btn.appendChild(iconSpan);
@@ -62,7 +62,7 @@ export class AutoFormalisationSidebarDiv {
 
     private setActive(page: Page): void {
         this.activePage = page;
-        const buttons = this.div.querySelectorAll(".nav-item");
+        const buttons: NodeListOf<Element> = this.div.querySelectorAll(".nav-item");
         const pages: Page[] = ["home", "browse", "trends", "contribute", "about"];
         buttons.forEach((btn, i) => {
             btn.classList.toggle("active", pages[i] === page);
