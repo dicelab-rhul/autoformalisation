@@ -166,7 +166,7 @@ export class AutoFormalisationFiltersDiv implements AutoFormalisationDiv {
 
         optionElements.push(AutoFormalisationHTMLUtils.createOptionElement("", "", "All"));
 
-        for (const v of [...values].sort((a, b) => a.localeCompare(b))) {
+        for (const v of [...values].sort((a: string, b: string) => a.localeCompare(b))) {
             const opt: HTMLOptionElement = document.createElement("option");
 
             opt.value = v;

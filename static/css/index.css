@@ -122,6 +122,8 @@ a:hover {
     color: #fff;
     font-size: 1.5rem;
     font-style: italic;
+    background-image: url('../images/banner_long.png');
+    background-size: cover;
 }
 
 /* ── Home page sections ── */
@@ -315,4 +317,36 @@ a:hover {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 8px;
+}
+
+#pagination-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.pagination-button {
+    background-color: #5c5043;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #3e3529;
+}
+
+.pagination-info {
+    font-size: 0.9rem;
+    color: #555;
 }
