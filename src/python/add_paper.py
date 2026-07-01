@@ -12,7 +12,7 @@ class PaperEntryParser():
     def __init__(self, papers_bib_file: str) -> None:
         self.__papers_bib_file: str = papers_bib_file
         self.__standard_keys: list[str] = ["id", "entrytype", "authors", "title", "year", "doi", "url", "journal", "booktitle", "venue"]
-        self.__misc_keys: list[str] = ["llm", "language", "type"]
+        self.__misc_keys: list[str] = ["area", "language", "goal", "type", "repository"]
         self.__normaliser: Normaliser = Normaliser()
 
     def __load_bib_database(self) -> None:
